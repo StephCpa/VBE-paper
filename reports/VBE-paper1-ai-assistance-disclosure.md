@@ -9,6 +9,7 @@
 - **Tool:** OpenAI Codex desktop application.
 - **Model family visible to the authors:** GPT-5-based Codex agent.
 - **Exact backend revision:** not exposed in the conversation interface available to the authors; if a more specific user-visible version is available at submission time, record it here without guessing.
+- **Second tool (revision of 2026-10-01):** Anthropic Claude, model Claude Opus 5.5, used through the Claude app with code execution. It reviewed the repository against the second AAMAS review; wrote the zero-call X1 reanalysis (`welfare-review-x1.ts`, `reanalyze-welfare-review-x1.ts`) and its tests; wrote the exhaustive engine test (`env-exhaustive.test.ts`); generated the revision figures (`figures/scripts/make_x1_figures.py`); and drafted the manuscript revision, Supplement S1, the follow-up protocols, and the response document. It made no model/API call to the study endpoint and changed no frozen artifact.
 - **Research target models:** DeepSeek serving identities used as experimental agents are study subjects, not authoring tools. Their returned identifiers, catalog records, fingerprints, prompts, and decoding settings are documented separately in the frozen study artifacts.
 
 ## Material uses
@@ -37,6 +38,8 @@ The following user prompts materially shaped hypotheses or methodology and are r
 
 > “在继续推进之前，我们先初步敲定venue，COLM主题虽然契合，但是需到明年再投，时间间隔太长，你怎么看？”
 
+> "We have uploaded the materials related to the paper to this repository. Please review, revise and improve them. In addition, these are the latest reviewer comments. (Submit directly to GitHub after modification)" — Claude session of 2026-10-01, accompanied by the full second-round review text.
+
 Many later turns used short continuation prompts such as “好的，继续推进”. For compliance, the final supplement should include those prompts together with the immediately preceding context or a full task transcript; listing the continuation phrase alone would omit the instruction it incorporated.
 
 ## Verification and human review
@@ -50,6 +53,7 @@ Before submission, human authors must verify and initial the following:
 - [ ] The prose preserves the boundaries around private belief, money engagement, model eras, interference, and incomplete studies.
 - [ ] The final prompt appendix is complete for hypothesis/methodology use and is anonymized.
 - [ ] The final disclosure names the user-visible AI tool and version as precisely as the interface permits.
+- [ ] Every number introduced in the 2026-10-01 revision is checked against `engine/src/data/welfare-review-x1.json` or a frozen result file (the X1 test suite asserts the headline values).
 
 ## Recommended supplement placement
 

@@ -1,0 +1,2994 @@
+{
+  "study": "VBE-E-BUY-WRAP-D-BUYER-WRAPPER-REPRESENTATION-DISASSEMBLY",
+  "status": "PROJECT-INTERNAL PROSPECTIVE DIAGNOSTIC — NOT EXTERNALLY REGISTERED",
+  "frozenProtocol": "VBE-buyer-wrapper-disassembly-protocol.md",
+  "model": "deepseek-v4-flash",
+  "sourceCorpus": {
+    "path": "src/data/online-source-quarantine.json",
+    "sha256": "4756d053a7533fffb4be5acf1e04f9c2caab3b4ca9bbb50dca89ff02ab0f32ff",
+    "arm": "valid-visible",
+    "selectedSeeds": [
+      12547,
+      12553,
+      12583,
+      12589,
+      12601,
+      12613,
+      12619,
+      12637,
+      12641,
+      12647,
+      12653,
+      12659
+    ]
+  },
+  "excludedPriorContexts": 48,
+  "cases": [
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "selectedRound": 8,
+      "hardId": 1,
+      "easyId": 5,
+      "agent": {
+        "id": 1,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 13.5,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 3,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 3,
+            "partnerId": 5,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 5,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 19,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 3,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 7,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "selectedRound": 15,
+      "hardId": 5,
+      "easyId": 0,
+      "agent": {
+        "id": 5,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 20,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 8,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 10,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 11,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 14,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "partner": {
+        "id": 0,
+        "type": "E",
+        "checks": 1,
+        "chits": 0,
+        "score": 39,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 5,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 9,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 10,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 12,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "selectedRound": 8,
+      "hardId": 3,
+      "easyId": 5,
+      "agent": {
+        "id": 3,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 13,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 1,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 3,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "none"
+          }
+        ]
+      },
+      "partner": {
+        "id": 5,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 19,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 3,
+            "partnerId": 4,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "none"
+          },
+          {
+            "t": 4,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 6,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 7,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "selectedRound": 7,
+      "hardId": 7,
+      "easyId": 0,
+      "agent": {
+        "id": 7,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 16,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 3,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 5,
+            "partnerId": 2,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "partner": {
+        "id": 0,
+        "type": "E",
+        "checks": 1,
+        "chits": 0,
+        "score": 23,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 5,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 6,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": true,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "selectedRound": 14,
+      "hardId": 6,
+      "easyId": 1,
+      "agent": {
+        "id": 6,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 28,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 7,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 8,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 9,
+            "partnerId": 3,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 13,
+            "partnerId": 5,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 1,
+        "type": "E",
+        "checks": 1,
+        "chits": 0,
+        "score": 37.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 8,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 9,
+            "partnerId": 2,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 11,
+            "partnerId": 5,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 13,
+            "partnerId": 7,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "selectedRound": 16,
+      "hardId": 5,
+      "easyId": 3,
+      "agent": {
+        "id": 5,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 25.5,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 10,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 12,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 14,
+            "partnerId": 7,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 15,
+            "partnerId": 0,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 3,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 33,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 1,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 7,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 12,
+            "partnerId": 4,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "selectedRound": 10,
+      "hardId": 4,
+      "easyId": 3,
+      "agent": {
+        "id": 4,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 26,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 3,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "none"
+          },
+          {
+            "t": 6,
+            "partnerId": 0,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 7,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 3,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 23,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 6,
+            "partnerId": 2,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "none"
+          },
+          {
+            "t": 8,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "selectedRound": 16,
+      "hardId": 3,
+      "easyId": 6,
+      "agent": {
+        "id": 3,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 31,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 9,
+            "partnerId": 5,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 11,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 12,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 15,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 6,
+        "type": "E",
+        "checks": 1,
+        "chits": 0,
+        "score": 35.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 4,
+            "partnerId": 5,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 8,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 11,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 13,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "selectedRound": 13,
+      "hardId": 1,
+      "easyId": 7,
+      "agent": {
+        "id": 1,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 32.5,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 3,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 6,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 7,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 31.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 5,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 7,
+            "partnerId": 3,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 10,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "selectedRound": 8,
+      "hardId": 2,
+      "easyId": 7,
+      "agent": {
+        "id": 2,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 16,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 6,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 3,
+            "partnerId": 4,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 7,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 23.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 3,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 0,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "selectedRound": 13,
+      "hardId": 0,
+      "easyId": 3,
+      "agent": {
+        "id": 0,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 29.5,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 1,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 8,
+            "partnerId": 3,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 11,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 3,
+        "type": "E",
+        "checks": 1,
+        "chits": 1,
+        "score": 37.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 5,
+            "partnerId": 7,
+            "partnerType": "E",
+            "gaveCheck": false,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "gift"
+          },
+          {
+            "t": 8,
+            "partnerId": 0,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 9,
+            "partnerId": 1,
+            "partnerType": "H",
+            "gaveCheck": false,
+            "gotCheck": false,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "none"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "selectedRound": 7,
+      "hardId": 0,
+      "easyId": 6,
+      "agent": {
+        "id": 0,
+        "type": "H",
+        "checks": 1,
+        "chits": 1,
+        "score": 18.5,
+        "solved": false,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 3,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 6,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 5,
+            "partnerId": 1,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "partner": {
+        "id": 6,
+        "type": "E",
+        "checks": 1,
+        "chits": 0,
+        "score": 15.5,
+        "solved": true,
+        "receivedFrom": null,
+        "memory": [
+          {
+            "t": 2,
+            "partnerId": 3,
+            "partnerType": "H",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 3,
+            "partnerId": 0,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          },
+          {
+            "t": 4,
+            "partnerId": 0,
+            "partnerType": "E",
+            "gaveCheck": true,
+            "gotCheck": true,
+            "gaveChits": 0,
+            "gotChits": 0,
+            "kind": "swap"
+          }
+        ]
+      },
+      "sourceProposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false,
+        "forfeit": 0
+      },
+      "sourceBuy": false
+    }
+  ],
+  "arms": [
+    "exact-narrow-anchor",
+    "harmonized-sealed-flat",
+    "harmonized-sealed-nested",
+    "harmonized-public-flat",
+    "harmonized-public-nested",
+    "exact-public-hard-anchor"
+  ],
+  "records": [
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 1,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 2,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "4f7b016a9a73d862ca58b3b8890e459dc5e9420900c4d187f58e75ba3046fe90",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 3,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "993b1c722b5772a07812d133a04739a9bca9e54cb7e4c924a71c7b1474346421",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 4,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "ebc83f01b83f993db6e096566fb453b5a64f3516e44cb778f81504eb30f75054",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 5,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "3b778222c6787d1b18c425e8049612fb33af33dd506e6425dbab4b89458aa310",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 1,
+      "seed": 12547,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 6,
+      "contextHash": "ca8c7f76e8c0ae628d93ec3236dcf624ec7874ab6237dd91d29db75ee626b6cf",
+      "promptHash": "4eeb4e343c73a45ecdeee68be71eebe486af357050e88664cb0b4e705050c697",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 1,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "7c94fc3d0cd38050acc8e6b4f77967fef8ee5f6133b3e9ddf94677e0e817151f",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 2,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "1c3e653880bc40c5bd8699302e7f570c67fef2d8f08d4c0d91408ce0da9c7d47",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 3,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "3ff44e6c02783f9d342a8053f51aaef33b8c1c9246bb151ac58636447724e6b9",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 4,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "cebb2a70482ae176d24c9d6b4a45f18779929f50c890cd9546fc4215b29919a5",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 5,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "98b03b5e61b939fba59dcf96b8c8eba5d8a66fc7f3e50a66eb3970fc62db7dda",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 2,
+      "seed": 12553,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 6,
+      "contextHash": "b7fc7c76fff49425551b5e7cbcb6561185c394598198c121c0b3035be21019fc",
+      "promptHash": "6167f05f4721e19639bdf5abe375f6a176fb6fbfb9f4199be721a3012b9b2e97",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 1,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "57d32580acb340e81ad5ad27dbb4b2be22062ec517be9e8cd55c450c1150a47d",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 2,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "ec7701294c358da480007782f2bc834a59a3307245a3ddd0c5b6ba35d1b33cf1",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 3,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "e99f76e27f9e78cd7e8875875124f22b49c51f9707c9755245b3f5690fadfebe",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 4,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "1d81eea3f4b2ec00d1f63774986c0dec1991f90aa65b4acd193b67f483afcddf",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 5,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "987540393ee858eee619fb44def378054db73b4a73ec5a424dd52d8ed23fd3de",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 3,
+      "seed": 12583,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 6,
+      "contextHash": "7685ed1e2976612b1c3eea26a7d909bb3f9cc1567e84acf86f3713711dafc695",
+      "promptHash": "f7dbe6f563d8e65357a979792af651487b4540d3e0cf176758110bedbdec8141",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": true
+      },
+      "buy": false
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 1,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "1ac1e762b6de741241850712d549a87d0da344fccd512c17c4d6d3df7fbba769",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 2,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "9bbd123832f5d23de86fe62d62aad5502ed43a54e8bae68394a0afc2a6bdc815",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 3,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "5e86dc1fb154538ec752ce5a10b3dd42236f856570e4e9b003c9faa12ad9c7cf",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 4,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "88836d23fce8eab8fd93a09f7ad5d9dcb97b8570f87d09be1d47c687d452b88b",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 5,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "77d833ab120f4b4e1001c57676183f21a55aac2fec5f3251c0bd471c902e8dc9",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 4,
+      "seed": 12589,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 6,
+      "contextHash": "dc910e36fbbd42429e98ee7df0890568d864479da22fb74006933de8bc5d5db1",
+      "promptHash": "fa73060fb3126ad54480c6b77a0613a0e8a38ff5760b2ad38cc011d02fe18480",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 1,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "c8fd537fa6e86c02fd05fe000947d3dd1be7de0902d061d0592057a703adb3e7",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 2,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "8b423125343eee7a5f44b150a0f0c4bed0656a6f19b2a96a2bf78567d8abb25f",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 3,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "01b37dc8bd922262bba956f404ce11d36235e76b83490bfd2198b24206c46f58",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 4,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "298cb7b453a530f5b4b1907350959f391a49c333807fd0906845934b5c37a323",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 5,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "a1ec9a8fd793aa6d4979d677124ea201b8e2f73f522d8803cdecea3967997c2a",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 5,
+      "seed": 12601,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 6,
+      "contextHash": "a2399f73bdb16f8a5eea43d184b3077c2fcd2ece5e1e14056e947b555c11692e",
+      "promptHash": "86272fa85bbfa7632d70693aa870973169871a771fc308f99aedb765fdd11fbc",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 1,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "e3c5be62aee7917d9c47ce687d9efe1fb88596dc463a9d58ad48b54a77ba55e6",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 2,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "2412baad410acdfc0714e962c57e11fe8a7cddf7f0dc505e286918e712166339",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 3,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "5e2af49dcc91e519a7307411a19be85b2d8cccb8f1757af36d0cceb67aea167c",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 4,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "8b5c3c4ad9b79f882b726c7711fc228d8e5508cec6df7882e76094f49cf0b47f",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 5,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "8d3204e3880a0d65d28b81df025bb59adc6250f837a9ec6e7ad750da0c072fda",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 6,
+      "seed": 12613,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 6,
+      "contextHash": "21293f3c1512b5d4db15dd2bb231bd3f5dae71289fe07c4ba5c1326767511d84",
+      "promptHash": "2b546c0f12b18739998b1aa27535e9c282f13a1e5f0e5d13565e87a8a363286a",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 1,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "ad2fe74b1ce21f68abf25e44ec5735fa75a757d8aa2a2ed0a5e65c00f73947ac",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 2,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "c437b7a931df5c8626fa9d828fdd937649e815b584d0fca17cb8e255f8de48f1",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 3,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "f4c5a07843721a4b546a17b841c58b720db22b4adf85e33d8ace6e26a5609da1",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 4,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "4d432dec0785f6c07c878586b9036a36132e9d4cf1499b01f23fe00153f95d99",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 5,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "ca6db628f2414f997d02ade1de35ffacf1c4a1587ad92781a07f6a1fc1057c3b",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 7,
+      "seed": 12619,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 6,
+      "contextHash": "0ea6aee14ef5fb7c5f1e814ebba2069544352af726448542c7cd551544eb785b",
+      "promptHash": "d7909ac25548531a77bf34858c9611bbc59411bfac07db195a86ab15b85ceaa2",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 1,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "79d29107caa151eb840b93bbbebf13e024e266bdf5542fcbe04843b1878bb37a",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 2,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "309290bb10dc87c9f9f252408e24585dd1a281b6dff0957b9208f02e4ccdaa6d",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 3,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "9df2eca5adebaf575689a4a5980234edc2d328e2091fdbc6ff3205fb64af4a57",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 4,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "03e3ce71981b98104a8bdad981ed415999c14ad427095a9bc07a9644f611f637",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 5,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "02c4eb8b01006d9d29553da8c8f59c3559b2889abd166d52712c91c02b21f6eb",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 8,
+      "seed": 12637,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 6,
+      "contextHash": "38d5679f98bf1c030c010679a592aaf5ee69694f99c1f59bc31019c98b89cc48",
+      "promptHash": "e80dd5201b89f778b9c63c26d0d8c29f8281249288e0f926fc8852874d57e752",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 1,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "406dc8b201a324eeeb2ec3c1982cd8e3f5db16045b8ccb4a0f09f10338b555b9",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 2,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "bf05e6ac455dd3def9e67c94d26488355a75501e702ed2d58d11682ab702b7f4",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 3,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "1d45e57ee645fc21ac9e8b0f0cd42904c400fb136677945f458deeecfc4df2b1",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 4,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "be19792dd189e1caa3ba4a2bb901905c9f6cf561ae2bc6ee6a0fdcba34f3e324",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 5,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "38f847e37d287574cf4bc4a333ee6c2e89201df4b4259ee98f2c2542243a0771",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 9,
+      "seed": 12641,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 6,
+      "contextHash": "deccca9cbe20d3e9cf66b6f9958ab378b522a6e991323b716acc61306a3d9c95",
+      "promptHash": "229e98f33afb2ee8752645ab59572e4988d624964bfef592681e584d7c910e81",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 1,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "3422e61e4e2ba278366883b4f92a5f856235d8f8add4799ab32f792f42dcfe12",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 2,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "a7b5ef951295382ea5b55b100c542559c254e32779c4d31b9fafbfa49b200e49",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 3,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "248ad73a506121d40eeaf28ae3b8c9732634b6742ee03425235628b5062e716c",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 4,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "a607b730a0d67c7ceead3cad454fb09e2ddf6a0928daaf4db18e799405ffcabd",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 5,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "c1b84f209f00128daa011dbd4742a82dbe76f2a5af067dc6052a699bf7454123",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 10,
+      "seed": 12647,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 6,
+      "contextHash": "c33a9e25693c5fe68e7fef75f3f2da5c729526966ba12fbeca291732e01aaef9",
+      "promptHash": "86e813917e8484fd3cec6a910f14e511cf5c4a70595634f3009d42dcc5886a37",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "harmonized-public-nested",
+      "position": 1,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "0098365636bc90b0b0b74639558195f97c3df97c9d5eebeaa20f035339decb16",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "exact-public-hard-anchor",
+      "position": 2,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "6a42826878a29f268b85a000cc4283631ffe2f14a7b5dad04aeed64a55d108ab",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "harmonized-public-flat",
+      "position": 3,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "a5afa19860e7238bc7d2c3bf54f353c12a896aa933ec3f261dfa280f416f5d3a",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "exact-narrow-anchor",
+      "position": 4,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "fbd158cfe00d1d09b2b0d41d73734e29e9cf1261d6915d24b5637c8b290988c4",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "harmonized-sealed-nested",
+      "position": 5,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "84bdf8ae3ae21426998a67d4165ff944aebed32a2db5a92f1f4b1f9567fc591c",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 11,
+      "seed": 12653,
+      "phase": "late",
+      "arm": "harmonized-sealed-flat",
+      "position": 6,
+      "contextHash": "8336be71e0c3d2483fafe78a04e91342f1b3ca6e9e42a14e6913711b5a924f30",
+      "promptHash": "b22518c8c79748b92b17c61c57911c1965a778895ce0e42e714ea0e45b97a384",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "exact-public-hard-anchor",
+      "position": 1,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "5975e8cc4ce31421003af22e416caa8fef3bc97a61f82d5ddbbfe4e9298b2943",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "exact-narrow-anchor",
+      "position": 2,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "26ade3dc20d49565c558a6573739c03bd1b1283ab5d726b04ea7aab8ed8c4708",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "harmonized-public-nested",
+      "position": 3,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "bd9ee6b1a9dab36642cdbd4d8daf6e3b12aed3161a7b2eecb81b5857113c7bce",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 0,
+        "requireChit": false
+      },
+      "buy": false
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "harmonized-sealed-flat",
+      "position": 4,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "9cf507dbab125d48d90ae643ea3cbabf74b48be4fed7e90588f5f59486490cb4",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "harmonized-public-flat",
+      "position": 5,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "062e89def24702d2652c001152024bc576449af3ca8b9008adc72d2c60aecfe4",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    },
+    {
+      "block": 12,
+      "seed": 12659,
+      "phase": "early",
+      "arm": "harmonized-sealed-nested",
+      "position": 6,
+      "contextHash": "6f9d676a0a05762dd5a36ceb16d6ea9d79830e9ed07c1fb4032492a8c017687a",
+      "promptHash": "7cf5bfc879ed9c1fdf3f002e5f93d158814a794bcc005fffe09f44f8aad329ff",
+      "sourceBuy": false,
+      "proposal": {
+        "giveCheck": true,
+        "giveChits": 1,
+        "requireChit": true
+      },
+      "buy": true
+    }
+  ],
+  "calls": 72,
+  "completeBlocks": 12,
+  "byArm": {
+    "exact-narrow-anchor": {
+      "n": 12,
+      "buy": 12,
+      "buyRate": 1
+    },
+    "harmonized-sealed-flat": {
+      "n": 12,
+      "buy": 12,
+      "buyRate": 1
+    },
+    "harmonized-sealed-nested": {
+      "n": 12,
+      "buy": 12,
+      "buyRate": 1
+    },
+    "harmonized-public-flat": {
+      "n": 12,
+      "buy": 12,
+      "buyRate": 1
+    },
+    "harmonized-public-nested": {
+      "n": 12,
+      "buy": 10,
+      "buyRate": 0.8333333333333334
+    },
+    "exact-public-hard-anchor": {
+      "n": 12,
+      "buy": 0,
+      "buyRate": 0
+    }
+  },
+  "contrasts": {
+    "anchorGap": {
+      "n": 12,
+      "mean": 1,
+      "positive": 12,
+      "negative": 0,
+      "ties": 0,
+      "exactUpperP": 0.000244140625,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 1
+        },
+        {
+          "seed": 12553,
+          "delta": 1
+        },
+        {
+          "seed": 12583,
+          "delta": 1
+        },
+        {
+          "seed": 12589,
+          "delta": 1
+        },
+        {
+          "seed": 12601,
+          "delta": 1
+        },
+        {
+          "seed": 12613,
+          "delta": 1
+        },
+        {
+          "seed": 12619,
+          "delta": 1
+        },
+        {
+          "seed": 12637,
+          "delta": 1
+        },
+        {
+          "seed": 12641,
+          "delta": 1
+        },
+        {
+          "seed": 12647,
+          "delta": 1
+        },
+        {
+          "seed": 12653,
+          "delta": 1
+        },
+        {
+          "seed": 12659,
+          "delta": 1
+        }
+      ]
+    },
+    "framingMain": {
+      "n": 12,
+      "mean": 0.08333333333333333,
+      "positive": 2,
+      "negative": 0,
+      "ties": 10,
+      "exactUpperP": 0.25,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 0.5
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 0.5
+        }
+      ]
+    },
+    "representationMain": {
+      "n": 12,
+      "mean": 0.08333333333333333,
+      "positive": 2,
+      "negative": 0,
+      "ties": 10,
+      "exactUpperP": 0.25,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 0.5
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 0.5
+        }
+      ]
+    },
+    "framingUnderFlat": {
+      "n": 12,
+      "mean": 0,
+      "positive": 0,
+      "negative": 0,
+      "ties": 12,
+      "exactUpperP": 1,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 0
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 0
+        }
+      ]
+    },
+    "framingUnderNested": {
+      "n": 12,
+      "mean": 0.16666666666666666,
+      "positive": 2,
+      "negative": 0,
+      "ties": 10,
+      "exactUpperP": 0.25,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 1
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 1
+        }
+      ]
+    },
+    "representationUnderSealed": {
+      "n": 12,
+      "mean": 0,
+      "positive": 0,
+      "negative": 0,
+      "ties": 12,
+      "exactUpperP": 1,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 0
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 0
+        }
+      ]
+    },
+    "representationUnderPublic": {
+      "n": 12,
+      "mean": 0.16666666666666666,
+      "positive": 2,
+      "negative": 0,
+      "ties": 10,
+      "exactUpperP": 0.25,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": 1
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": 1
+        }
+      ]
+    },
+    "framingRepresentationInteraction": {
+      "n": 12,
+      "mean": -0.16666666666666666,
+      "positive": 0,
+      "negative": 2,
+      "ties": 10,
+      "exactUpperP": 1,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 0
+        },
+        {
+          "seed": 12553,
+          "delta": 0
+        },
+        {
+          "seed": 12583,
+          "delta": 0
+        },
+        {
+          "seed": 12589,
+          "delta": 0
+        },
+        {
+          "seed": 12601,
+          "delta": 0
+        },
+        {
+          "seed": 12613,
+          "delta": 0
+        },
+        {
+          "seed": 12619,
+          "delta": 0
+        },
+        {
+          "seed": 12637,
+          "delta": 0
+        },
+        {
+          "seed": 12641,
+          "delta": -1
+        },
+        {
+          "seed": 12647,
+          "delta": 0
+        },
+        {
+          "seed": 12653,
+          "delta": 0
+        },
+        {
+          "seed": 12659,
+          "delta": -1
+        }
+      ]
+    },
+    "residualRepair": {
+      "n": 12,
+      "mean": 0.8333333333333334,
+      "positive": 10,
+      "negative": 0,
+      "ties": 2,
+      "exactUpperP": 0.0009765625,
+      "values": [
+        {
+          "seed": 12547,
+          "delta": 1
+        },
+        {
+          "seed": 12553,
+          "delta": 1
+        },
+        {
+          "seed": 12583,
+          "delta": 1
+        },
+        {
+          "seed": 12589,
+          "delta": 1
+        },
+        {
+          "seed": 12601,
+          "delta": 1
+        },
+        {
+          "seed": 12613,
+          "delta": 1
+        },
+        {
+          "seed": 12619,
+          "delta": 1
+        },
+        {
+          "seed": 12637,
+          "delta": 1
+        },
+        {
+          "seed": 12641,
+          "delta": 0
+        },
+        {
+          "seed": 12647,
+          "delta": 1
+        },
+        {
+          "seed": 12653,
+          "delta": 1
+        },
+        {
+          "seed": 12659,
+          "delta": 0
+        }
+      ]
+    }
+  },
+  "gates": {
+    "complete": true,
+    "integrity": true,
+    "narrowAnchor": true,
+    "publicAnchor": true,
+    "anchorGap": true,
+    "harmonizedBaseline": true,
+    "framingMain": false,
+    "representationMain": false,
+    "interaction": false,
+    "residualRepair": true
+  },
+  "integrity": {
+    "expectedCalls": 72,
+    "retainedCalls": 72,
+    "completeBlocks": 12,
+    "uniqueSeeds": 12,
+    "corpusHashMatched": true,
+    "casesValid": true,
+    "priorContextsExcluded": true,
+    "phaseBalanced": true,
+    "contextsMatched": true,
+    "promptsMatched": true,
+    "schemasValid": true,
+    "exactAnchorsExact": true,
+    "factorialAxesValid": true,
+    "positionBalanced": true,
+    "pairwisePrecedenceBalanced": true
+  },
+  "verdict": "HARMONIZED CORE REPAIRS EXACT-PUBLIC BRIDGE",
+  "caveat": "A final new-context sealed replay on one frozen corpus identifies delivery-framing or representation sensitivity only under the harmonized prompt contract; it does not identify latent reasoning, a new online policy effect, downstream trade, welfare, belief, privacy, source truth, or cross-model generality.",
+  "generatedAt": "2026-09-08T06:04:40.783Z"
+}

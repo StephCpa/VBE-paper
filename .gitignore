@@ -28,6 +28,10 @@ engine/src/lib/vbe/*
 !engine/src/lib/vbe/reanalyze-welfare-review-x0-v1_1.test.ts
 !engine/src/lib/vbe/epistemic-analysis.ts
 !engine/src/lib/vbe/epistemic-reward-confirmatory.ts
+!engine/src/lib/vbe/welfare-review-x1.ts
+!engine/src/lib/vbe/welfare-review-x1.test.ts
+!engine/src/lib/vbe/reanalyze-welfare-review-x1.ts
+!engine/src/lib/vbe/env-exhaustive.test.ts
 engine/src/data/*
 !engine/src/data/welfare-crowding-out.json
 !engine/src/data/welfare-crowding-out-freeze.json
@@ -45,3 +49,6 @@ engine/src/data/*
 !engine/src/data/provider-health-welfare-semantic-boundary.json
 !engine/src/data/provider-health-freeze.json
 !engine/src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json
+!engine/src/data/welfare-review-x1.json
+!engine/src/data/welfare-review-x1.md
+!engine/src/data/buyer-wrapper-disassembly.json

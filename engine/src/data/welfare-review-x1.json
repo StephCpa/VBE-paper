@@ -1,0 +1,4980 @@
+{
+  "analysis": "VBE-X1-ZERO-CALL-MECHANISM-AUDIT",
+  "version": "1.0",
+  "status": "POST-HOC ZERO-CALL REANALYSIS OF FROZEN TRACES — SUPPLEMENTARY; NOT A PROSPECTIVE CLAIM",
+  "modelCalls": 0,
+  "sources": {
+    "src/data/welfare-crowding-out.json": "f6438915387c05fc1eb1b4a94c9b70ba7ae4a77b0addd0e6bf1ed86d66779c96",
+    "src/data/welfare-role-channel.json": "149cedf566502b250e0dcaa53076698c9318188b9bb077d3ac96f5e8347b9b2c",
+    "src/data/welfare-semantic-boundary.json": "f4ab7c137903926871d9d1ef8d163f58d4b14dd60e209341cdf13d0597c09e26"
+  },
+  "params": {
+    "n": 8,
+    "T": 24,
+    "R": 3,
+    "q": 0.4,
+    "B": 1,
+    "M": 4,
+    "pHard": 0.32,
+    "pPartner": 0.93,
+    "v": 0.5,
+    "K": 4
+  },
+  "replayChecks": {
+    "W-CO": {
+      "runs": 36,
+      "scoresMatch": 36,
+      "kindsMatch": 36,
+      "reconcile": 36,
+      "decisions": 2728
+    },
+    "W-RG": {
+      "runs": 48,
+      "scoresMatch": 48,
+      "kindsMatch": 48,
+      "reconcile": 48,
+      "decisions": 3680
+    },
+    "W-SGB": {
+      "runs": 98,
+      "scoresMatch": 98,
+      "kindsMatch": 98,
+      "reconcile": 98,
+      "decisions": 7602
+    }
+  },
+  "effectCrossChecks": 21,
+  "payoffTable": [
+    {
+      "category": "H>H:gift",
+      "giverType": "H",
+      "receiverType": "H",
+      "giver": -0.96,
+      "receiver": 2.33,
+      "total": 1.37,
+      "engineGiver": -0.9600000000000001,
+      "engineReceiver": 2.33,
+      "engineTotal": 1.37
+    },
+    {
+      "category": "H>H:sale",
+      "giverType": "H",
+      "receiverType": "H",
+      "giver": -0.96,
+      "receiver": 2.33,
+      "total": 1.37,
+      "engineGiver": -0.9600000000000001,
+      "engineReceiver": 2.33,
+      "engineTotal": 1.37
+    },
+    {
+      "category": "H>E:gift",
+      "giverType": "H",
+      "receiverType": "E",
+      "giver": -0.96,
+      "receiver": 0,
+      "total": -0.96,
+      "engineGiver": -0.9600000000000001,
+      "engineReceiver": 0,
+      "engineTotal": -0.96
+    },
+    {
+      "category": "H>E:sale",
+      "giverType": "H",
+      "receiverType": "E",
+      "giver": -0.96,
+      "receiver": 0,
+      "total": -0.96,
+      "engineGiver": -0.9600000000000001,
+      "engineReceiver": 0,
+      "engineTotal": -0.96
+    },
+    {
+      "category": "E>H:gift",
+      "giverType": "E",
+      "receiverType": "H",
+      "giver": -0.5,
+      "receiver": 2.33,
+      "total": 1.83,
+      "engineGiver": -0.5,
+      "engineReceiver": 2.33,
+      "engineTotal": 1.83
+    },
+    {
+      "category": "E>H:sale",
+      "giverType": "E",
+      "receiverType": "H",
+      "giver": -0.5,
+      "receiver": 2.33,
+      "total": 1.83,
+      "engineGiver": -0.5,
+      "engineReceiver": 2.33,
+      "engineTotal": 1.83
+    },
+    {
+      "category": "E>E:gift",
+      "giverType": "E",
+      "receiverType": "E",
+      "giver": -0.5,
+      "receiver": 0,
+      "total": -0.5,
+      "engineGiver": -0.5,
+      "engineReceiver": 0,
+      "engineTotal": -0.5
+    },
+    {
+      "category": "E>E:sale",
+      "giverType": "E",
+      "receiverType": "E",
+      "giver": -0.5,
+      "receiver": 0,
+      "total": -0.5,
+      "engineGiver": -0.5,
+      "engineReceiver": 0,
+      "engineTotal": -0.5
+    },
+    {
+      "category": "HH:swap",
+      "giverType": "H",
+      "receiverType": "H",
+      "giver": 1.83,
+      "receiver": 1.83,
+      "total": 3.66,
+      "engineGiver": 1.8300000000000005,
+      "engineReceiver": 1.8300000000000005,
+      "engineTotal": 3.660000000000001
+    },
+    {
+      "category": "EH:swap",
+      "giverType": "E",
+      "receiverType": "H",
+      "giver": -0.5,
+      "receiver": 1.83,
+      "total": 1.33,
+      "engineGiver": -0.5,
+      "engineReceiver": 1.8300000000000005,
+      "engineTotal": 1.3300000000000005
+    },
+    {
+      "category": "EE:swap",
+      "giverType": "E",
+      "receiverType": "E",
+      "giver": -0.5,
+      "receiver": -0.5,
+      "total": -1,
+      "engineGiver": -0.5,
+      "engineReceiver": -0.5,
+      "engineTotal": -1
+    }
+  ],
+  "stageGames": [
+    {
+      "pair": "H-H",
+      "rowRole": "H",
+      "colRole": "H",
+      "payoffs": [
+        [
+          [
+            0.9600000000000001,
+            0.9600000000000001
+          ],
+          [
+            3.290000000000001,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            3.29
+          ],
+          [
+            2.7900000000000005,
+            2.7900000000000005
+          ]
+        ]
+      ],
+      "rowDominant": "keep",
+      "colDominant": "keep",
+      "welfareMaximizing": "H give, H give",
+      "prisonersDilemma": true
+    },
+    {
+      "pair": "E-H",
+      "rowRole": "E",
+      "colRole": "H",
+      "payoffs": [
+        [
+          [
+            3.5000000000000004,
+            0.9600000000000001
+          ],
+          [
+            3.5000000000000004,
+            0
+          ]
+        ],
+        [
+          [
+            3.0000000000000004,
+            3.29
+          ],
+          [
+            3.0000000000000004,
+            2.7900000000000005
+          ]
+        ]
+      ],
+      "rowDominant": "keep",
+      "colDominant": "keep",
+      "welfareMaximizing": "E give, H keep",
+      "prisonersDilemma": false
+    }
+  ],
+  "benchmarks": {
+    "W-CO": {
+      "never-transfer": 53.5833,
+      "first-best-ex-ante": 62.25,
+      "first-best-ex-post": 62.3299,
+      "always-give": 59.8785
+    },
+    "W-RG": {
+      "never-transfer": 52.5313,
+      "first-best-ex-ante": 61.8125,
+      "first-best-ex-post": 61.8958,
+      "always-give": 59.5
+    },
+    "W-SGB": {
+      "never-transfer": 54.2411,
+      "first-best-ex-ante": 63.1875,
+      "first-best-ex-post": 63.2634,
+      "always-give": 60.8125
+    }
+  },
+  "accounting": {
+    "W-CO": {
+      "byArm": {
+        "money-talk": {
+          "meanWelfare": 54.5417,
+          "neverTransferSameSeeds": 53.5833,
+          "gainOverNeverTransfer": 0.9583,
+          "shareOfExAnteFeasibleGain": 0.1106,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 27,
+              "expectedPerAccount": 0.6862,
+              "realizedPerAccount": 0.7708,
+              "residualPerAccount": 0.0846
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 13,
+              "expectedPerAccount": 0.1237,
+              "realizedPerAccount": 0.191,
+              "residualPerAccount": 0.0673
+            },
+            "H>E:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 1,
+              "expectedPerAccount": -0.0035,
+              "realizedPerAccount": -0.0035,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 641,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-talk": {
+          "meanWelfare": 56.875,
+          "neverTransferSameSeeds": 53.5833,
+          "gainOverNeverTransfer": 3.2917,
+          "shareOfExAnteFeasibleGain": 0.3798,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 138,
+              "expectedPerAccount": 3.5075,
+              "realizedPerAccount": 3.7292,
+              "residualPerAccount": 0.2217
+            },
+            "EH:swap": {
+              "count": 37,
+              "expectedPerAccount": 0.3417,
+              "realizedPerAccount": 0.434,
+              "residualPerAccount": 0.0923
+            },
+            "EE:swap": {
+              "count": 2,
+              "expectedPerAccount": -0.0139,
+              "realizedPerAccount": -0.0139,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 15,
+              "expectedPerAccount": 0.1427,
+              "realizedPerAccount": 0.1563,
+              "residualPerAccount": 0.0135
+            },
+            "H>E:gift": {
+              "count": 146,
+              "expectedPerAccount": -0.9733,
+              "realizedPerAccount": -1.0417,
+              "residualPerAccount": -0.0683
+            },
+            "E>H:gift": {
+              "count": 12,
+              "expectedPerAccount": 0.1525,
+              "realizedPerAccount": 0.125,
+              "residualPerAccount": -0.0275
+            },
+            "E>E:gift": {
+              "count": 28,
+              "expectedPerAccount": -0.0972,
+              "realizedPerAccount": -0.0972,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 304,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        }
+      },
+      "decomposition": {
+        "gift-talk - money-talk": {
+          "welfareDelta": 2.3333,
+          "sumOfRealizedCategoryDeltas": 2.3334,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 111,
+              "expectedDeltaPerAccount": 2.8213,
+              "realizedDeltaPerAccount": 2.9584
+            },
+            "EH:swap": {
+              "countDelta": 37,
+              "expectedDeltaPerAccount": 0.3417,
+              "realizedDeltaPerAccount": 0.434
+            },
+            "EE:swap": {
+              "countDelta": 2,
+              "expectedDeltaPerAccount": -0.0139,
+              "realizedDeltaPerAccount": -0.0139
+            },
+            "H>H:gift": {
+              "countDelta": 2,
+              "expectedDeltaPerAccount": 0.019,
+              "realizedDeltaPerAccount": -0.0347
+            },
+            "H>E:gift": {
+              "countDelta": 146,
+              "expectedDeltaPerAccount": -0.9733,
+              "realizedDeltaPerAccount": -1.0417
+            },
+            "E>H:gift": {
+              "countDelta": 12,
+              "expectedDeltaPerAccount": 0.1525,
+              "realizedDeltaPerAccount": 0.125
+            },
+            "E>E:gift": {
+              "countDelta": 27,
+              "expectedDeltaPerAccount": -0.0937,
+              "realizedDeltaPerAccount": -0.0937
+            },
+            "none": {
+              "countDelta": -337,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        }
+      }
+    },
+    "W-RG": {
+      "byArm": {
+        "neutral-standard": {
+          "meanWelfare": 53.6146,
+          "neverTransferSameSeeds": 52.5313,
+          "gainOverNeverTransfer": 1.0833,
+          "shareOfExAnteFeasibleGain": 0.1167,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 24,
+              "expectedPerAccount": 0.915,
+              "realizedPerAccount": 0.875,
+              "residualPerAccount": -0.04
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 11,
+              "expectedPerAccount": 0.157,
+              "realizedPerAccount": 0.2135,
+              "residualPerAccount": 0.0566
+            },
+            "H>E:gift": {
+              "count": 2,
+              "expectedPerAccount": -0.02,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0.02
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 1,
+              "expectedPerAccount": -0.0052,
+              "realizedPerAccount": -0.0052,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 422,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-standard": {
+          "meanWelfare": 55.2969,
+          "neverTransferSameSeeds": 52.5313,
+          "gainOverNeverTransfer": 2.7656,
+          "shareOfExAnteFeasibleGain": 0.298,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 83,
+              "expectedPerAccount": 3.1644,
+              "realizedPerAccount": 3.2813,
+              "residualPerAccount": 0.1169
+            },
+            "EH:swap": {
+              "count": 25,
+              "expectedPerAccount": 0.3464,
+              "realizedPerAccount": 0.401,
+              "residualPerAccount": 0.0547
+            },
+            "EE:swap": {
+              "count": 3,
+              "expectedPerAccount": -0.0313,
+              "realizedPerAccount": -0.0313,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 21,
+              "expectedPerAccount": 0.2997,
+              "realizedPerAccount": 0.2656,
+              "residualPerAccount": -0.0341
+            },
+            "H>E:gift": {
+              "count": 98,
+              "expectedPerAccount": -0.98,
+              "realizedPerAccount": -1.125,
+              "residualPerAccount": -0.145
+            },
+            "E>H:gift": {
+              "count": 1,
+              "expectedPerAccount": 0.0191,
+              "realizedPerAccount": 0.0313,
+              "residualPerAccount": 0.0122
+            },
+            "E>E:gift": {
+              "count": 11,
+              "expectedPerAccount": -0.0573,
+              "realizedPerAccount": -0.0573,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 218,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-hh-blocked": {
+          "meanWelfare": 52.0885,
+          "neverTransferSameSeeds": 52.5313,
+          "gainOverNeverTransfer": -0.4427,
+          "shareOfExAnteFeasibleGain": -0.0477,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EH:swap": {
+              "count": 18,
+              "expectedPerAccount": 0.2494,
+              "realizedPerAccount": 0.2813,
+              "residualPerAccount": 0.0319
+            },
+            "EE:swap": {
+              "count": 1,
+              "expectedPerAccount": -0.0104,
+              "realizedPerAccount": -0.0104,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:gift": {
+              "count": 81,
+              "expectedPerAccount": -0.81,
+              "realizedPerAccount": -0.75,
+              "residualPerAccount": 0.06
+            },
+            "E>H:gift": {
+              "count": 3,
+              "expectedPerAccount": 0.0572,
+              "realizedPerAccount": 0.0625,
+              "residualPerAccount": 0.0053
+            },
+            "E>E:gift": {
+              "count": 5,
+              "expectedPerAccount": -0.026,
+              "realizedPerAccount": -0.026,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 352,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-eh-gift-blocked": {
+          "meanWelfare": 54.849,
+          "neverTransferSameSeeds": 52.5313,
+          "gainOverNeverTransfer": 2.3177,
+          "shareOfExAnteFeasibleGain": 0.2497,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 84,
+              "expectedPerAccount": 3.2025,
+              "realizedPerAccount": 3.2188,
+              "residualPerAccount": 0.0162
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 18,
+              "expectedPerAccount": 0.2569,
+              "realizedPerAccount": 0.2813,
+              "residualPerAccount": 0.0244
+            },
+            "H>E:gift": {
+              "count": 119,
+              "expectedPerAccount": -1.19,
+              "realizedPerAccount": -1.1563,
+              "residualPerAccount": 0.0338
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 5,
+              "expectedPerAccount": -0.026,
+              "realizedPerAccount": -0.026,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 234,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        }
+      },
+      "decomposition": {
+        "gift-standard - neutral-standard": {
+          "welfareDelta": 1.6823,
+          "sumOfRealizedCategoryDeltas": 1.6823,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 59,
+              "expectedDeltaPerAccount": 2.2494,
+              "realizedDeltaPerAccount": 2.4063
+            },
+            "EH:swap": {
+              "countDelta": 25,
+              "expectedDeltaPerAccount": 0.3464,
+              "realizedDeltaPerAccount": 0.401
+            },
+            "EE:swap": {
+              "countDelta": 3,
+              "expectedDeltaPerAccount": -0.0313,
+              "realizedDeltaPerAccount": -0.0313
+            },
+            "H>H:gift": {
+              "countDelta": 10,
+              "expectedDeltaPerAccount": 0.1427,
+              "realizedDeltaPerAccount": 0.0521
+            },
+            "H>E:gift": {
+              "countDelta": 96,
+              "expectedDeltaPerAccount": -0.96,
+              "realizedDeltaPerAccount": -1.125
+            },
+            "E>H:gift": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": 0.0191,
+              "realizedDeltaPerAccount": 0.0313
+            },
+            "E>E:gift": {
+              "countDelta": 10,
+              "expectedDeltaPerAccount": -0.0521,
+              "realizedDeltaPerAccount": -0.0521
+            },
+            "none": {
+              "countDelta": -204,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "gift-hh-blocked - neutral-standard": {
+          "welfareDelta": -1.5261,
+          "sumOfRealizedCategoryDeltas": -1.5259,
+          "rows": {
+            "HH:swap": {
+              "countDelta": -24,
+              "expectedDeltaPerAccount": -0.915,
+              "realizedDeltaPerAccount": -0.875
+            },
+            "EH:swap": {
+              "countDelta": 18,
+              "expectedDeltaPerAccount": 0.2494,
+              "realizedDeltaPerAccount": 0.2813
+            },
+            "EE:swap": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": -0.0104,
+              "realizedDeltaPerAccount": -0.0104
+            },
+            "H>H:gift": {
+              "countDelta": -11,
+              "expectedDeltaPerAccount": -0.157,
+              "realizedDeltaPerAccount": -0.2135
+            },
+            "H>E:gift": {
+              "countDelta": 79,
+              "expectedDeltaPerAccount": -0.79,
+              "realizedDeltaPerAccount": -0.75
+            },
+            "E>H:gift": {
+              "countDelta": 3,
+              "expectedDeltaPerAccount": 0.0572,
+              "realizedDeltaPerAccount": 0.0625
+            },
+            "E>E:gift": {
+              "countDelta": 4,
+              "expectedDeltaPerAccount": -0.0208,
+              "realizedDeltaPerAccount": -0.0208
+            },
+            "none": {
+              "countDelta": -70,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "gift-eh-gift-blocked - neutral-standard": {
+          "welfareDelta": 1.2344,
+          "sumOfRealizedCategoryDeltas": 1.2345,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 60,
+              "expectedDeltaPerAccount": 2.2875,
+              "realizedDeltaPerAccount": 2.3438
+            },
+            "H>H:gift": {
+              "countDelta": 7,
+              "expectedDeltaPerAccount": 0.0999,
+              "realizedDeltaPerAccount": 0.0678
+            },
+            "H>E:gift": {
+              "countDelta": 117,
+              "expectedDeltaPerAccount": -1.17,
+              "realizedDeltaPerAccount": -1.1563
+            },
+            "E>E:gift": {
+              "countDelta": 4,
+              "expectedDeltaPerAccount": -0.0208,
+              "realizedDeltaPerAccount": -0.0208
+            },
+            "none": {
+              "countDelta": -188,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        }
+      }
+    },
+    "W-SGB": {
+      "byArm": {
+        "neutral": {
+          "meanWelfare": 55.2768,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 1.0357,
+          "shareOfExAnteFeasibleGain": 0.1158,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 27,
+              "expectedPerAccount": 0.8823,
+              "realizedPerAccount": 0.9643,
+              "residualPerAccount": 0.082
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 10,
+              "expectedPerAccount": 0.1223,
+              "realizedPerAccount": 0.0714,
+              "residualPerAccount": -0.0509
+            },
+            "H>E:gift": {
+              "count": 3,
+              "expectedPerAccount": -0.0257,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0.0257
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 503,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-exact": {
+          "meanWelfare": 57.3393,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 3.0982,
+          "shareOfExAnteFeasibleGain": 0.3463,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 105,
+              "expectedPerAccount": 3.4312,
+              "realizedPerAccount": 3.1607,
+              "residualPerAccount": -0.2705
+            },
+            "EH:swap": {
+              "count": 28,
+              "expectedPerAccount": 0.3325,
+              "realizedPerAccount": 0.3571,
+              "residualPerAccount": 0.0246
+            },
+            "EE:swap": {
+              "count": 2,
+              "expectedPerAccount": -0.0179,
+              "realizedPerAccount": -0.0179,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 18,
+              "expectedPerAccount": 0.2202,
+              "realizedPerAccount": 0.1875,
+              "residualPerAccount": -0.0327
+            },
+            "H>E:gift": {
+              "count": 99,
+              "expectedPerAccount": -0.8486,
+              "realizedPerAccount": -0.6161,
+              "residualPerAccount": 0.2325
+            },
+            "E>H:gift": {
+              "count": 9,
+              "expectedPerAccount": 0.1471,
+              "realizedPerAccount": 0.0804,
+              "residualPerAccount": -0.0667
+            },
+            "E>E:gift": {
+              "count": 12,
+              "expectedPerAccount": -0.0536,
+              "realizedPerAccount": -0.0536,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 270,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-easy-only": {
+          "meanWelfare": 55.2277,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 0.9866,
+          "shareOfExAnteFeasibleGain": 0.1103,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 29,
+              "expectedPerAccount": 0.9477,
+              "realizedPerAccount": 0.9911,
+              "residualPerAccount": 0.0434
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 1,
+              "expectedPerAccount": -0.0089,
+              "realizedPerAccount": -0.0089,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 29,
+              "expectedPerAccount": 0.3547,
+              "realizedPerAccount": 0.183,
+              "residualPerAccount": -0.1717
+            },
+            "H>E:gift": {
+              "count": 16,
+              "expectedPerAccount": -0.1371,
+              "realizedPerAccount": -0.1607,
+              "residualPerAccount": -0.0236
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 4,
+              "expectedPerAccount": -0.0179,
+              "realizedPerAccount": -0.0179,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 464,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-any-holder": {
+          "meanWelfare": 57.2455,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 3.0045,
+          "shareOfExAnteFeasibleGain": 0.3358,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 111,
+              "expectedPerAccount": 3.6273,
+              "realizedPerAccount": 3.3482,
+              "residualPerAccount": -0.2791
+            },
+            "EH:swap": {
+              "count": 28,
+              "expectedPerAccount": 0.3325,
+              "realizedPerAccount": 0.4375,
+              "residualPerAccount": 0.105
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 11,
+              "expectedPerAccount": 0.1346,
+              "realizedPerAccount": 0.1027,
+              "residualPerAccount": -0.0319
+            },
+            "H>E:gift": {
+              "count": 95,
+              "expectedPerAccount": -0.8143,
+              "realizedPerAccount": -0.9375,
+              "residualPerAccount": -0.1232
+            },
+            "E>H:gift": {
+              "count": 7,
+              "expectedPerAccount": 0.1144,
+              "realizedPerAccount": 0.0804,
+              "residualPerAccount": -0.034
+            },
+            "E>E:gift": {
+              "count": 6,
+              "expectedPerAccount": -0.0268,
+              "realizedPerAccount": -0.0268,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 285,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "gift-hard-partner-only": {
+          "meanWelfare": 57.683,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 3.442,
+          "shareOfExAnteFeasibleGain": 0.3847,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 115,
+              "expectedPerAccount": 3.758,
+              "realizedPerAccount": 3.4554,
+              "residualPerAccount": -0.3027
+            },
+            "EH:swap": {
+              "count": 1,
+              "expectedPerAccount": 0.0119,
+              "realizedPerAccount": 0.0223,
+              "residualPerAccount": 0.0104
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 10,
+              "expectedPerAccount": 0.1223,
+              "realizedPerAccount": 0.0982,
+              "residualPerAccount": -0.0241
+            },
+            "H>E:gift": {
+              "count": 18,
+              "expectedPerAccount": -0.1543,
+              "realizedPerAccount": -0.1875,
+              "residualPerAccount": -0.0332
+            },
+            "E>H:gift": {
+              "count": 4,
+              "expectedPerAccount": 0.0654,
+              "realizedPerAccount": 0.0536,
+              "residualPerAccount": -0.0118
+            },
+            "E>E:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 395,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "money-exact": {
+          "meanWelfare": 55.0714,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 0.8304,
+          "shareOfExAnteFeasibleGain": 0.0928,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 21,
+              "expectedPerAccount": 0.6862,
+              "realizedPerAccount": 0.7768,
+              "residualPerAccount": 0.0905
+            },
+            "EH:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "EE:swap": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 6,
+              "expectedPerAccount": 0.0734,
+              "realizedPerAccount": 0.0536,
+              "residualPerAccount": -0.0198
+            },
+            "H>E:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:gift": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 516,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        },
+        "easy-easy-negative": {
+          "meanWelfare": 55.4643,
+          "neverTransferSameSeeds": 54.2411,
+          "gainOverNeverTransfer": 1.2232,
+          "shareOfExAnteFeasibleGain": 0.1367,
+          "forfeits": 0,
+          "categories": {
+            "HH:swap": {
+              "count": 75,
+              "expectedPerAccount": 2.4509,
+              "realizedPerAccount": 2.1964,
+              "residualPerAccount": -0.2545
+            },
+            "EH:swap": {
+              "count": 1,
+              "expectedPerAccount": 0.0119,
+              "realizedPerAccount": 0.0223,
+              "residualPerAccount": 0.0104
+            },
+            "EE:swap": {
+              "count": 113,
+              "expectedPerAccount": -1.0089,
+              "realizedPerAccount": -1.0089,
+              "residualPerAccount": 0
+            },
+            "H>H:gift": {
+              "count": 34,
+              "expectedPerAccount": 0.4159,
+              "realizedPerAccount": 0.3125,
+              "residualPerAccount": -0.1034
+            },
+            "H>E:gift": {
+              "count": 35,
+              "expectedPerAccount": -0.3,
+              "realizedPerAccount": -0.3482,
+              "residualPerAccount": -0.0482
+            },
+            "E>H:gift": {
+              "count": 3,
+              "expectedPerAccount": 0.049,
+              "realizedPerAccount": 0.0536,
+              "residualPerAccount": 0.0046
+            },
+            "E>E:gift": {
+              "count": 1,
+              "expectedPerAccount": -0.0045,
+              "realizedPerAccount": -0.0045,
+              "residualPerAccount": 0
+            },
+            "H>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "H>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>H:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "E>E:sale": {
+              "count": 0,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            },
+            "none": {
+              "count": 281,
+              "expectedPerAccount": 0,
+              "realizedPerAccount": 0,
+              "residualPerAccount": 0
+            }
+          }
+        }
+      },
+      "decomposition": {
+        "gift-exact - neutral": {
+          "welfareDelta": 2.0625,
+          "sumOfRealizedCategoryDeltas": 2.0624,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 78,
+              "expectedDeltaPerAccount": 2.5489,
+              "realizedDeltaPerAccount": 2.1964
+            },
+            "EH:swap": {
+              "countDelta": 28,
+              "expectedDeltaPerAccount": 0.3325,
+              "realizedDeltaPerAccount": 0.3571
+            },
+            "EE:swap": {
+              "countDelta": 2,
+              "expectedDeltaPerAccount": -0.0179,
+              "realizedDeltaPerAccount": -0.0179
+            },
+            "H>H:gift": {
+              "countDelta": 8,
+              "expectedDeltaPerAccount": 0.0979,
+              "realizedDeltaPerAccount": 0.1161
+            },
+            "H>E:gift": {
+              "countDelta": 96,
+              "expectedDeltaPerAccount": -0.8229,
+              "realizedDeltaPerAccount": -0.6161
+            },
+            "E>H:gift": {
+              "countDelta": 9,
+              "expectedDeltaPerAccount": 0.1471,
+              "realizedDeltaPerAccount": 0.0804
+            },
+            "E>E:gift": {
+              "countDelta": 12,
+              "expectedDeltaPerAccount": -0.0536,
+              "realizedDeltaPerAccount": -0.0536
+            },
+            "none": {
+              "countDelta": -233,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "gift-easy-only - neutral": {
+          "welfareDelta": -0.0491,
+          "sumOfRealizedCategoryDeltas": -0.0491,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 2,
+              "expectedDeltaPerAccount": 0.0654,
+              "realizedDeltaPerAccount": 0.0268
+            },
+            "EE:swap": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": -0.0089,
+              "realizedDeltaPerAccount": -0.0089
+            },
+            "H>H:gift": {
+              "countDelta": 19,
+              "expectedDeltaPerAccount": 0.2324,
+              "realizedDeltaPerAccount": 0.1116
+            },
+            "H>E:gift": {
+              "countDelta": 13,
+              "expectedDeltaPerAccount": -0.1114,
+              "realizedDeltaPerAccount": -0.1607
+            },
+            "E>E:gift": {
+              "countDelta": 4,
+              "expectedDeltaPerAccount": -0.0179,
+              "realizedDeltaPerAccount": -0.0179
+            },
+            "none": {
+              "countDelta": -39,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "gift-any-holder - neutral": {
+          "welfareDelta": 1.9687,
+          "sumOfRealizedCategoryDeltas": 1.9688,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 84,
+              "expectedDeltaPerAccount": 2.745,
+              "realizedDeltaPerAccount": 2.3839
+            },
+            "EH:swap": {
+              "countDelta": 28,
+              "expectedDeltaPerAccount": 0.3325,
+              "realizedDeltaPerAccount": 0.4375
+            },
+            "H>H:gift": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": 0.0123,
+              "realizedDeltaPerAccount": 0.0313
+            },
+            "H>E:gift": {
+              "countDelta": 92,
+              "expectedDeltaPerAccount": -0.7886,
+              "realizedDeltaPerAccount": -0.9375
+            },
+            "E>H:gift": {
+              "countDelta": 7,
+              "expectedDeltaPerAccount": 0.1144,
+              "realizedDeltaPerAccount": 0.0804
+            },
+            "E>E:gift": {
+              "countDelta": 6,
+              "expectedDeltaPerAccount": -0.0268,
+              "realizedDeltaPerAccount": -0.0268
+            },
+            "none": {
+              "countDelta": -218,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "gift-hard-partner-only - neutral": {
+          "welfareDelta": 2.4062,
+          "sumOfRealizedCategoryDeltas": 2.4063,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 88,
+              "expectedDeltaPerAccount": 2.8757,
+              "realizedDeltaPerAccount": 2.4911
+            },
+            "EH:swap": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": 0.0119,
+              "realizedDeltaPerAccount": 0.0223
+            },
+            "H>H:gift": {
+              "countDelta": 0,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0.0268
+            },
+            "H>E:gift": {
+              "countDelta": 15,
+              "expectedDeltaPerAccount": -0.1286,
+              "realizedDeltaPerAccount": -0.1875
+            },
+            "E>H:gift": {
+              "countDelta": 4,
+              "expectedDeltaPerAccount": 0.0654,
+              "realizedDeltaPerAccount": 0.0536
+            },
+            "none": {
+              "countDelta": -108,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "money-exact - neutral": {
+          "welfareDelta": -0.2054,
+          "sumOfRealizedCategoryDeltas": -0.2053,
+          "rows": {
+            "HH:swap": {
+              "countDelta": -6,
+              "expectedDeltaPerAccount": -0.1961,
+              "realizedDeltaPerAccount": -0.1875
+            },
+            "H>H:gift": {
+              "countDelta": -4,
+              "expectedDeltaPerAccount": -0.0489,
+              "realizedDeltaPerAccount": -0.0178
+            },
+            "H>E:gift": {
+              "countDelta": -3,
+              "expectedDeltaPerAccount": 0.0257,
+              "realizedDeltaPerAccount": 0
+            },
+            "none": {
+              "countDelta": 13,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        },
+        "easy-easy-negative - neutral": {
+          "welfareDelta": 0.1875,
+          "sumOfRealizedCategoryDeltas": 0.1875,
+          "rows": {
+            "HH:swap": {
+              "countDelta": 48,
+              "expectedDeltaPerAccount": 1.5686,
+              "realizedDeltaPerAccount": 1.2321
+            },
+            "EH:swap": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": 0.0119,
+              "realizedDeltaPerAccount": 0.0223
+            },
+            "EE:swap": {
+              "countDelta": 113,
+              "expectedDeltaPerAccount": -1.0089,
+              "realizedDeltaPerAccount": -1.0089
+            },
+            "H>H:gift": {
+              "countDelta": 24,
+              "expectedDeltaPerAccount": 0.2936,
+              "realizedDeltaPerAccount": 0.2411
+            },
+            "H>E:gift": {
+              "countDelta": 32,
+              "expectedDeltaPerAccount": -0.2743,
+              "realizedDeltaPerAccount": -0.3482
+            },
+            "E>H:gift": {
+              "countDelta": 3,
+              "expectedDeltaPerAccount": 0.049,
+              "realizedDeltaPerAccount": 0.0536
+            },
+            "E>E:gift": {
+              "countDelta": 1,
+              "expectedDeltaPerAccount": -0.0045,
+              "realizedDeltaPerAccount": -0.0045
+            },
+            "none": {
+              "countDelta": -222,
+              "expectedDeltaPerAccount": 0,
+              "realizedDeltaPerAccount": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "reviewerChecks": {
+    "wsgbGiftExactHtoEGifts": 99,
+    "wsgbNeutralHtoEGifts": 3,
+    "wsgbGiftExactHtoEExpectedPerAccount": -0.8486,
+    "wsgbGiftMinusNeutralHtoEExpectedPerAccount": -0.8229,
+    "wrgGiftStandardEHSwaps": 25,
+    "wrgGiftStandardEtoHOneWay": 1,
+    "wrgEHSwapAvoidableLossVersusOneWayTotal": 12.5,
+    "staticHHMagnitude": 3.1644
+  },
+  "joint": {
+    "W-CO": {
+      "money-talk": [
+        {
+          "pair": "H-H",
+          "meetings": 154,
+          "neither": 114,
+          "onlyFirst": 6,
+          "onlySecond": 7,
+          "both": 27,
+          "kinds": {
+            "gift": 13,
+            "none": 114,
+            "swap": 27
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 373,
+          "neither": 373,
+          "onlyFirst": 0,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 373
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 155,
+          "neither": 154,
+          "onlyFirst": 0,
+          "onlySecond": 1,
+          "both": 0,
+          "kinds": {
+            "none": 154,
+            "gift": 1
+          }
+        }
+      ],
+      "gift-talk": [
+        {
+          "pair": "H-H",
+          "meetings": 154,
+          "neither": 1,
+          "onlyFirst": 11,
+          "onlySecond": 4,
+          "both": 138,
+          "kinds": {
+            "swap": 138,
+            "gift": 15,
+            "none": 1
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 373,
+          "neither": 178,
+          "onlyFirst": 12,
+          "onlySecond": 146,
+          "both": 37,
+          "kinds": {
+            "gift": 158,
+            "none": 178,
+            "swap": 37
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 155,
+          "neither": 125,
+          "onlyFirst": 17,
+          "onlySecond": 11,
+          "both": 2,
+          "kinds": {
+            "none": 125,
+            "gift": 28,
+            "swap": 2
+          }
+        }
+      ]
+    },
+    "W-RG": {
+      "neutral-standard": [
+        {
+          "pair": "H-H",
+          "meetings": 107,
+          "neither": 72,
+          "onlyFirst": 4,
+          "onlySecond": 7,
+          "both": 24,
+          "kinds": {
+            "swap": 24,
+            "none": 72,
+            "gift": 11
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 262,
+          "neither": 260,
+          "onlyFirst": 0,
+          "onlySecond": 2,
+          "both": 0,
+          "kinds": {
+            "none": 260,
+            "gift": 2
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 91,
+          "neither": 90,
+          "onlyFirst": 1,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 90,
+            "gift": 1
+          }
+        }
+      ],
+      "gift-standard": [
+        {
+          "pair": "H-H",
+          "meetings": 107,
+          "neither": 3,
+          "onlyFirst": 11,
+          "onlySecond": 10,
+          "both": 83,
+          "kinds": {
+            "swap": 83,
+            "gift": 21,
+            "none": 3
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 262,
+          "neither": 138,
+          "onlyFirst": 1,
+          "onlySecond": 98,
+          "both": 25,
+          "kinds": {
+            "swap": 25,
+            "none": 138,
+            "gift": 99
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 91,
+          "neither": 77,
+          "onlyFirst": 5,
+          "onlySecond": 6,
+          "both": 3,
+          "kinds": {
+            "none": 77,
+            "gift": 11,
+            "swap": 3
+          }
+        }
+      ],
+      "gift-hh-blocked": [
+        {
+          "pair": "H-H",
+          "meetings": 107,
+          "neither": 5,
+          "onlyFirst": 12,
+          "onlySecond": 16,
+          "both": 74,
+          "kinds": {
+            "swap": 74,
+            "gift": 28,
+            "none": 5
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 262,
+          "neither": 160,
+          "onlyFirst": 3,
+          "onlySecond": 81,
+          "both": 18,
+          "kinds": {
+            "swap": 18,
+            "none": 160,
+            "gift": 84
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 91,
+          "neither": 85,
+          "onlyFirst": 2,
+          "onlySecond": 3,
+          "both": 1,
+          "kinds": {
+            "none": 85,
+            "gift": 5,
+            "swap": 1
+          }
+        }
+      ],
+      "gift-eh-gift-blocked": [
+        {
+          "pair": "H-H",
+          "meetings": 107,
+          "neither": 5,
+          "onlyFirst": 11,
+          "onlySecond": 7,
+          "both": 84,
+          "kinds": {
+            "swap": 84,
+            "gift": 18,
+            "none": 5
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 262,
+          "neither": 139,
+          "onlyFirst": 4,
+          "onlySecond": 103,
+          "both": 16,
+          "kinds": {
+            "swap": 16,
+            "none": 139,
+            "gift": 107
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 91,
+          "neither": 86,
+          "onlyFirst": 4,
+          "onlySecond": 1,
+          "both": 0,
+          "kinds": {
+            "none": 86,
+            "gift": 5
+          }
+        }
+      ]
+    },
+    "W-SGB": {
+      "neutral": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 88,
+          "onlyFirst": 3,
+          "onlySecond": 7,
+          "both": 27,
+          "kinds": {
+            "gift": 10,
+            "none": 88,
+            "swap": 27
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 301,
+          "onlyFirst": 0,
+          "onlySecond": 3,
+          "both": 0,
+          "kinds": {
+            "none": 301,
+            "gift": 3
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 114,
+          "onlyFirst": 0,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 114
+          }
+        }
+      ],
+      "gift-exact": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 2,
+          "onlyFirst": 11,
+          "onlySecond": 7,
+          "both": 105,
+          "kinds": {
+            "swap": 105,
+            "gift": 18,
+            "none": 2
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 168,
+          "onlyFirst": 9,
+          "onlySecond": 99,
+          "both": 28,
+          "kinds": {
+            "gift": 108,
+            "swap": 28,
+            "none": 168
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 100,
+          "onlyFirst": 6,
+          "onlySecond": 6,
+          "both": 2,
+          "kinds": {
+            "none": 100,
+            "gift": 12,
+            "swap": 2
+          }
+        }
+      ],
+      "gift-easy-only": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 67,
+          "onlyFirst": 12,
+          "onlySecond": 17,
+          "both": 29,
+          "kinds": {
+            "swap": 29,
+            "none": 67,
+            "gift": 29
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 288,
+          "onlyFirst": 0,
+          "onlySecond": 16,
+          "both": 0,
+          "kinds": {
+            "none": 288,
+            "gift": 16
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 109,
+          "onlyFirst": 4,
+          "onlySecond": 0,
+          "both": 1,
+          "kinds": {
+            "none": 109,
+            "gift": 4,
+            "swap": 1
+          }
+        }
+      ],
+      "gift-any-holder": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 3,
+          "onlyFirst": 6,
+          "onlySecond": 5,
+          "both": 111,
+          "kinds": {
+            "swap": 111,
+            "gift": 11,
+            "none": 3
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 174,
+          "onlyFirst": 7,
+          "onlySecond": 95,
+          "both": 28,
+          "kinds": {
+            "none": 174,
+            "gift": 102,
+            "swap": 28
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 108,
+          "onlyFirst": 4,
+          "onlySecond": 2,
+          "both": 0,
+          "kinds": {
+            "none": 108,
+            "gift": 6
+          }
+        }
+      ],
+      "gift-hard-partner-only": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 0,
+          "onlyFirst": 7,
+          "onlySecond": 3,
+          "both": 115,
+          "kinds": {
+            "swap": 115,
+            "gift": 10
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 281,
+          "onlyFirst": 4,
+          "onlySecond": 18,
+          "both": 1,
+          "kinds": {
+            "none": 281,
+            "gift": 22,
+            "swap": 1
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 114,
+          "onlyFirst": 0,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 114
+          }
+        }
+      ],
+      "money-exact": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 98,
+          "onlyFirst": 4,
+          "onlySecond": 2,
+          "both": 21,
+          "kinds": {
+            "none": 98,
+            "swap": 21,
+            "gift": 6
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 304,
+          "onlyFirst": 0,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 304
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 114,
+          "onlyFirst": 0,
+          "onlySecond": 0,
+          "both": 0,
+          "kinds": {
+            "none": 114
+          }
+        }
+      ],
+      "easy-easy-negative": [
+        {
+          "pair": "H-H",
+          "meetings": 125,
+          "neither": 16,
+          "onlyFirst": 25,
+          "onlySecond": 9,
+          "both": 75,
+          "kinds": {
+            "swap": 75,
+            "gift": 34,
+            "none": 16
+          }
+        },
+        {
+          "pair": "E-H",
+          "meetings": 304,
+          "neither": 265,
+          "onlyFirst": 3,
+          "onlySecond": 35,
+          "both": 1,
+          "kinds": {
+            "none": 265,
+            "gift": 38,
+            "swap": 1
+          }
+        },
+        {
+          "pair": "E-E",
+          "meetings": 114,
+          "neither": 0,
+          "onlyFirst": 1,
+          "onlySecond": 0,
+          "both": 113,
+          "kinds": {
+            "swap": 113,
+            "gift": 1
+          }
+        }
+      ]
+    }
+  },
+  "moneyFunnel": {
+    "byStudyArm": {
+      "W-CO": {
+        "money-talk": {
+          "ehMeetings": 373,
+          "hardHoldsMark": 203,
+          "sellerOffersSale": 203,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 344,
+          "markOffersAnyCell": 0
+        },
+        "gift-talk": {
+          "ehMeetings": 373,
+          "hardHoldsMark": 203,
+          "sellerOffersSale": 185,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 344,
+          "markOffersAnyCell": 0
+        }
+      },
+      "W-RG": {
+        "neutral-standard": {
+          "ehMeetings": 262,
+          "hardHoldsMark": 131,
+          "sellerOffersSale": 128,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 232,
+          "markOffersAnyCell": 0
+        },
+        "gift-standard": {
+          "ehMeetings": 262,
+          "hardHoldsMark": 131,
+          "sellerOffersSale": 123,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 232,
+          "markOffersAnyCell": 0
+        },
+        "gift-hh-blocked": {
+          "ehMeetings": 262,
+          "hardHoldsMark": 131,
+          "sellerOffersSale": 121,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 232,
+          "markOffersAnyCell": 0
+        },
+        "gift-eh-gift-blocked": {
+          "ehMeetings": 262,
+          "hardHoldsMark": 131,
+          "sellerOffersSale": 115,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 232,
+          "markOffersAnyCell": 0
+        }
+      },
+      "W-SGB": {
+        "neutral": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 136,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "gift-exact": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 124,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "gift-easy-only": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 135,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "gift-any-holder": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 131,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "gift-hard-partner-only": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 78,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "money-exact": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 140,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        },
+        "easy-easy-negative": {
+          "ehMeetings": 304,
+          "hardHoldsMark": 140,
+          "sellerOffersSale": 140,
+          "buyerOffersMark": 0,
+          "bothCompatible": 0,
+          "executedSales": 0,
+          "hardDecisionsHoldingMark": 261,
+          "markOffersAnyCell": 0
+        }
+      }
+    },
+    "totals": {
+      "hardDecisionsHoldingMark": 3443,
+      "markOffersAnyCell": 0,
+      "executedSales": 0
+    }
+  },
+  "fixedState": {
+    "firstMeetingDecisionsPerArm": {
+      "W-CO": 144,
+      "W-RG": 96,
+      "W-SGB": 112
+    },
+    "comparisons": [
+      {
+        "study": "W-CO",
+        "arm": "gift-talk",
+        "reference": "money-talk",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 28,
+            "seedsWithDecisions": 13,
+            "armGiveRate": 0.9643,
+            "referenceGiveRate": 0.1786,
+            "armGivesReferenceKeeps": 22,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.7692,
+            "bootstrap95": [
+              0.5897,
+              0.9103
+            ],
+            "closedLoopSeedMeanDifference": 0.7223
+          },
+          {
+            "cell": "H>E",
+            "decisions": 46,
+            "seedsWithDecisions": 18,
+            "armGiveRate": 0.6957,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 32,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.6556,
+            "bootstrap95": [
+              0.5,
+              0.7963
+            ],
+            "closedLoopSeedMeanDifference": 0.481
+          },
+          {
+            "cell": "E>H",
+            "decisions": 41,
+            "seedsWithDecisions": 18,
+            "armGiveRate": 0.6341,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 26,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.6157,
+            "bootstrap95": [
+              0.4444,
+              0.7778
+            ],
+            "closedLoopSeedMeanDifference": 0.1316
+          },
+          {
+            "cell": "E>E",
+            "decisions": 29,
+            "seedsWithDecisions": 12,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.1022
+          }
+        ]
+      },
+      {
+        "study": "W-RG",
+        "arm": "gift-standard",
+        "reference": "neutral-standard",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 19,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0.7895,
+            "referenceGiveRate": 0.2632,
+            "armGivesReferenceKeeps": 10,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.4519,
+            "bootstrap95": [
+              0.1556,
+              0.7407
+            ],
+            "closedLoopSeedMeanDifference": 0.5731
+          },
+          {
+            "cell": "H>E",
+            "decisions": 34,
+            "seedsWithDecisions": 11,
+            "armGiveRate": 0.7941,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 27,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.7955,
+            "bootstrap95": [
+              0.5909,
+              0.9773
+            ],
+            "closedLoopSeedMeanDifference": 0.4523
+          },
+          {
+            "cell": "E>H",
+            "decisions": 31,
+            "seedsWithDecisions": 12,
+            "armGiveRate": 0.5161,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 16,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.5069,
+            "bootstrap95": [
+              0.3125,
+              0.7083
+            ],
+            "closedLoopSeedMeanDifference": 0.1007
+          },
+          {
+            "cell": "E>E",
+            "decisions": 12,
+            "seedsWithDecisions": 6,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.1237
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "gift-exact",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 0.9444,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 10,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.5521,
+            "bootstrap95": [
+              0.2708,
+              0.8229
+            ],
+            "closedLoopSeedMeanDifference": 0.6443
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0.6857,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 24,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.7202,
+            "bootstrap95": [
+              0.5476,
+              0.869
+            ],
+            "closedLoopSeedMeanDifference": 0.4155
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0.4359,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 17,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.4821,
+            "bootstrap95": [
+              0.3214,
+              0.6488
+            ],
+            "closedLoopSeedMeanDifference": 0.1229
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.0721
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "gift-easy-only",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 0.4444,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 2,
+            "referenceGivesArmKeeps": 1,
+            "seedMeanDifference": 0.0938,
+            "bootstrap95": [
+              -0.0625,
+              0.2813
+            ],
+            "closedLoopSeedMeanDifference": 0.0919
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0.0571,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 2,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.0417,
+            "bootstrap95": [
+              0,
+              0.1012
+            ],
+            "closedLoopSeedMeanDifference": 0.042
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.031
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "gift-any-holder",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 1,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 11,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.5938,
+            "bootstrap95": [
+              0.2813,
+              0.875
+            ],
+            "closedLoopSeedMeanDifference": 0.666
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0.6286,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 22,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.5536,
+            "bootstrap95": [
+              0.369,
+              0.7262
+            ],
+            "closedLoopSeedMeanDifference": 0.408
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0.0769,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 3,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.1,
+            "bootstrap95": [
+              0,
+              0.2714
+            ],
+            "closedLoopSeedMeanDifference": 0.1127
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0.05,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 1,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.0556,
+            "bootstrap95": [
+              0,
+              0.1667
+            ],
+            "closedLoopSeedMeanDifference": 0.0255
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "gift-hard-partner-only",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 1,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 11,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.5938,
+            "bootstrap95": [
+              0.2813,
+              0.875
+            ],
+            "closedLoopSeedMeanDifference": 0.7015
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.0541
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.0203
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "money-exact",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 0.0556,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 6,
+            "seedMeanDifference": -0.375,
+            "bootstrap95": [
+              -0.6875,
+              -0.125
+            ],
+            "closedLoopSeedMeanDifference": -0.0703
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": -0.0116
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0
+          }
+        ]
+      },
+      {
+        "study": "W-SGB",
+        "arm": "easy-easy-negative",
+        "reference": "neutral",
+        "firstMeetingStatesIdentical": true,
+        "cells": [
+          {
+            "cell": "H>H",
+            "decisions": 18,
+            "seedsWithDecisions": 8,
+            "armGiveRate": 0.8333,
+            "referenceGiveRate": 0.3889,
+            "armGivesReferenceKeeps": 8,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0.4271,
+            "bootstrap95": [
+              0.2083,
+              0.6458
+            ],
+            "closedLoopSeedMeanDifference": 0.4755
+          },
+          {
+            "cell": "H>E",
+            "decisions": 35,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.1179
+          },
+          {
+            "cell": "E>H",
+            "decisions": 39,
+            "seedsWithDecisions": 14,
+            "armGiveRate": 0,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 0,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 0,
+            "bootstrap95": [
+              0,
+              0
+            ],
+            "closedLoopSeedMeanDifference": 0.0133
+          },
+          {
+            "cell": "E>E",
+            "decisions": 20,
+            "seedsWithDecisions": 9,
+            "armGiveRate": 1,
+            "referenceGiveRate": 0,
+            "armGivesReferenceKeeps": 20,
+            "referenceGivesArmKeeps": 0,
+            "seedMeanDifference": 1,
+            "bootstrap95": [
+              1,
+              1
+            ],
+            "closedLoopSeedMeanDifference": 0.9911
+          }
+        ]
+      }
+    ]
+  },
+  "namedEngagement": [
+    {
+      "arm": "gift-exact",
+      "namedRelation": "E->H gift",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0.1229,
+        "bootstrap95": [
+          0.0806,
+          0.1655
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": false
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 14,
+        "delta": 0.4821,
+        "bootstrap95": [
+          0.3214,
+          0.6488
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": true
+          },
+          {
+            "threshold": 0.3,
+            "clears": true
+          }
+        ]
+      }
+    },
+    {
+      "arm": "gift-easy-only",
+      "namedRelation": "E->H gift",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": false
+          },
+          {
+            "threshold": 0.1,
+            "clears": false
+          },
+          {
+            "threshold": 0.15,
+            "clears": false
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 14,
+        "delta": 0,
+        "bootstrap95": [
+          0,
+          0
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": false
+          },
+          {
+            "threshold": 0.1,
+            "clears": false
+          },
+          {
+            "threshold": 0.15,
+            "clears": false
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      }
+    },
+    {
+      "arm": "gift-any-holder",
+      "namedRelation": "actor->H gift",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0.3649,
+        "bootstrap95": [
+          0.3011,
+          0.4297
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": true
+          },
+          {
+            "threshold": 0.3,
+            "clears": true
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 14,
+        "delta": 0.2417,
+        "bootstrap95": [
+          0.0952,
+          0.4143
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      }
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "namedRelation": "actor->H gift",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0.3272,
+        "bootstrap95": [
+          0.2766,
+          0.3809
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": true
+          },
+          {
+            "threshold": 0.3,
+            "clears": true
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 14,
+        "delta": 0.1893,
+        "bootstrap95": [
+          0.0655,
+          0.331
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      }
+    },
+    {
+      "arm": "money-exact",
+      "namedRelation": "E->H sale",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0.063,
+        "bootstrap95": [
+          0.0393,
+          0.0872
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": false
+          },
+          {
+            "threshold": 0.15,
+            "clears": false
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 14,
+        "delta": 0.1119,
+        "bootstrap95": [
+          0.0179,
+          0.2262
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": false
+          },
+          {
+            "threshold": 0.2,
+            "clears": false
+          },
+          {
+            "threshold": 0.25,
+            "clears": false
+          },
+          {
+            "threshold": 0.3,
+            "clears": false
+          }
+        ]
+      }
+    },
+    {
+      "arm": "easy-easy-negative",
+      "namedRelation": "E->E gift",
+      "closedLoop": {
+        "seeds": 14,
+        "delta": 0.9911,
+        "bootstrap95": [
+          0.9732,
+          1
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": true
+          },
+          {
+            "threshold": 0.3,
+            "clears": true
+          }
+        ]
+      },
+      "firstDecision": {
+        "seeds": 9,
+        "delta": 1,
+        "bootstrap95": [
+          1,
+          1
+        ],
+        "clears": [
+          {
+            "threshold": 0.05,
+            "clears": true
+          },
+          {
+            "threshold": 0.1,
+            "clears": true
+          },
+          {
+            "threshold": 0.15,
+            "clears": true
+          },
+          {
+            "threshold": 0.2,
+            "clears": true
+          },
+          {
+            "threshold": 0.25,
+            "clears": true
+          },
+          {
+            "threshold": 0.3,
+            "clears": true
+          }
+        ]
+      }
+    }
+  ],
+  "determinism": [
+    {
+      "armA": "gift-standard",
+      "armB": "gift-hh-blocked",
+      "identicalPrompts": 250,
+      "identicalProposals": 219,
+      "aGivesBKeeps": 10,
+      "bGivesAKeeps": 16,
+      "firstMeetingIdenticalPrompts": 96,
+      "firstMeetingIdenticalProposals": 87
+    },
+    {
+      "armA": "gift-standard",
+      "armB": "gift-eh-gift-blocked",
+      "identicalPrompts": 388,
+      "identicalProposals": 350,
+      "aGivesBKeeps": 16,
+      "bGivesAKeeps": 15,
+      "firstMeetingIdenticalPrompts": 96,
+      "firstMeetingIdenticalProposals": 85
+    },
+    {
+      "armA": "gift-hh-blocked",
+      "armB": "gift-eh-gift-blocked",
+      "identicalPrompts": 239,
+      "identicalProposals": 208,
+      "aGivesBKeeps": 13,
+      "bGivesAKeeps": 11,
+      "firstMeetingIdenticalPrompts": 96,
+      "firstMeetingIdenticalProposals": 84
+    }
+  ],
+  "dynamics": {
+    "W-CO": [
+      {
+        "arm": "money-talk",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 28,
+        "gives": 5,
+        "rate": 0.1786
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 40,
+        "gives": 6,
+        "rate": 0.15
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 38,
+        "gives": 7,
+        "rate": 0.1842
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 202,
+        "gives": 49,
+        "rate": 0.2426
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 46,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 37,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 42,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 248,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 41,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 45,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 32,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "money-talk",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 255,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 28,
+        "gives": 27,
+        "rate": 0.9643
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 40,
+        "gives": 40,
+        "rate": 1
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 38,
+        "gives": 36,
+        "rate": 0.9474
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 202,
+        "gives": 188,
+        "rate": 0.9307
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 46,
+        "gives": 32,
+        "rate": 0.6957
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 37,
+        "gives": 19,
+        "rate": 0.5135
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 42,
+        "gives": 28,
+        "rate": 0.6667
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 248,
+        "gives": 104,
+        "rate": 0.4194
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 41,
+        "gives": 26,
+        "rate": 0.6341
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 45,
+        "gives": 1,
+        "rate": 0.0222
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 32,
+        "gives": 2,
+        "rate": 0.0625
+      },
+      {
+        "arm": "gift-talk",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 255,
+        "gives": 20,
+        "rate": 0.0784
+      }
+    ],
+    "W-RG": [
+      {
+        "arm": "neutral-standard",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 19,
+        "gives": 5,
+        "rate": 0.2632
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 24,
+        "gives": 14,
+        "rate": 0.5833
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 23,
+        "gives": 6,
+        "rate": 0.2609
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 148,
+        "gives": 34,
+        "rate": 0.2297
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 34,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 23,
+        "gives": 1,
+        "rate": 0.0435
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 26,
+        "gives": 1,
+        "rate": 0.0385
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 179,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 31,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 24,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 26,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral-standard",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 181,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 19,
+        "gives": 15,
+        "rate": 0.7895
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 24,
+        "gives": 21,
+        "rate": 0.875
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 23,
+        "gives": 20,
+        "rate": 0.8696
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 148,
+        "gives": 131,
+        "rate": 0.8851
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 34,
+        "gives": 27,
+        "rate": 0.7941
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 23,
+        "gives": 13,
+        "rate": 0.5652
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 26,
+        "gives": 12,
+        "rate": 0.4615
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 179,
+        "gives": 71,
+        "rate": 0.3966
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 31,
+        "gives": 16,
+        "rate": 0.5161
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 24,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 26,
+        "gives": 3,
+        "rate": 0.1154
+      },
+      {
+        "arm": "gift-standard",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 181,
+        "gives": 7,
+        "rate": 0.0387
+      }
+    ],
+    "W-SGB": [
+      {
+        "arm": "neutral",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 18,
+        "gives": 7,
+        "rate": 0.3889
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 23,
+        "gives": 10,
+        "rate": 0.4348
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 24,
+        "gives": 3,
+        "rate": 0.125
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 185,
+        "gives": 44,
+        "rate": 0.2378
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 35,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 27,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 35,
+        "gives": 1,
+        "rate": 0.0286
+      },
+      {
+        "arm": "neutral",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 207,
+        "gives": 2,
+        "rate": 0.0097
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 39,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 29,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 23,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 213,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>E",
+        "ordinal": "1",
+        "decisions": 20,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>E",
+        "ordinal": "2",
+        "decisions": 33,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>E",
+        "ordinal": "3",
+        "decisions": 30,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "neutral",
+        "cell": "E>E",
+        "ordinal": "4+",
+        "decisions": 145,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 18,
+        "gives": 17,
+        "rate": 0.9444
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 23,
+        "gives": 23,
+        "rate": 1
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 24,
+        "gives": 21,
+        "rate": 0.875
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 185,
+        "gives": 167,
+        "rate": 0.9027
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 35,
+        "gives": 24,
+        "rate": 0.6857
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 27,
+        "gives": 10,
+        "rate": 0.3704
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 35,
+        "gives": 10,
+        "rate": 0.2857
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 207,
+        "gives": 83,
+        "rate": 0.401
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 39,
+        "gives": 17,
+        "rate": 0.4359
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 29,
+        "gives": 2,
+        "rate": 0.069
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 23,
+        "gives": 2,
+        "rate": 0.087
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 213,
+        "gives": 16,
+        "rate": 0.0751
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>E",
+        "ordinal": "1",
+        "decisions": 20,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>E",
+        "ordinal": "2",
+        "decisions": 33,
+        "gives": 2,
+        "rate": 0.0606
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>E",
+        "ordinal": "3",
+        "decisions": 30,
+        "gives": 1,
+        "rate": 0.0333
+      },
+      {
+        "arm": "gift-exact",
+        "cell": "E>E",
+        "ordinal": "4+",
+        "decisions": 145,
+        "gives": 13,
+        "rate": 0.0897
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>H",
+        "ordinal": "1",
+        "decisions": 18,
+        "gives": 15,
+        "rate": 0.8333
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>H",
+        "ordinal": "2",
+        "decisions": 23,
+        "gives": 19,
+        "rate": 0.8261
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>H",
+        "ordinal": "3",
+        "decisions": 24,
+        "gives": 18,
+        "rate": 0.75
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>H",
+        "ordinal": "4+",
+        "decisions": 185,
+        "gives": 132,
+        "rate": 0.7135
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>E",
+        "ordinal": "1",
+        "decisions": 35,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>E",
+        "ordinal": "2",
+        "decisions": 27,
+        "gives": 6,
+        "rate": 0.2222
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>E",
+        "ordinal": "3",
+        "decisions": 35,
+        "gives": 6,
+        "rate": 0.1714
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "H>E",
+        "ordinal": "4+",
+        "decisions": 207,
+        "gives": 24,
+        "rate": 0.1159
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>H",
+        "ordinal": "1",
+        "decisions": 39,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>H",
+        "ordinal": "2",
+        "decisions": 29,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>H",
+        "ordinal": "3",
+        "decisions": 23,
+        "gives": 0,
+        "rate": 0
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>H",
+        "ordinal": "4+",
+        "decisions": 213,
+        "gives": 4,
+        "rate": 0.0188
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>E",
+        "ordinal": "1",
+        "decisions": 20,
+        "gives": 20,
+        "rate": 1
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>E",
+        "ordinal": "2",
+        "decisions": 33,
+        "gives": 33,
+        "rate": 1
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>E",
+        "ordinal": "3",
+        "decisions": 30,
+        "gives": 30,
+        "rate": 1
+      },
+      {
+        "arm": "easy-easy-negative",
+        "cell": "E>E",
+        "ordinal": "4+",
+        "decisions": 145,
+        "gives": 144,
+        "rate": 0.9931
+      }
+    ]
+  },
+  "filterAudit": [
+    {
+      "arm": "gift-hh-blocked",
+      "blockedProposals": 214,
+      "transitions": {
+        "HH:swap -> none": 74,
+        "H>H:gift -> none": 28,
+        "none -> none": 5
+      }
+    },
+    {
+      "arm": "gift-eh-gift-blocked",
+      "blockedProposals": 20,
+      "transitions": {
+        "EH:swap -> H>E:gift": 16,
+        "E>H:gift -> none": 4
+      }
+    }
+  ],
+  "inference": {
+    "W-CO": [
+      {
+        "name": "gift - money welfare",
+        "n": 18,
+        "mean": 2.3333,
+        "mres": 0.5,
+        "positive": 17,
+        "negative": 1,
+        "ties": 0,
+        "minSeedDelta": -0.6875,
+        "bootstrap95": [
+          1.7292,
+          2.9306
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.0000152587890625,
+        "pMres": 0.00003814697265625,
+        "holmPMres": null,
+        "leaveOneOutMin": 2.1949,
+        "leaveOneOutMax": 2.511,
+        "values": [
+          0.625,
+          1.8125,
+          2.5625,
+          2.3125,
+          3.9375,
+          3.125,
+          0.625,
+          4.6875,
+          -0.6875,
+          3.875,
+          3.125,
+          1.6875,
+          2.5625,
+          3.5625,
+          2.625,
+          2.5,
+          1.9375,
+          1.125
+        ]
+      }
+    ],
+    "W-RG": [
+      {
+        "name": "gift-standard - neutral-standard welfare",
+        "n": 12,
+        "mean": 1.6823,
+        "mres": 0.5,
+        "positive": 9,
+        "negative": 3,
+        "ties": 0,
+        "minSeedDelta": -0.4375,
+        "bootstrap95": [
+          0.8542,
+          2.4635
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00341796875,
+        "pMres": 0.01123046875,
+        "holmPMres": null,
+        "leaveOneOutMin": 1.4886,
+        "leaveOneOutMax": 1.875,
+        "values": [
+          -0.4375,
+          3.8125,
+          2.4375,
+          -0.125,
+          2.5625,
+          1.5625,
+          3,
+          2.25,
+          2.9375,
+          2.375,
+          0.25,
+          -0.4375
+        ]
+      },
+      {
+        "name": "gift-standard - gift-hh-blocked welfare",
+        "n": 12,
+        "mean": 3.2083,
+        "mres": 0.5,
+        "positive": 12,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.8125,
+        "bootstrap95": [
+          2.4688,
+          3.8906
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.000244140625,
+        "pMres": 0.000244140625,
+        "holmPMres": null,
+        "leaveOneOutMin": 3.0568,
+        "leaveOneOutMax": 3.4261,
+        "values": [
+          3.0625,
+          4.875,
+          3,
+          2.4375,
+          4.25,
+          2,
+          3.75,
+          3.8125,
+          4.625,
+          4.4375,
+          1.4375,
+          0.8125
+        ]
+      },
+      {
+        "name": "gift-eh-gift-blocked - gift-hh-blocked welfare",
+        "n": 12,
+        "mean": 2.7604,
+        "mres": 0.5,
+        "positive": 12,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.6875,
+        "bootstrap95": [
+          2.0938,
+          3.4115
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.000244140625,
+        "pMres": 0.000244140625,
+        "holmPMres": null,
+        "leaveOneOutMin": 2.608,
+        "leaveOneOutMax": 2.9489,
+        "values": [
+          2.4375,
+          4.3125,
+          1.5,
+          3.6875,
+          3.5625,
+          2.5625,
+          1.5625,
+          3.4375,
+          3.5,
+          4.4375,
+          1.4375,
+          0.6875
+        ]
+      },
+      {
+        "name": "gift-standard - gift-hh-blocked H-H swap rate",
+        "n": 12,
+        "mean": 0.7525,
+        "mres": 0.5,
+        "positive": 12,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.375,
+        "bootstrap95": [
+          0.6327,
+          0.8615
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.000244140625,
+        "pMres": 0.001953125,
+        "holmPMres": null,
+        "leaveOneOutMin": 0.73,
+        "leaveOneOutMax": 0.7868,
+        "values": [
+          1,
+          0.727273,
+          0.777778,
+          0.4,
+          0.9,
+          0.666667,
+          1,
+          0.9,
+          0.933333,
+          0.6,
+          0.375,
+          0.75
+        ]
+      }
+    ],
+    "W-SGB H-H swap rate": [
+      {
+        "name": "gift-exact - neutral H-H swap rate",
+        "n": 14,
+        "mean": 0.607,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.375,
+        "bootstrap95": [
+          0.5097,
+          0.714
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00006103515625,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 0.5768,
+        "leaveOneOutMax": 0.6249,
+        "values": [
+          0.714286,
+          0.7,
+          0.375,
+          0.909091,
+          0.428571,
+          0.727273,
+          1,
+          0.4,
+          0.444444,
+          0.428571,
+          0.555556,
+          0.571429,
+          0.8,
+          0.444444
+        ]
+      },
+      {
+        "name": "gift-exact - money-exact H-H swap rate",
+        "n": 14,
+        "mean": 0.6631,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.375,
+        "bootstrap95": [
+          0.5681,
+          0.7551
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00006103515625,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 0.6442,
+        "leaveOneOutMax": 0.6852,
+        "values": [
+          0.714286,
+          0.7,
+          0.375,
+          0.909091,
+          0.428571,
+          0.818182,
+          0.9,
+          0.4,
+          0.555556,
+          0.857143,
+          0.555556,
+          0.714286,
+          0.8,
+          0.555556
+        ]
+      },
+      {
+        "name": "gift-exact - easy-easy-negative H-H swap rate",
+        "n": 14,
+        "mean": 0.2293,
+        "mres": 0.25,
+        "positive": 10,
+        "negative": 3,
+        "ties": 1,
+        "minSeedDelta": -0.1429,
+        "bootstrap95": [
+          0.1049,
+          0.3506
+        ],
+        "lowerBoundExceedsMres": false,
+        "pZero": 0.002685546875,
+        "pMres": 0.6240234375,
+        "holmPMres": 1,
+        "leaveOneOutMin": 0.2008,
+        "leaveOneOutMax": 0.258,
+        "values": [
+          0.285714,
+          -0.1,
+          0,
+          0.545455,
+          -0.142857,
+          0.363636,
+          0.6,
+          0.1,
+          0.333333,
+          0.285714,
+          0.222222,
+          0.428571,
+          0.4,
+          -0.111111
+        ]
+      },
+      {
+        "name": "money-exact - neutral H-H swap rate",
+        "n": 14,
+        "mean": -0.056,
+        "mres": 0.25,
+        "positive": 1,
+        "negative": 5,
+        "ties": 8,
+        "minSeedDelta": -0.4286,
+        "bootstrap95": [
+          -0.1259,
+          -0.0009
+        ],
+        "lowerBoundExceedsMres": false,
+        "pZero": 0.96875,
+        "pMres": 1,
+        "holmPMres": 1,
+        "leaveOneOutMin": -0.068,
+        "leaveOneOutMax": -0.0274,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -0.090909,
+          0.1,
+          0,
+          -0.111111,
+          -0.428571,
+          0,
+          -0.142857,
+          0,
+          -0.111111
+        ]
+      },
+      {
+        "name": "easy-easy-negative - neutral H-H swap rate",
+        "n": 14,
+        "mean": 0.3777,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.1111,
+        "bootstrap95": [
+          0.2875,
+          0.4745
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00885009765625,
+        "holmPMres": 0.02655029296875,
+        "leaveOneOutMin": 0.3452,
+        "leaveOneOutMax": 0.3982,
+        "values": [
+          0.428571,
+          0.8,
+          0.375,
+          0.363636,
+          0.571429,
+          0.363636,
+          0.4,
+          0.3,
+          0.111111,
+          0.142857,
+          0.333333,
+          0.142857,
+          0.4,
+          0.555556
+        ]
+      },
+      {
+        "name": "gift-exact - gift-easy-only H-H swap rate",
+        "n": 14,
+        "mean": 0.5923,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.125,
+        "bootstrap95": [
+          0.482,
+          0.6974
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.0001220703125,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 0.5686,
+        "leaveOneOutMax": 0.6282,
+        "values": [
+          0.571429,
+          0.7,
+          0.125,
+          0.818182,
+          0.428571,
+          0.818182,
+          0.9,
+          0.4,
+          0.444444,
+          0.571429,
+          0.555556,
+          0.714286,
+          0.8,
+          0.444444
+        ]
+      },
+      {
+        "name": "gift-any-holder - neutral H-H swap rate",
+        "n": 14,
+        "mean": 0.6576,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.3333,
+        "bootstrap95": [
+          0.5488,
+          0.7713
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00006103515625,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 0.6312,
+        "leaveOneOutMax": 0.6825,
+        "values": [
+          0.571429,
+          0.7,
+          0.375,
+          1,
+          0.571429,
+          0.545455,
+          1,
+          0.5,
+          0.888889,
+          0.428571,
+          0.333333,
+          0.714286,
+          0.8,
+          0.777778
+        ]
+      },
+      {
+        "name": "gift-hard-partner-only - neutral H-H swap rate",
+        "n": 14,
+        "mean": 0.7034,
+        "mres": 0.25,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.4,
+        "bootstrap95": [
+          0.5956,
+          0.81
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00006103515625,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 0.6806,
+        "leaveOneOutMax": 0.7267,
+        "values": [
+          0.857143,
+          0.8,
+          0.5,
+          0.818182,
+          1,
+          0.818182,
+          1,
+          0.4,
+          0.888889,
+          0.428571,
+          0.555556,
+          0.714286,
+          0.4,
+          0.666667
+        ]
+      }
+    ],
+    "W-SGB welfare": [
+      {
+        "name": "gift-exact - neutral welfare",
+        "n": 14,
+        "mean": 2.0625,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.5,
+        "bootstrap95": [
+          1.4286,
+          2.8125
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.0001220703125,
+        "holmPMres": 0.0008544921875,
+        "leaveOneOutMin": 1.7933,
+        "leaveOneOutMax": 2.1827,
+        "values": [
+          2.0625,
+          2.0625,
+          1.0625,
+          3.375,
+          1.3125,
+          3.25,
+          5.5625,
+          0.5,
+          1.1875,
+          0.6875,
+          2.5625,
+          1.0625,
+          2.8125,
+          1.375
+        ]
+      },
+      {
+        "name": "gift-exact - money-exact welfare",
+        "n": 14,
+        "mean": 2.2679,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.5625,
+        "bootstrap95": [
+          1.6696,
+          2.9598
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00006103515625,
+        "holmPMres": 0.00048828125,
+        "leaveOneOutMin": 2.0337,
+        "leaveOneOutMax": 2.399,
+        "values": [
+          2.5,
+          2.125,
+          1.0625,
+          3.375,
+          1.3125,
+          3.5625,
+          5.3125,
+          0.5625,
+          1.5,
+          1.375,
+          2.5625,
+          1.4375,
+          3.3125,
+          1.75
+        ]
+      },
+      {
+        "name": "gift-exact - easy-easy-negative welfare",
+        "n": 14,
+        "mean": 1.875,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.1875,
+        "bootstrap95": [
+          1.3482,
+          2.433
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00018310546875,
+        "holmPMres": 0.0010986328125,
+        "leaveOneOutMin": 1.7308,
+        "leaveOneOutMax": 2.0048,
+        "values": [
+          1.25,
+          0.875,
+          2.0625,
+          2.3125,
+          0.5625,
+          2.75,
+          3.75,
+          1.4375,
+          2.25,
+          1.8125,
+          3.625,
+          1,
+          2.375,
+          0.1875
+        ]
+      },
+      {
+        "name": "money-exact - neutral welfare",
+        "n": 14,
+        "mean": -0.2054,
+        "mres": 0.5,
+        "positive": 1,
+        "negative": 9,
+        "ties": 4,
+        "minSeedDelta": -0.6875,
+        "bootstrap95": [
+          -0.3393,
+          -0.0714
+        ],
+        "lowerBoundExceedsMres": false,
+        "pZero": 0.99609375,
+        "pMres": 1,
+        "holmPMres": 1,
+        "leaveOneOutMin": -0.2404,
+        "leaveOneOutMax": -0.1683,
+        "values": [
+          -0.4375,
+          -0.0625,
+          0,
+          0,
+          0,
+          -0.3125,
+          0.25,
+          -0.0625,
+          -0.3125,
+          -0.6875,
+          0,
+          -0.375,
+          -0.5,
+          -0.375
+        ]
+      },
+      {
+        "name": "easy-easy-negative - neutral welfare",
+        "n": 14,
+        "mean": 0.1875,
+        "mres": 0.5,
+        "positive": 9,
+        "negative": 5,
+        "ties": 0,
+        "minSeedDelta": -1.125,
+        "bootstrap95": [
+          -0.3393,
+          0.7098
+        ],
+        "lowerBoundExceedsMres": false,
+        "pZero": 0.25457763671875,
+        "pMres": 0.8687744140625,
+        "holmPMres": 1,
+        "leaveOneOutMin": 0.0625,
+        "leaveOneOutMax": 0.2885,
+        "values": [
+          0.8125,
+          1.1875,
+          -1,
+          1.0625,
+          0.75,
+          0.5,
+          1.8125,
+          -0.9375,
+          -1.0625,
+          -1.125,
+          -1.0625,
+          0.0625,
+          0.4375,
+          1.1875
+        ]
+      },
+      {
+        "name": "gift-exact - gift-easy-only welfare",
+        "n": 14,
+        "mean": 2.1116,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.375,
+        "bootstrap95": [
+          1.4643,
+          2.8125
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.000244140625,
+        "holmPMres": 0.0010986328125,
+        "leaveOneOutMin": 1.899,
+        "leaveOneOutMax": 2.2452,
+        "values": [
+          1.25,
+          1.8125,
+          0.625,
+          3,
+          1.3125,
+          3.375,
+          4.875,
+          0.375,
+          1.875,
+          0.625,
+          3.1875,
+          1.75,
+          3.6875,
+          1.8125
+        ]
+      },
+      {
+        "name": "gift-any-holder - neutral welfare",
+        "n": 14,
+        "mean": 1.9688,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.375,
+        "bootstrap95": [
+          1.2946,
+          2.6964
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.000244140625,
+        "holmPMres": 0.0010986328125,
+        "leaveOneOutMin": 1.7788,
+        "leaveOneOutMax": 2.0913,
+        "values": [
+          1.5625,
+          1.375,
+          0.625,
+          4,
+          2.1875,
+          2.375,
+          4.4375,
+          0.6875,
+          2.625,
+          0.375,
+          0.75,
+          0.625,
+          1.9375,
+          4
+        ]
+      },
+      {
+        "name": "gift-hard-partner-only - neutral welfare",
+        "n": 14,
+        "mean": 2.4063,
+        "mres": 0.5,
+        "positive": 14,
+        "negative": 0,
+        "ties": 0,
+        "minSeedDelta": 0.0625,
+        "bootstrap95": [
+          1.7589,
+          3.1071
+        ],
+        "lowerBoundExceedsMres": true,
+        "pZero": 0.00006103515625,
+        "pMres": 0.00018310546875,
+        "holmPMres": 0.0010986328125,
+        "leaveOneOutMin": 2.1683,
+        "leaveOneOutMax": 2.5865,
+        "values": [
+          3.3125,
+          2.9375,
+          1.875,
+          3.0625,
+          3,
+          3.6875,
+          5.5,
+          0.0625,
+          2.25,
+          1.5,
+          1.5,
+          1.875,
+          0.875,
+          2.25
+        ]
+      }
+    ]
+  }
+}

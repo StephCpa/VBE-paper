@@ -46,726 +46,633 @@ Vietnam}{M. Baldoni, F. Fang, W. Yeoh, N. Yorke-Smith (eds.)}
 \ccsdesc[300]{Computing methodologies~Agent / discrete models}
 \ccsdesc[300]{Computing methodologies~Natural language processing}
 
+
 \begin{document}
 
 \begin{abstract}
-Public natural-language rules are often evaluated as if compliance with the
-named action were the mechanism that changes welfare.  We test that assumption
-in the Verification Budget Economy, an eight-agent repeated-exchange
-environment with scarce checks and intrinsically worthless transferable marks.
-A byte-identical visible-announcement execution intervention shows that
-blocking feasible Hard-to-Hard check giving lowers welfare within the gift arm
-by 3.2083 points per account.  A prospectively
-frozen seven-arm study replicates the gift package against no recommendation on
-Hard-to-Hard swap rate ($+0.6070$) and welfare ($+2.0625$), but a zero-call
-proposal audit finds that the named Easy-to-Hard relation rises only 0.123
-above neutral, below a post-hoc 0.25 engagement screen.  Any-holder and Hard-partner
-packages name Hard actors directly, whereas an engaged, mechanically harmful
-Easy-to-Easy directive also raises Hard giving outside its named relation.  The
-exact money package yields seller proposals but no executed sales, and its
-named sale contrast does not clear that screen.  These results support
-a layered conclusion: public packages can alter welfare-relevant role-
-conditional proposal patterns and spill over beyond their named relation, but the
-present designs do not identify helping-specific scope expansion, a priced-
-semantic boundary, or a self-enforcing institution.  Proposal propagation,
-physical execution, and welfare are therefore distinct empirical objects.
+Public natural-language rules for language-model agents are usually judged by
+whether agents perform the action the rule names.  We test that practice in the
+Verification Budget Economy, an eight-agent random-matching economy with scarce
+verification checks.  A public announcement naming Easy-to-Hard gifts raises
+welfare by 2.06 points per account over a no-recommendation announcement
+(14/14 paired seeds), yet an exact accounting identity attributes the gain to
+Hard--Hard check swaps---mutual cooperation in an unnamed stage game that is a
+Prisoner's Dilemma---net of dominated Hard-to-Easy giving the same text induces.
+Under a byte-identical gift announcement, blocking Hard--Hard transfers after the
+model responds lowers welfare by 3.21 (12/12 seeds).  Replaying the frozen
+traces through the engine, we compare first decisions at states that are
+byte-identical except for the announcement: the named gift is engaged but
+collapses after one meeting, whereas cross-role Hard--Hard giving is raised
+directly by the text, including by a harmful Easy--Easy directive obeyed in 113
+of 114 meetings.  Explicit exclusion clauses bound the response; positive role
+predicates do not.
 \end{abstract}
 
-\keywords{language-model agents, multi-agent systems, public rules,
+\keywords{language-model agents, multi-agent systems, public rules, norms,
 causal mechanisms, welfare, agent-based simulation}
 
 \maketitle
 
 \section{Introduction}
 
-Public natural-language rules are increasingly used to coordinate language-model
-teams, markets, and social simulations.  Yet an observed change in aggregate
-outcomes does not reveal which part of the rule-to-outcome chain carried the
-effect.  Agents may propose the named transaction, respond to an unmentioned
-role relation, or produce proposals that the environment cannot execute.  A
-study that records only surface compliance can therefore assign welfare to the
-wrong mechanism.
+Teams, markets, and simulations of language-model agents increasingly
+coordinate through public rules written in natural language.  The usual check of such a rule
+is whether agents perform the action it names and whether an aggregate outcome
+improves.  That check conflates four objects: the proposals agents make, the
+transactions the environment executes from pairs of proposals, the state those
+transactions produce, and the welfare that results.  A rule can be followed in
+its named relation and still owe its effect to a relation it never mentions.
 
-We study this problem in the Verification Budget Economy (\vbe), an eight-
-account, 24-round random-matching economy in which Hard agents benefit from a
-partner's check, Easy agents can salvage an unused check, and transferable
-marks have no direct or terminal value.  Public messages recommend gifting
-checks or exchanging them for marks, while the engine executes only compatible
-bilateral transitions.  This separation lets us ask three linked questions:
-does a package engage the relation it names, which execution changes affect
-welfare, and do explicit actor or partner restrictions constrain the
-observed response?
+We study this gap in the Verification Budget Economy (\vbe), where Hard agents
+need verification checks, Easy agents have spare ones, and the engine executes
+only compatible pairs of proposals.  Three prospectively frozen studies with a
+hosted model supply the causal comparisons; a zero-call reanalysis of their
+frozen traces supplies the accounting and the fixed-state comparisons.  The
+results form one chain:
 
-We answer these questions in a staged design.  W-CO (welfare crowding-out)
-first discovers a welfare
-contrast between gift and money talk and exposes an unmentioned \hh channel
-after the planned gift-versus-sale mechanism gate fails.  W-RG (welfare
-role-generalization channel) then holds the
-visible public announcement byte-identical and intervenes only after each
-model response:
-blocking feasible \hh giving lowers welfare by 3.2083 points per account, with
-all 12 paired seeds moving in the same direction.  W-SGB (welfare semantic-
-generalization boundary) subsequently varies
-seven public-message packages under unchanged execution.  The gift package
-replicates on \hh swap rate and welfare, but the zero-call proposal audit shows
-that its named Easy-to-Hard relation does not clear the post-hoc screen;
-any-holder and Hard-partner packages name Hard actors directly, while an
-engaged harmful Easy--Easy directive spills into \hh behavior.  The money
-package produces seller proposals but no executed sales.
+\begin{itemize}
+\item \emph{Welfare comes from an unnamed relation.}  The engine implies that a
+Hard--Hard meeting is a strict Prisoner's Dilemma and that giving in an
+Easy--Hard meeting is individually dominated for both roles.  A gift
+announcement naming Easy-to-Hard gifts raises welfare, and an exact accounting
+identity attributes the gain to Hard--Hard swaps net of wasteful Hard-to-Easy
+gifts.  Blocking Hard--Hard transfers under the identical announcement removes
+the gain (\S\ref{sec:welfare}).
+\item \emph{The text acts on unnamed roles directly.}  Because each prompt is a
+function of reconstructable state, we can find first decisions taken from states
+that are byte-identical across arms except for the announcement.  There, the
+named Easy-to-Hard gift is engaged, and Hard--Hard giving is raised by the gift
+text and by a harmful Easy--Easy directive.  Explicit exclusion clauses bound
+the response; positive role predicates do not (\S\ref{sec:fixed}).
+\item \emph{Closed-loop dynamics separate the two.}  The named gift collapses
+after an Easy agent's first meeting, whereas Hard--Hard cooperation and harmful
+Easy--Easy compliance persist for the whole run (\S\ref{sec:dynamics}).
+\end{itemize}
 
-The paper makes three contributions.  First, it estimates a welfare-relevant
-execution contrast within the gift arm with a byte-identical visible-announcement
-intervention rather than
-inferring mechanism from the public wording.  Second, it provides a
-role-conditional proposal map and a symmetric engagement audit that separates
-literal support from candidate scope expansion.  Third, it establishes an
-evidence discipline for language-mediated populations: proposal propagation,
-physical execution, state feedback, and welfare must be measured as distinct
-layers.  The resulting claim is about a causal systems property of a hosted
-model population, not about private belief, common knowledge, or consciousness.
+The contribution is an identification design and the result it produces, not a
+reminder that intention differs from execution.  Execution-layer intervention
+under a fixed prompt, exact transaction accounting, fixed-state comparison from
+frozen logs, and an engaged harmful control together rule out the intuitive
+explanation---that the rule works because agents do what it says---and locate
+both the welfare channel and the failure modes.  The claim concerns a hosted
+model population in one economy, not private belief, common knowledge, or a
+self-enforcing institution.
 
-\section{Environment and Rule-to-Outcome Stack}
+\section{Environment}
+\label{sec:env}
 
-\subsection{Verification Budget Economy}
+\subsection{Rules and state}
 
-\vbe contains eight persistent accounts and runs for 24 rounds.  In each
-round, controllers are assigned Hard or Easy roles and randomly matched with
-meeting probability $q=0.4$.  A successful Hard task pays $R=3$.  A Hard
-agent's own check succeeds with probability $p_H=0.32$; a partner-supplied
-check succeeds with probability $p_P=0.93$.  At the start of each round,
-each account receives its round endowment of $B=1$ check.  Every unused
-inventory check converts to $v=0.5$ at round end and then expires.  Four marks
-circulate but
-have no direct or terminal payoff.  Replacing an own check with a partner check
-increases expected Hard-task value by
-\begin{equation}
-R(p_P-p_H)=3(0.93-0.32)=1.83.
-\end{equation}
+\vbe has $n=8$ persistent accounts and $T=24$ rounds; the supplement lists every
+parameter.  All accounts start with score 0, and
+four random accounts start with one \emph{mark} each.  Marks have no direct or
+terminal value and persist across rounds.  Each round proceeds as follows.
 
-Checks can move through a simultaneous exchange (a \emph{swap}), a one-way
-\eh gift, or an Easy seller's mark-contingent transfer matched with a Hard
-buyer's offered mark.  Controllers propose actions independently; the engine
-executes only compatible joint transitions.  Mean final score per account is
-the welfare outcome.  The principal mechanism outcome is the proportion of
-\hh meetings that execute a mutual check swap.  Because treatment changes
-holdings and future opportunities, the inferential unit is the complete
-seed-level population trajectory, not a meeting.
+\begin{enumerate}
+\item \emph{Roles and endowments.}  Exactly four accounts are drawn Hard and four
+Easy.  Every account receives $B=1$ check.  An Easy account is paid $R=3$
+immediately.
+\item \emph{Matching.}  Accounts are shuffled into four pairs, and each pair meets
+independently with probability $q=0.4$, so an account has at most one meeting per
+round and roles are independent of pairing.
+\item \emph{Proposals.}  Each party to a meeting simultaneously proposes
+\texttt{giveCheck}, \texttt{giveChits} (0 or 1 marks), and \texttt{requireChit}.
+\item \emph{Resolution.}  In priority order: if both give and neither requires a
+mark, the checks are \emph{swapped}; if one gives while requiring a mark and the
+other offers one, a \emph{sale} executes; if one gives without requiring a mark,
+it is a one-way \emph{gift}; otherwise nothing moves.  A received check is a
+verification source; it is not added to the recipient's inventory.
+\item \emph{Settlement.}  A Hard account that received a check uses it and
+succeeds with probability $p_P=0.93$; otherwise it uses its own check and
+succeeds with probability $p_H=0.32$.  Success pays $R$.  Every check still in
+inventory pays $v=0.5$, and checks expire.
+\end{enumerate}
 
-Table~\ref{tab:payoffs} makes the transaction accounting explicit.  A received
-check is recorded as a verification source for a Hard agent; it is not added
-to the recipient's inventory.  In an E$\rightarrow$H gift or sale, however,
-the Hard recipient retains its own check and can still receive the ordinary
-end-of-round salvage.  The prompt exposes the current roles, both inventories, scores, and
-the last four partner interactions.  A sale requires a seller's mark-contingent
-proposal and a buyer's offered mark; a gift requires only the giver's
-unconditional proposal.  These asymmetric acceptance conditions matter for
-interpreting zero executed sales.
+Scores, marks, and each account's last $K=4$ meetings persist.  The prompt shows
+the round, the agent's role, checks, marks, and score, the partner's role,
+checks, and marks, and the agent's own last four meetings; it never shows the
+partner's score or history.  One payoff draw per account per round is
+pre-generated from the seed, so arms sharing a seed share roles, pairings, and
+payoff draws.
+
+\subsection{Transaction payoffs and stage games}
+\label{sec:payoffs}
 
 \begin{table}[t]
-\caption{Expected direct payoff changes for one executed relation relative to
-no transfer.  These are engine accounting identities before downstream matching
-and payoff draws; a Hard recipient of an E$\rightarrow$H transfer retains its
-own check and therefore also receives its ordinary salvage term.}
+\caption{Expected direct payoff change of one executed transfer relative to no
+transfer, derived from the engine.  A sale moves the same payoffs as a gift in
+the same direction because marks are valueless.}
 \label{tab:payoffs}
 \small
 \centering
 \begin{tabular}{@{}lrrr@{}}
 \toprule
-Relation & Giver & Receiver & Total \\
+Executed transfer & Giver & Receiver & Total \\
 \midrule
 H--H swap & $+1.83$ & $+1.83$ & $+3.66$ \\
-E$\rightarrow$H gift & $-0.50$ & $+2.33$ & $+1.83$ \\
-H$\rightarrow$E gift & $-0.96$ & $0.00$ & $-0.96$ \\
+E--H swap (E is ``giver'') & $-0.50$ & $+1.83$ & $+1.33$ \\
 E--E swap & $-0.50$ & $-0.50$ & $-1.00$ \\
-E$\rightarrow$H mark sale & $-0.50$ & $+2.33$ & $+1.83$ \\
+One-way E$\rightarrow$H & $-0.50$ & $+2.33$ & $+1.83$ \\
+One-way H$\rightarrow$H & $-0.96$ & $+2.33$ & $+1.37$ \\
+One-way H$\rightarrow$E & $-0.96$ & $0.00$ & $-0.96$ \\
+One-way E$\rightarrow$E & $-0.50$ & $0.00$ & $-0.50$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Public rules as distributed policy programs}
+Table~\ref{tab:payoffs} lists the expected change for every transfer the engine
+can execute.  Each entry is checked against the engine by integrating its
+settlement over the payoff-draw strata, and an exhaustive test covers all 4,096
+local meeting states (\S\ref{sec:audit}).  Two rows matter most.  An E--H
+\emph{swap} is worth $1.33$, not $1.83$: the Hard agent gives away a check it
+would otherwise salvage, and the Easy agent cannot use the check it receives.  A
+one-way H$\rightarrow$E gift destroys $0.96$.
 
-The rule-to-outcome path is
-\begin{equation}
-\text{message}\rightarrow\text{proposal}\rightarrow\text{execution}
-\rightarrow\text{state}\rightarrow\text{welfare}.
-\end{equation}
-Natural-language evaluations often observe the first two elements and infer
-the rest.  \vbe records each layer.  We call a message a \emph{distributed
-policy program} when it changes a population's mapping from role and local
-state to proposed action.  This is an operational abstraction, not a claim
-about an internal symbolic representation.
-
-We annotate each directive $D$ as $(A_D,B_D,R_D,Q_D)$: named actor roles,
-partner roles, transfer relation, and explicit restrictions such as ``only.''
-This is a descriptive coding scheme, not a formal semantics.  A candidate
-role spillover occurs outside its named actor--partner pairs; a change from a
-one-way gift to a joint swap is a separate action-level distinction.
-Confirmatory excess execution rates require both the declared effect-size
-and error-control gates.  Semantic interpretation additionally needs engagement
-of the named relation; our later proposal screen checks that prerequisite
-descriptively.
-
-Exact gift names Easy acting toward Hard, unlike the tested H--H pair.
-The Hard-partner package allows Hard actors, so H--H fits its role predicate
-even though a joint swap is not explicitly named.  Easy-only both names Easy
-actors and prohibits Hard giving.  Its zero named E$\rightarrow$H proposals
-and compound wording prevent isolation of actor-exclusivity semantics.
-
-\section{Experimental Design}
-
-\subsection{Discovery and execution intervention}
-
-W-CO compares historical gift and money packages on 18 fresh paired seeds.
-The welfare contrast was prospectively evaluated, but the \hh explanation was
-found only after the planned behavioral-substitution gate failed.  W-CO is
-therefore mechanism discovery, not confirmatory evidence for that channel.
-
-W-RG converts the trace hypothesis into a prospective execution intervention.
-Twelve fresh seeds each run four paired arms: neutral; standard gift; gift with
-feasible \hh check giving suppressed after response; and gift with feasible
-unconditional \eh giving suppressed after response.  The three gift arms have
-byte-identical visible announcements and retain the current meeting's
-structured proposal for the local execution transform.  They differ only in
-that narrow post-response transform; subsequent proposals may respond to the
-changed state.  Original intentions are retained because reciprocal Hard giving
-can turn a candidate one-way \eh gift into a swap before realization.
-The H--H filter sets \texttt{giveCheck=false} if both roles are Hard and
-the proposer holds a check and proposes to give it.  The E$\rightarrow$H
-filter applies the same assignment only to Easy givers facing Hard with
-\texttt{requireChit=false}.  Both leave \texttt{giveChits} and
-\texttt{requireChit} unchanged.  Models are queried separately in each arm.
-
-\subsection{Prospective role-boundary test}
-
-W-SGB keeps execution unmodified and randomizes seven message packages over 14
-fresh paired seeds: neutral; exact gift; gift with the actor restricted to
-``Easy only''; gift generalized to any check-holder; giving restricted only by
-a Hard partner; exact money talk; and an Easy--Easy reciprocal-transfer
-directive.  The last is an engaged negative control.  When two Easy agents
-exchange checks, both lose the 0.5 salvage value of an otherwise retained
-check, so the named execution destroys 1.0 total welfare.  A separate E--E swap
-gate must pass before this arm can support an interpretation about scope.
-
-Co-primary endpoints are seed-level \hh swap rate and mean welfare.  Each has
-eight directional contrasts.  Holm adjustment controls familywise error at
-0.025 within each endpoint family.  Minimum relevant effects are $+0.25$ for
-swap rate and $+0.5$ for welfare.  We use MRES (minimum relevant effect size)
-for these thresholds: the value is a practical-effect gate, so a small
-significant difference cannot upgrade a scope or welfare claim.  The gift,
-money, and neutral packages are byte-preserved anchors.  New packages are not
-token- or length-matched; W-SGB identifies package-level scope profiles, not a
-single word or parse.  After the frozen run, we borrowed the $0.25$ MRES for a
-descriptive named-proposal engagement screen.  This post-hoc zero-call audit
-qualifies interpretation; it is not another preregistered hypothesis family.  Zero executed
-sales still cannot establish a priced-semantic boundary.
-
-Table~\ref{tab:arms} shows the clauses that distinguish the packages.  Every
-directive also states that it is a public statement rather than an engine rule,
-may be followed or ignored, and that each agent should maximize its own score.
-The supplement preserves the complete byte-exact messages.
-
-\begin{table*}[t]
-\caption{W-SGB message packages as descriptive named-support annotations.  $Q_D$ records
-an explicit closure condition; $\emptyset$ denotes no such condition.}
-\label{tab:arms}
+\begin{table}[t]
+\caption{Expected round payoffs (row, column) in a Hard--Hard meeting implied by
+Table~\ref{tab:payoffs}.  Keeping is strictly dominant and mutual giving maximizes
+welfare: a strict Prisoner's Dilemma.}
+\label{tab:pd}
 \small
 \centering
-\begin{tabular}{@{}lll@{}}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-Arm & Distinguishing public clause (abridged) & Annotation $(A_D,B_D,R_D,Q_D)$ \\
+& Partner keeps & Partner gives \\
 \midrule
-Neutral & ``announces no exchange recommendation'' & $\emptyset$ \\
-Gift exact & ``an Easy agent gives ... to a Hard agent'' & $(\{E\},\{H\},\{gift\},\emptyset)$ \\
-Easy only & ``only an Easy agent gives ...; A Hard agent does not'' & $(\{E\},\{H\},\{gift\},\{actor\mbox{-}exclusive\})$ \\
-Any holder & ``any agent who holds a leftover check gives it'' & $(\{E,H\},\{H\},\{gift\},\emptyset)$ \\
-Hard partner & ``an agent gives ... only when the current partner is Hard'' & $(\{E,H\},\{H\},\{gift\},\{partner\mbox{-}exclusive\})$ \\
-Money exact & ``a mark is accepted as payment for one leftover check'' & $(\{E\},\{H\},\{sale\},\emptyset)$ \\
-E--E negative & ``when two Easy agents meet ... each gives ... to the other'' & $(\{E\},\{E\},\{swap\},\emptyset)$ \\
+Keep & $(0.96,\ 0.96)$ & $(3.29,\ 0.00)$ \\
+Give & $(0.00,\ 3.29)$ & $(2.79,\ 2.79)$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The identities imply the stage games.  An H--H meeting is a strict Prisoner's
+Dilemma (Table~\ref{tab:pd}): keeping is dominant, and mutual giving maximizes
+welfare.  In an E--H meeting, keeping is
+strictly dominant for both roles, and the welfare-maximizing outcome is a one-way
+E$\rightarrow$H gift, which costs the Easy agent $0.5$.  Every welfare-improving
+transfer therefore requires an agent to give up private payoff.  The population
+game is repeated under random rematching with private four-meeting histories,
+where cooperation can in principle be sustained by community
+enforcement~\cite{kandori1992,ellison1994}; our design does not identify such a
+mechanism.
+
+Two model-free benchmarks run on the same seeds, schedules, and draws.  The
+\emph{ex-ante first best} maximizes expected welfare meeting by meeting over the
+engine's action space without using realized draws: an H--H swap, a one-way
+E$\rightarrow$H gift, and no transfer otherwise.  It is a planner benchmark, not
+an equilibrium.  The \emph{ex-post first best} uses realized draws and bounds
+attainable welfare.  \emph{Never-transfer} sets the baseline.
+
+\section{Studies and Inference}
+\label{sec:design}
+
+All model studies use \texttt{deepseek-flash} in one provider-labeled serving era
+at temperature zero.  Every protocol, seed list, prompt, contrast, and gate was
+hash-frozen locally before its first target call; none was externally
+registered.  Each study is bracketed by a 14-call provider-health check before
+the first and after the last target call, with external controls, dominance
+anchors, entropy, returned-model, catalog, and fingerprint gates; all brackets
+reported here are healthy and identity-consistent.  The supplement records the
+anomalous earlier service window that motivated the bracket.
+
+\paragraph{W-CO (discovery).}  Gift versus money announcements on 18 fresh
+paired seeds.  Its welfare contrast was prospective; its planned
+gift-for-sale substitution gate failed, and the H--H channel was found
+afterwards.  We use it only as discovery and as a third replication of the
+fixed-state results.
+
+\paragraph{W-RG (execution intervention).}  Four arms on 12 fresh paired
+seeds: neutral; gift; gift with H--H check giving blocked; gift with
+unconditional E$\rightarrow$H give proposals blocked.  The three gift arms show
+the model the same announcement.  After the model responds, a filter sets only
+\texttt{giveCheck} to false on eligible proposals and leaves the other fields
+unchanged; the engine then executes as usual and later prompts reflect the
+changed history.  W-RG estimates the dynamic total effect of changing the
+execution contract under a fixed announcement.
+
+\paragraph{W-SGB (package boundary).}  Seven announcements on 14 fresh paired
+seeds under unmodified execution (Table~\ref{tab:arms}).  The harmful E--E
+directive names a transfer that destroys $1.0$ per execution and carries its
+own frozen engagement gate.  Packages other than the three historical anchors
+are not length-matched, so contrasts identify whole packages.
+
+\begin{table*}[t]
+\caption{W-SGB announcement packages.  Every package also states that it is a
+public statement rather than an engine rule, may be followed or ignored, and that
+agents should maximize their own score.  The supplement reproduces every package
+verbatim.}
+\label{tab:arms}
+\footnotesize
+\centering
+\begin{tabular}{@{}lp{0.47\textwidth}l@{}}
+\toprule
+Arm & Distinguishing clause (abridged) & Named relation; explicit exclusion \\
+\midrule
+Neutral & ``announces no exchange recommendation'' & none \\
+Gift exact & ``an Easy agent gives a leftover check to a Hard agent'' & E $\rightarrow$ H gift \\
+Easy only & ``only an Easy agent gives \ldots{} A Hard agent does not give'' & E $\rightarrow$ H gift; excludes Hard actors \\
+Any holder & ``any agent who holds a leftover check gives it to a Hard agent'' & \{E,H\} $\rightarrow$ H gift \\
+Hard partner & ``an agent gives \ldots{} only when the current partner is Hard \ldots{} do not give \ldots{} when the current partner is Easy'' & \{E,H\} $\rightarrow$ H gift; excludes Easy partners \\
+Money exact & ``a mark is accepted as payment \ldots{} a Hard agent who holds a mark may buy'' & E $\rightarrow$ H sale \\
+Harmful E--E & ``when two Easy agents meet \ldots{} each gives that check to the other'' & E $\leftrightarrow$ E swap \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-Within each seed, arms share initial holdings, roles, pairings, and pregenerated
-payoff randomness.  Cyclic orders and reversals place every arm twice in each
-position and balance every pairwise precedence relation 7/7.  Strict schemas
-prevent malformed outputs from becoming idle actions.  Each target study is
-enclosed by an independently specified 14-call pre/post provider-health bracket
-covering external controls, dominance anchors, prompt hashes, returned model,
-live catalog, output diversity, entropy, and a metadata fingerprint.  W-RG and
-W-SGB use canonical \texttt{deepseek-flash} in the same provider-labeled V4.1
-Flash era.  Earlier \texttt{deepseek-v4-flash} results lack comparable returned
-identities and are not pooled.  A bracket bounds an observed service interval;
-it does not prove immutable weights.
+\paragraph{Inference.}  Let $Y_s(d,e)$ be the seed-$s$ population outcome under
+announcement $d$ and execution contract $e$; the seed fixes initial state,
+roles, pairings, and payoff draws.  W-RG and W-SGB estimate, respectively,
+\begin{align*}
+\tau_{\mathrm{RG}}&=\tfrac{1}{12}\textstyle\sum_s\bigl[Y_s(d_{\mathrm{gift}},e_{\mathrm{std}})-Y_s(d_{\mathrm{gift}},e_{\neg\mathrm{HH}})\bigr],\\
+\tau_{\mathrm{SGB}}&=\tfrac{1}{14}\textstyle\sum_s\bigl[Y_s(d_1,e_{\mathrm{std}})-Y_s(d_0,e_{\mathrm{std}})\bigr].
+\end{align*}
+Both include downstream feedback through holdings and histories, so the
+inferential unit is the paired seed-level trajectory, not a meeting or account,
+and neither identifies a natural indirect effect~\cite{hudgens2008,aronow2017}.
+We report percentile bootstrap intervals (20,000 resamples of seed differences;
+pointwise, not simultaneous) and one-sided exact sign-flip $p$-values for
+$\Delta>0$ under a zero-centered sign-symmetry null.  W-SGB applies Holm
+correction at $0.025$ within its eight H--H and eight welfare contrasts.  A
+frozen gate passes when the mean reaches the minimum relevant effect size
+(\mres: $0.25$ for swap rate, $0.5$ for welfare) and the adjusted $p\le0.025$.
+Passing a gate shows a large estimate and a nonzero effect; it does not show
+$\Delta>\mres$.  We therefore add supplementary exact tests of
+$H_0{:}\,\Delta\le\mres$ and leave-one-seed-out ranges.  With 12 or 14 seeds the
+smallest attainable one-sided $p$ is $2^{-12}$ or $2^{-14}$, reached whenever
+every seed agrees in sign, so we report sign counts throughout.
 
-This control was introduced after a serving incident in which 72 distinct
-prompt hashes returned one identical action pattern.  A same-account,
-same-harness probe on a then-distinct endpoint remained discriminative, and an
-arithmetic suffix changed the output, showing that the prompt tail was read.
-We classified that episode as a serving-identity failure rather than a
-substantive behavioral null.  Provider health is consequently evaluated from
-external controls and metadata independently of each target outcome.
+\subsection{Zero-call reanalysis of frozen traces}
+\label{sec:audit}
 
-\subsection{Estimands and inference}
-
-W-RG estimates the paired dynamic total effect of changing an execution
-contract under a byte-identical visible announcement, with the current
-meeting's proposal held fixed only for that local execution transform.  W-SGB
-estimates intention-to-treat effects of complete public-message packages under
-the unchanged execution contract.  Both estimands include downstream feedback
-through holdings, partner histories, and later responses; role and matching
-schedules remain paired.  They do not decompose a
-natural indirect effect and do not assume independence among agents or meetings.
-This population-level treatment assignment follows causal work on interference:
-when one agent's treatment changes other agents' exposures and outcomes,
-unit-level no-interference estimands are generally unavailable without an
-exposure model \cite{hudgens2008,aronow2017}.
-
-Formally, let $Y_s(d,e)$ denote the seed-$s$ population outcome under public
-directive package $d$ and execution policy $e$, where $s$ fixes the paired
-initial state, role/matching schedule, and payoff draws.  The principal W-RG
-contrast estimates
-\begin{equation}
-\frac{1}{12}\sum_s\left[Y_s(d_{gift},e_{standard})-
-Y_s(d_{gift},e_{block\text{-}HH})\right],
-\end{equation}
-whereas a W-SGB contrast estimates
-\begin{equation}
-\frac{1}{14}\sum_s\left[Y_s(d_1,e_{standard})-
-Y_s(d_0,e_{standard})\right].
-\end{equation}
-The first intervenes on execution after the current meeting's response while
-allowing subsequent state feedback; it is not an open-loop replay or a natural-
-mediation estimate.  The second intervenes on a visible package and allows
-proposals to respond.  The two designs therefore answer different causal
-questions and their estimates are not pooled.
-
-For each contrast we compute an arm difference within every matched seed, then
-average the paired differences.  Reported percentile intervals use 20,000
-nonparametric resamples of the paired seed effects with a fixed analysis seed.
-Directional $p$-values enumerate every sign assignment of the absolute paired
-effects under a zero-centered sign-symmetry null.  W-SGB applies Holm adjustment
-separately to its eight \hh and eight welfare hypotheses.  A gate passes only
-when every frozen pair is present, the mean reaches its \mres, and the adjusted
-$p$-value is at most 0.025.  Thus statistical significance below the declared
-magnitude---as for gift minus negative---cannot upgrade the verdict.
-
-W-RG completes 3,680 target calls and W-SGB 7,602, with zero retained API,
-schema, or parse failures; their two pre/post brackets add 56 calls reported
-separately.  Counts of meetings and transfers describe mechanisms, whereas
-inference remains at the seed-level population unit.
-
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=0.90\textwidth]{figures/redteam-v1/AAMAS-Fig1-redteam-final.pdf}
-  \Description{A three-stage study diagram followed by horizontal bar charts.
-  The stages are discovery, a visible-announcement execution intervention, and a
-  seven-arm role-boundary experiment.  Gift directives have high Hard--Hard
-  swap rates and welfare; Easy-only and money-exact do not.}
-  \caption{Discovery, byte-identical visible-announcement execution contrast, and the prospective
-  role-boundary study.  The named Easy-to-Hard gift rarely realizes as a one-way transfer;
-  Hard reciprocity converts most candidate gifts into swaps, and welfare falls
-  when feasible Hard--Hard circulation is blocked under the gift package.}
-  \label{fig:mechanism}
-\end{figure*}
+The reanalysis adds no model call and changes no frozen artifact.  We replay
+every frozen run through the frozen engine by feeding back its recorded
+proposals.  Because roles, pairings, and draws come from the seed alone, the
+replay reproduces all 182 runs exactly (every final score and every meeting
+resolution), recovering the exact prompt behind each of the 14,010 decisions, a
+count equal to the three studies' frozen call totals.  This supports three
+analyses.  \emph{Accounting:} each run's welfare equals its never-transfer
+welfare plus the realized contribution of each executed transfer, computed from
+the regenerated payoff draws; the identity holds exactly in all 182 runs.
+\emph{Fixed states:} at an agent's first meeting, its prompt carries no
+treatment-dependent history, and the reconstructed prompts are byte-identical
+across arms once the announcement is removed (verified for every first
+meeting); comparing arms there isolates the announcement's effect on that
+decision.  \emph{Engine validation:} an exhaustive test enumerates every role
+pair, inventory, and proposal combination (4,096 cases) and checks resource
+conservation, the filters, and settlement against Table~\ref{tab:payoffs}.
+These analyses are post hoc and descriptive with respect to the frozen studies.
 
 \section{Results}
 
-\subsection{Most candidate one-way gifts resolve as swaps}
+\subsection{Welfare comes from an unnamed cooperation channel}
+\label{sec:welfare}
 
-In W-CO, gift talk exceeds money talk by 2.3333 mean score points (95\%
-bootstrap CI $[1.7292,2.9306]$, one-sided exact $p=0.00001526$), but its planned
-mechanism gate fails: the \eh gift-rate difference is only 0.03158, below the
-0.25 threshold, and neither arm produces a mark sale.  Post-hoc traces instead
-show \hh swaps rising from 27/154 under money talk to 138/154 under gift talk.
-The discovery therefore identifies a welfare-relevant channel, not a clean
-one-way-gift substitution.
-
-W-RG then isolates that channel within the gift package (Table~\ref{tab:wrg}).
-Standard gift produces 83 swaps in 107 \hh meetings; \hh blocking reduces the count to zero.
-Suppressing \hh giving lowers welfare by 3.2083 points per account, with all 12
-paired seeds positive.  Retaining \hh circulation while suppressing one-way
-\eh realization exceeds the converse execution regime by 2.7604, again 12/12
-positive.  Figure~\ref{fig:trace} contrasts the named \eh intention path with
-the unmentioned \hh circulation and diagrams the post-response execution fork.
+The gift announcement raises welfare.  In W-SGB it exceeds neutral by
+$2.0625$ points per account ($[1.429,2.813]$, 14/14 seeds), raising the H--H
+swap rate by $0.607$; W-CO's gift-minus-money contrast ($+2.333$, 17/18 seeds)
+and W-RG's gift-minus-neutral contrast ($+1.682$, 9/12 seeds) agree in sign
+(Table~\ref{tab:contrasts}).
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.96\textwidth,keepaspectratio]{figures/AAMAS-Fig2-v1.1.png}
-  \Description{A two-panel trace.  The left panel shows 26 feasible original
-  Easy-to-Hard gift intentions, 25 reciprocal E-to-H swaps, and one realized
-  one-way gift alongside 83 unmentioned Hard-to-Hard swaps.  The right panel
-  shows identical public gift announcements sent to paired rollouts: standard
-  execution preserves 83 Hard-to-Hard swaps, whereas a post-response
-  Hard-to-Hard filter reduces them to zero and lowers welfare by 3.2083 points
-  per account.}
-  \caption{The named candidate path and the unmentioned channel.  With the
-  revised paired-rollout schematic, identical public announcements feed the
-  standard and H--H-blocked execution paths; the solve accounting is dependency
-  accounting rather than an independent mediation estimate.}
-  \label{fig:trace}
+  \includegraphics[width=0.98\textwidth]{figures/VBE-x1-fig-mechanism.pdf}
+  \Description{Left: seed-level welfare for twelve W-RG seeds across four arms,
+  with arm means and dashed never-transfer and ex-ante first-best lines; welfare
+  drops from about 55.3 under gift to about 52.1 when Hard--Hard transfers are
+  blocked, near the never-transfer line.  Right: horizontal bars decomposing the
+  W-SGB gift-minus-neutral welfare difference by transfer type: Hard--Hard swaps
+  +2.20, Easy--Hard swaps +0.36, one-way Hard-to-Hard +0.12, one-way
+  Easy-to-Hard +0.08, one-way Hard-to-Easy -0.62, Easy--Easy -0.07, net +2.06,
+  with W-RG values as hollow diamonds.}
+  \caption{(A) W-RG: seed-level welfare (lines connect a seed's four paired runs).
+  Blocking H--H transfers under the identical gift announcement removes the gift's
+  gain.  Dashed lines are model-free benchmarks on the same seeds.  (B) Exact
+  accounting of the gift-minus-neutral welfare difference by executed transfer type
+  (W-SGB bars; W-RG diamonds).  This is an accounting identity, not a mediation
+  estimate: arms differ in which transfers occur.}
+  \label{fig:mechanism}
 \end{figure*}
 
+\paragraph{Where the gain comes from.}  The named transfer is almost absent from
+the realized trace.  In W-SGB's gift arm, 105 of 125 H--H meetings end in swaps
+(27 under neutral), while only 9 of 304 E--H meetings end in a one-way
+E$\rightarrow$H gift.  Figure~\ref{fig:mechanism}B decomposes the welfare
+difference exactly: H--H swaps contribute $+2.20$ per account and E--H swaps
+$+0.36$, while 99 one-way H$\rightarrow$E gifts (3 under neutral) cost $0.62$.
+W-RG gives the same pattern ($+2.41$ from H--H swaps, $-1.13$ from
+H$\rightarrow$E gifts).  The announcement therefore buys welfare through
+cooperation in the unnamed Prisoner's Dilemma and pays for part of it with a
+dominated, welfare-destroying transfer the same text induces.  Reciprocity also
+costs welfare in the named relation: in W-RG's gift arm, 25 of 26 feasible
+E$\rightarrow$H gift intentions met an unconditional Hard give and resolved as
+E--H swaps, each worth $0.5$ less than the one-way gift (12.5 points in total).
+Joint proposals show where these transfers come from: in the gift arm's E--H
+meetings, only the Easy agent gave in 9, only the Hard agent in 99, both in 28,
+and neither in 168.  Table~\ref{tab:welfare} places every package against
+model-free benchmarks on the same seeds.  The gift package captures 35\% of the
+ex-ante feasible gain; the Hard-partner package captures the most, 38\%, because
+it keeps H--H swaps (115) while nearly eliminating H$\rightarrow$E gifts (18).
+Mutual H--H giving is not simply two independent proposals: under neutral it
+occurs in 27 of 125 meetings, against about 8 expected from the marginal give
+rate, whereas under gift it matches independence (105 versus 104).
+
 \begin{table*}[t]
-\caption{W-RG prospective paired contrasts.}
-\label{tab:wrg}
-\small
+\caption{Absolute welfare and executed transfers by W-SGB package (14 seeds,
+same schedules and payoff draws).  Gain is welfare minus the never-transfer
+benchmark; share is gain divided by the ex-ante first best's gain.  Transfer
+columns count executed meetings out of 125 H--H, 304 E--H, and 114 E--E meetings
+per arm.}
+\label{tab:welfare}
+\footnotesize
 \centering
-\begin{tabular}{@{}lrrrl@{}}
+\begin{tabular}{@{}lrrrrrrrr@{}}
 \toprule
-Contrast & Mean $\Delta$ & 95\% bootstrap CI & Exact $p$ & Frozen gate \\
+Package or benchmark & Welfare & Gain & Share & H--H swaps & E--H swaps & One-way E$\rightarrow$H & One-way H$\rightarrow$E & E--E swaps \\
 \midrule
-Gift $-$ neutral welfare & 1.6823 & [.8542,2.4635] & .00342 & pass \\
-Gift $-$ \hh-blocked welfare & 3.2083 & [2.4688,3.8906] & .00024 & pass; 12/12 positive \\
-\eh-blocked $-$ \hh-blocked welfare & 2.7604 & [2.0938,3.4115] & .00024 & pass; 12/12 positive \\
-Gift $-$ \hh-blocked swap rate & 0.7525 & [.6327,.8615] & .00024 & pass \\
+Neutral & 55.28 & 1.04 & 0.12 & 27 & 0 & 0 & 3 & 0 \\
+Gift exact & 57.34 & 3.10 & 0.35 & 105 & 28 & 9 & 99 & 2 \\
+Easy only & 55.23 & 0.99 & 0.11 & 29 & 0 & 0 & 16 & 1 \\
+Any holder & 57.25 & 3.00 & 0.34 & 111 & 28 & 7 & 95 & 0 \\
+Hard partner & 57.68 & 3.44 & 0.38 & 115 & 1 & 4 & 18 & 0 \\
+Money exact & 55.07 & 0.83 & 0.09 & 21 & 0 & 0 & 0 & 0 \\
+Harmful E--E & 55.46 & 1.22 & 0.14 & 75 & 1 & 3 & 35 & 113 \\
+\midrule
+Never transfer & 54.24 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+Always give & 60.81 & 6.57 & 0.73 & 125 & 304 & 0 & 0 & 114 \\
+Ex-ante first best & 63.19 & 8.95 & 1 & 125 & 0 & 304 & 0 & 0 \\
+Ex-post first best (uses realized draws) & 63.26 & 9.02 & 1.01 & --- & --- & --- & --- & --- \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-Low realized one-way gifting does not imply weak Easy intention.  Standard
-gift contains 26 feasible original \eh gift intentions; 25 meet unconditional
-Hard check-giving and resolve as swaps, leaving one realized one-way gift.
-Most candidate one-way intentions are therefore absorbed into reciprocal
-swaps in the realized trace; this describes the outcome pattern rather than a
-mediation mechanism.  The \hh
-intervention removes 102 Hard solves.  At three points per solve this accounts
-for 306 aggregate points against 308 observed aggregate welfare points.  This
-is dependency accounting, not an independent mediation estimate: blocking
-changes later state, holdings, histories, and responses.  The identified
-quantity is the dynamic total effect of disabling the \hh channel.  Because
-W-RG has no neutral-with-\hh-blocked arm, it does not identify the fraction of
-the gift-minus-neutral welfare effect carried by \hh circulation.  That
-directive-by-execution interaction remains a planned follow-up.
+\paragraph{Execution intervention.}  W-RG holds the announcement fixed and
+removes the H--H channel after the model responds.  Welfare falls by $3.208$
+($[2.469,3.891]$, 12/12 seeds, Figure~\ref{fig:mechanism}A), from $55.30$ to
+$52.09$---below the same seeds' never-transfer benchmark ($52.53$) in 10 of 12
+seeds.  Without H--H circulation, the remaining transfers induced by the gift
+announcement are net negative.  Removing transfers worth $3.66$ each will lower
+welfare; the result is informative because the removed channel is the one the
+announcement does not name, and because what remains of the announcement's
+effect is wasteful.  The E$\rightarrow$H filter changed little: of its 20
+blocked proposals, 16 would have produced E--H swaps and instead executed as
+one-way H$\rightarrow$E gifts, and 4 would have produced one-way E$\rightarrow$H
+gifts.  The regime contrast ``E$\rightarrow$H-blocked minus H--H-blocked''
+($+2.760$, 12/12) therefore compares keeping H--H circulation with keeping the
+little that the E$\rightarrow$H path carried.
 
-\subsection{Gift replicates; helping specificity remains unresolved}
-
-W-SGB completes all 98 cells.  Exact gift increases \hh swap rate over neutral
-by 0.6070 and welfare by 2.0625; both are positive in 14/14 seeds and have
-Holm-adjusted $p=0.0004883$ (Table~\ref{tab:wsgb}).  The gift reference thus
-replicates on both endpoints.  Because neutral announces no recommendation,
-this comparison estimates the total effect of the gift directive's presence
-and content together; it is not by itself gift-specific.  The zero-call audit
-in Table~\ref{tab:x0} then checks whether each package actually raises its
-named proposal relation.  The same exact-gift arm also records 99
-H$\rightarrow$E gifts (versus 3 in neutral); because each has negative direct
-accounting, the package does not have a uniformly welfare-positive realized
-relation.  Neutral itself contains 27/125 H--H swaps; the uptake timing is
-descriptive and does not establish norm formation or monotone adoption.
+W-RG has no neutral-with-H--H-blocked arm, so it does not identify how much of
+the gift-versus-neutral effect depends on the H--H path; the accounting
+identity above is consistent with nearly all of it but is not a causal
+decomposition.  The supplement gives a frozen-ready protocol for the
+announcement-by-execution factorial that would.
 
 \begin{table*}[t]
-\caption{Post-hoc zero-call proposal audit.  The named column is the package's
-seed-level named-relation proposal rate minus neutral; the three role columns
-are seed-level means for the indicated directed cell.  The displayed 0.25
-MRES is a descriptive screen applied after the frozen run, not a
-preregistered inferential gate.}
-\label{tab:x0}
-\small
+\caption{Prospective paired contrasts.  CIs are pointwise percentile bootstrap
+intervals over seeds; $+/-/0$ counts seeds by sign.  $p$ is the one-sided exact
+sign-flip $p$ for $\Delta>0$, Holm-adjusted within each W-SGB endpoint family.
+$p_{\mres}$ tests $H_0{:}\,\Delta\le\mres$ (supplementary; Holm within each W-SGB
+family).  Frozen gates require mean $\ge\mres$ and $p\le0.025$.}
+\label{tab:contrasts}
+\footnotesize
 \centering
-\begin{tabular}{@{}lrrrrr@{}}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrcrrl@{}}
 \toprule
-Arm & Named $\Delta$ & E$\rightarrow$H & H$\rightarrow$H & H$\rightarrow$E & MRES screen \\
+W-RG (12 seeds) & $\Delta$ & 95\% CI & $+/-/0$ & $p$ & $p_{\mres}$ & Gate \\
 \midrule
-Neutral & --- & 0.000 & 0.261 & 0.012 & reference \\
-Gift exact & 0.123 (E$\rightarrow$H) & 0.123 & 0.906 & 0.427 & fail \\
-Easy only & 0.000 (E$\rightarrow$H) & 0.000 & 0.353 & 0.054 & fail \\
-Any holder & 0.365 (actor$\rightarrow$H) & 0.113 & 0.927 & 0.420 & pass$^\dagger$ \\
-Hard partner & 0.327 (actor$\rightarrow$H) & 0.020 & 0.963 & 0.066 & pass$^\dagger$ \\
-Money exact & 0.063 (E$\rightarrow$H sale) & 0.000 & 0.191 & 0.000 & fail \\
-Harmful E--E & 0.991 (E$\rightarrow$E) & 0.013 & 0.737 & 0.130 & pass \\
+Gift $-$ neutral, welfare & 1.682 & [0.854, 2.463] & 9/3/0 & .0034 & .011 & pass \\
+Gift $-$ H--H-blocked, welfare & 3.208 & [2.469, 3.891] & 12/0/0 & .00024 & .00024 & pass \\
+E$\rightarrow$H-blocked $-$ H--H-blocked, welfare & 2.760 & [2.094, 3.412] & 12/0/0 & .00024 & .00024 & pass \\
+Gift $-$ H--H-blocked, H--H swap rate & 0.753 & [0.633, 0.862] & 12/0/0 & .00024 & .0020 & pass \\
 \bottomrule
-\multicolumn{6}{l}{\footnotesize $^\dagger$Hard actors are inside the named support, so these are literal-support responses.}
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{@{}lrrcrrrrcrr@{}}
+\toprule
+& \multicolumn{5}{c}{H--H swap rate (\mres{} 0.25)} & \multicolumn{5}{c}{Welfare (\mres{} 0.5)} \\
+\cmidrule(lr){2-6}\cmidrule(l){7-11}
+W-SGB (14 seeds) & $\Delta$ & 95\% CI & $+/-/0$ & $p$ & $p_{\mres}$ & $\Delta$ & 95\% CI & $+/-/0$ & $p$ & $p_{\mres}$ \\
+\midrule
+Gift $-$ neutral & .607 & [.510, .714] & 14/0/0 & .00049 & .00049 & 2.063 & [1.429, 2.813] & 14/0/0 & .00049 & .00085 \\
+Gift $-$ money & .663 & [.568, .755] & 14/0/0 & .00049 & .00049 & 2.268 & [1.670, 2.960] & 14/0/0 & .00049 & .00049 \\
+Gift $-$ harmful E--E & .229$^\dagger$ & [.105, .351] & 10/3/1 & .0054 & 1.0 & 1.875 & [1.348, 2.433] & 14/0/0 & .00049 & .0011 \\
+Harmful E--E $-$ neutral & .378 & [.287, .474] & 14/0/0 & .00049 & .027 & .188 & [$-$.339, .710] & 9/5/0 & .51 & 1.0 \\
+Gift $-$ Easy only & .592 & [.482, .697] & 14/0/0 & .00049 & .00049 & 2.112 & [1.464, 2.813] & 14/0/0 & .00049 & .0011 \\
+Any holder $-$ neutral & .658 & [.549, .771] & 14/0/0 & .00049 & .00049 & 1.969 & [1.295, 2.696] & 14/0/0 & .00049 & .0011 \\
+Hard partner $-$ neutral & .703 & [.596, .810] & 14/0/0 & .00049 & .00049 & 2.406 & [1.759, 3.107] & 14/0/0 & .00049 & .0011 \\
+Money $-$ neutral & $-$.056 & [$-$.126, $-$.001] & 1/5/8 & .97 & 1.0 & $-$.205 & [$-$.339, $-$.071] & 1/9/4 & .996 & 1.0 \\
+\bottomrule
+\multicolumn{11}{l}{$^\dagger$Significant but below the 0.25 \mres, so its frozen gate fails.  Every other row with mean $\ge\mres$ and $p\le0.025$ passes its frozen gate.}
 \end{tabular}
 \end{table*}
 
-The audit changes the scope interpretation.  Exact gift raises H--H giving
-strongly, but its named E$\rightarrow$H proposal rate is only 0.1229, with a
-seed-level mean difference of 0.1229 from neutral, below the 0.25 screen.  The
-Easy-only package never proposes its named E$\rightarrow$H gift and therefore
-cannot identify actor exclusivity.  Any-holder and Hard-partner packages clear
-the proposal screen, but their actor support explicitly includes Hard, so their
-H--H responses are inside the named support.  The harmful E--E package is both
-engaged and outside its named E--E support when it raises H--H giving.  The
-result is evidence that public packages alter role-conditional proposal
-patterns and can produce engaged cross-role spillover; structured scope
-expansion, role misbinding, and generic transfer priming remain observationally
-equivalent.
+The stricter supplementary test confirms every passing frozen gate, with one
+exception: the harmful directive's H--H effect rejects $\Delta\le0.25$ before
+correction ($p=0.0089$) but not after Holm ($0.027$).  Every passing contrast
+keeps its mean above \mres{} when any single seed is dropped.
 
-As an environment-only calibration, we replayed the 14 seeds with scripted
-policies.  Never transferring checks scored $54.241$ on average, first-best
-Hard-directed transfer $63.188$, and always giving $60.813$.  A model-free
-surrogate sampled from the exact-gift proposal map scored $56.683$; suppressing
-its H-to-E component raised this to $57.853$.  These yardsticks are
-descriptive, not new model evidence: they expose welfare-relevant waste
-channels but do not identify why the model selected them.
+\subsection{The text acts on unnamed roles directly}
+\label{sec:fixed}
 
-\subsection{Near-total compliance with a harmful directive}
-
-The negative directive adds no engine rule, reward, monitoring, or sanction,
-and explicitly says that agents may ignore it.  Yet it executes 113 E--E swaps
-in 114 opportunities.  Each named execution removes 0.5 points from each Easy
-agent's private salvage and destroys 1.0 total welfare.  The zero-call proposal
-audit reports a seed-level mean E--E gift-proposal rate of 0.991; the
-corresponding pooled directed count is 227/228.  Separately, the frozen
-execution engagement gate reports a seed-level mean E--E swap-rate contrast of
-0.9821 (113/114 pooled meeting swaps), with 95\% CI $[0.9464,1.0000]$ and
-adjusted $p=0.0000610$.  These are distinct proposal and execution metrics.
-Despite naming only E--E transactions, the directive raises \hh swap rate over
-neutral by 0.3777.  The payoff table shows a direct cost of $1.0$ per E--E
-swap, but this design cannot tell whether agents knowingly accept that cost or
-fail to represent the salvage consequence.  The latter question is reserved
-for a payoff-salience replay probe.
-
-\begin{table*}[t]
-\caption{Selected W-SGB contrasts.  CIs are seed-level bootstrap intervals;
-$p_H$ is Holm-adjusted within each eight-contrast endpoint family.}
-\label{tab:wsgb}
-\small
-\centering
-\begin{tabular}{@{}lrrrrrr@{}}
-\toprule
-& \multicolumn{3}{c}{\hh swap rate} & \multicolumn{3}{c}{Mean welfare} \\
-\cmidrule(lr){2-4}\cmidrule(l){5-7}
-Contrast & $\Delta$ & 95\% CI & $p_H$ & $\Delta$ & 95\% CI & $p_H$ \\
-\midrule
-Gift $-$ neutral & .6070 & [.5097,.7140] & .00049 & 2.0625 & [1.4286,2.8125] & .00049 \\
-Gift $-$ money & .6631 & [.5681,.7551] & .00049 & 2.2679 & [1.6696,2.9598] & .00049 \\
-Gift $-$ negative & .2293 & [.1049,.3506] & .00537$^\dagger$ & 1.8750 & [1.3482,2.4330] & .00049 \\
-Money $-$ neutral & -.0560 & [-.1259,-.0009] & .96875 & -.2054 & [-.3393,-.0714] & .99609 \\
-Negative $-$ neutral & .3777 & [.2875,.4745] & .00049 & .1875 & [-.3393,.7098] & .50916 \\
-Gift $-$ Easy only & .5923 & [.4820,.6974] & .00049 & 2.1116 & [1.4643,2.8125] & .00049 \\
-Any holder $-$ neutral & .6576 & [.5488,.7713] & .00049 & 1.9688 & [1.2946,2.6964] & .00049 \\
-Hard partner $-$ neutral & .7034 & [.5956,.8100] & .00049 & 2.4063 & [1.7589,3.1071] & .00049 \\
-\bottomrule
-\multicolumn{7}{l}{\footnotesize $^\dagger$Directional significance does not establish the prespecified 0.25 minimum relevant effect; the interval crosses that practical-effect boundary.}
-\end{tabular}
-\end{table*}
-
-Near-total named compliance therefore does not establish welfare alignment.
-The same package also induces potentially useful \hh circulation, and its net
-welfare difference from neutral is only 0.1875, with a confidence interval
-crossing zero and below the 0.5 threshold.  A public rule can be behaviorally
-contagious while imposing a per-transaction loss; aggregate welfare damage is
-not established here.
-
-No W-SGB arm yields an executed mark sale, although E$\rightarrow$H
-seller proposals are present.  Descriptively, its \hh effect is
-$-0.0560$ (bootstrap CI $[-0.1259,-0.0009]$) and its welfare effect is
-$-0.2054$ ($[-0.3393,-0.0714]$) relative to neutral.  The registered tests were
-one-sided for positive effects, so these negative directions were not
-prospectively tested and are not upgraded.  They motivate an
-engagement-gated replication of possible suppression, but cannot distinguish
-``priced-exchange semantics do not expand'' from a failure to match seller and
-buyer proposals.  The current data therefore support no priced-semantic
-boundary claim.
-
-\subsection{Boundary arms do not isolate actor exclusivity}
-
-The ``Easy only'' arm has mean \hh swap rate 0.237, near neutral's 0.223, and
-mean welfare 0.049 below neutral.  Exact gift exceeds it by 0.5923 in swap rate
-and 2.1116 in welfare, clearing both frozen gates.  Descriptively, the Easy-only
-variant remains near neutral, but its explicit prohibition and zero named
-E$\rightarrow$H proposal rate prevent a quantifier-only interpretation.  By
-contrast, ``any check-holder'' and ``only when the partner is Hard'' retain
-strong \hh circulation and welfare effects; the latter explicitly includes
-Hard actors in its named support.  Figure~\ref{fig:scope} summarizes the
-tested role relations and their \hh responses, including the harmful directive
-and the unmatched money package.
+Aggregate role-conditional proposal rates mix two sources: the announcement
+changes what an agent does in a given state, and it changes which states agents
+reach.  First decisions remove the second source.  Figure~\ref{fig:scope}A
+shows, for every W-SGB package, the unconditional-give rate at each agent's first
+meeting, where the prompt differs across arms only in the announcement (18
+H$\rightarrow$H, 35 H$\rightarrow$E, 39 E$\rightarrow$H, and 20 E$\rightarrow$E
+decisions per arm).
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.96\textwidth]{figures/redteam-v1/AAMAS-Fig3-redteam-final.pdf}
-  \Description{Four public-message packages are mapped to their text-named
-  role relations and tested Hard-to-Hard response.  Gift exact, Hard partner,
-  and harmful Easy-to-Easy directives show Hard-to-Hard spillover; Easy only
-  remains near neutral.  The right column reports rates and neutral contrasts,
-  while the footer records the global minimum-effect and adjusted-p-value
-  thresholds.  Money exact is omitted from scope inference because it produced
-  no named sales.}
-  \caption{Tested role relations and package-level response.  The revised
-  schematic reports each tested Hard--Hard rate beside its neutral contrast and
-  makes the frozen thresholds explicit; the exact-money package did not engage,
-  so it does not identify a priced-semantics boundary.}
+  \includegraphics[width=0.98\textwidth]{figures/VBE-x1-fig-scope.pdf}
+  \Description{Left: a heatmap with seven announcement packages as rows and four
+  directed role cells as columns, showing the first-decision give rate; orange
+  outlines mark the cells each package names.  Gift exact gives 0.94 to Hard
+  partners when Hard, 0.69 from Hard to Easy, and 0.44 from Easy to Hard; the
+  harmful Easy--Easy directive gives 1.00 in its named cell and 0.83 Hard to
+  Hard; neutral gives 0.39 Hard to Hard.  Right: give rates by the decider's
+  meeting number: gift Hard-to-Hard stays near 0.9, harmful Easy-to-Easy stays at
+  1.0, gift Hard-to-Easy falls from 0.69 to about 0.3--0.4, and the named gift
+  Easy-to-Hard falls from 0.44 to 0.07 after the first meeting.}
+  \caption{(A) Unconditional-give rate at each agent's first meeting, where prompts
+  are byte-identical across arms except for the announcement (W-SGB).  Orange
+  outlines mark the relation each package names (dashed: it names a sale, not a
+  gift).  (B) Give rate by the decider's meeting number within the run; later
+  meetings condition on realized history, so this panel is descriptive.}
   \label{fig:scope}
 \end{figure*}
 
+\paragraph{The named relation is engaged.}  Under gift exact, 17 of 39 Easy
+agents give to a Hard partner at their first meeting and none do under neutral
+(17 discordant pairs in one direction, 0 in the other).  The same holds in W-CO
+(26 of 41) and W-RG (16 of 31).  The low closed-loop rate of named giving
+($0.123$ above neutral in W-SGB) therefore does not reflect a failure to engage
+the named relation; \S\ref{sec:dynamics} shows it reflects decay.  A post-hoc
+engagement screen that compared closed-loop named rates with $0.25$ would call
+the gift package unengaged and the any-holder and Hard-partner packages engaged;
+at first decisions the classification reverses, and in closed loop it flips
+again between thresholds of $0.10$ and $0.15$ (supplement).  We therefore treat
+that screen as descriptive only.
+
+\paragraph{Cross-role giving is a direct text effect.}  At first decisions, Hard
+agents meeting a Hard partner give at rate $0.39$ under neutral, $0.94$ under the
+gift package, and $0.83$ under the harmful E--E directive, which names only
+Easy agents.  All disagreements with neutral run one way (10/0 and 8/0
+discordant decisions).  The harmful directive's H--H spillover is therefore not a
+by-product of the trajectories it creates.  Under the gift package, Hard agents
+also give to Easy partners ($0.69$), outside both the named actor and the named
+beneficiary.
+
+\paragraph{Exclusion clauses bind; positive predicates do not.}  Packages that
+\emph{exclude} a relation suppress it: ``do not give when the partner is Easy''
+reduces first-decision H$\rightarrow$E giving to $0.00$ (from $0.69$ under gift
+exact), and ``a Hard agent does not give'' leaves H$\rightarrow$H giving at the
+neutral level ($0.44$ versus $0.39$).  Packages that only \emph{name} a relation
+do not confine the response to it: any holder names Hard beneficiaries, yet Hard
+agents give to Easy partners at rate $0.63$.  Naming the actor matters for Easy
+agents: they give at first decisions when the package names Easy actors
+($0.44$), not when it names ``any agent'' ($0.08$) or ``an agent'' ($0.00$).
+The Easy-only package suppresses its own named relation ($0/39$), so it cannot
+isolate actor exclusivity; the money package lowers first-decision H--H giving
+($0.06$, six discordant decisions all favoring neutral).
+
+\paragraph{Noise floor.}  Temperature zero does not make the endpoint
+deterministic~\cite{atil2025nondeterminism}.  Across W-RG's three gift arms,
+decisions with byte-identical full prompts returned identical proposals in
+87--90\% of 877 comparisons, and disagreements were symmetric (10 versus 16,
+16 versus 15, and 13 versus 11 give-direction splits).  The one-directional
+splits above (17/0, 10/0, 8/0) lie far outside that noise.
+
+\subsection{Closed-loop dynamics}
+\label{sec:dynamics}
+
+Figure~\ref{fig:scope}B follows the same decisions over each agent's successive
+meetings.  The named E$\rightarrow$H gift collapses after an Easy agent's first
+meeting in all three studies ($0.63\rightarrow0.02$ in W-CO,
+$0.52\rightarrow0.00$ in W-RG, $0.44\rightarrow0.07$ in W-SGB).  H$\rightarrow$E
+giving declines more slowly ($0.69$ to $0.29$--$0.40$).  H$\rightarrow$H giving
+stays near $0.9$ throughout, so mutual cooperation in the Prisoner's Dilemma
+persists without any enforcement.  Harmful E--E compliance does not decay: E--E
+giving remains $0.99$ at agents' fourth and later meetings, although every
+execution costs each Easy agent $0.5$ of salvage.  These trends condition on
+realized history and are descriptive; they are consistent with agents abandoning
+unreciprocated sacrifices while maintaining reciprocated ones, but the design
+does not identify that mechanism.
+
+\subsection{A harmful directive and an unexecuted money package}
+
+The harmful directive adds no rule, reward, monitoring, or sanction and says it
+may be ignored, yet it executes 113 E--E swaps in 114 opportunities (frozen
+engagement contrast $0.982$, $[0.946,1.000]$, adjusted $p=0.00006$).  Its net
+welfare effect is $+0.19$ ($[-0.34,0.71]$), because H--H swaps it induces
+($+1.23$ per account) offset the $1.01$ it destroys through named E--E swaps.
+Behavioral spread across roles and welfare are thus separate quantities.  Whether
+agents accept the salvage loss knowingly or fail to represent it remains open; the
+supplement specifies a payoff-salience replay that separates the two.
+
+No arm of any study executed a mark sale.  The funnel locates the failure.
+Under money exact, the Hard partner held a mark in 140 of 304 E--H meetings, the
+Easy seller proposed a mark-contingent sale in all 140 (136 of 140 under neutral),
+and the Hard buyer offered a mark in none.  Across all 13 arms of the three
+studies, Hard agents offered a mark in 0 of 3,443 decisions taken while holding
+one---including under a money announcement that tells mark holders they may
+buy.  The money package therefore tests nothing about priced semantics; its
+failure is buyer non-payment.
+
 \section{Discussion}
 
-\subsection{What the evidence identifies}
+\paragraph{What is identified.}  Within the gift announcement, the H--H execution
+channel carries the welfare gain (W-RG), and the accounting identity attributes
+the gift-versus-neutral gain to H--H swaps net of H$\rightarrow$E waste.  At fixed
+states the announcement directly raises giving by unnamed actors toward unnamed
+beneficiaries, and only explicit exclusions bound that response.  Over time,
+unreciprocated named giving decays while reciprocated cooperation and harmful
+reciprocal compliance persist.  The best description of the object is a
+\emph{distributed policy program}: public text changes a population's mapping from
+role and state to proposals, and the engine determines which proposals become
+transitions.  It is not an institution in the stronger sense of common belief,
+legitimacy, consent, or self-enforcement~\cite{searle2005,ostrom1990}, and every
+agent receives the announcement directly, so cross-role responses are population
+responses, not peer-to-peer contagion.
 
-Taken together, the studies identify a layered causal object rather than a
-single semantic effect.  W-RG shows that, within the gift arm, changing the
-post-response execution contract to block feasible \hh giving lowers welfare by
-3.2083 points per account.  Because no neutral-with-\hh-blocked arm was run,
-this dynamic total effect does not identify the share of the gift-versus-neutral
-contrast carried by \hh circulation or establish necessity.  W-SGB
-shows that the same package changes \hh behavior relative to neutral, but the
-zero-call audit prevents us from treating that response as a demonstrated
-helping-specific expansion, because the named \eh relation does not clear the
-post-hoc screen.  The any-holder and Hard-partner packages name Hard actors
-directly, and the harmful E--E package demonstrates engaged spillover without a
-helping interpretation.  These alternatives remain observationally distinct in
-meaning but not in the present data.
-
-The best-supported abstraction is therefore a \emph{distributed policy program}:
-public text changes a population's mapping from local roles and state to
-proposals, and the engine determines which proposals become state transitions.
-This is more than an ignored string, but less than a social institution with
-common belief, legitimacy, consent, stable financing, or open-ended equilibrium
-support.  Reserving ``institution'' for that stronger object keeps the causal
-finding useful without assigning the model population beliefs or legitimacy
-that were not measured.
-
-\subsection{Implications for multi-agent system design}
-
-The design implication is an audit requirement.  Natural-language rules should
-be versioned like code: systems should log exact text, actor and beneficiary
-scope, model-service identity, proposal output, execution contract, and welfare
-transition.  Evaluations should first test whether the named relation engages,
-then probe unmentioned interactions with an engaged undesirable directive;
-otherwise a helping-specific interpretation can survive because its comparator
-did nothing.  Proposal and execution should remain separate audit layers, and
-the final report should distinguish named compliance, cross-role spillover,
-realized transitions, state feedback, and welfare.  Optimizing only the first
-two can select a rule that is legible and behaviorally contagious while still
-inducing a per-transaction loss; aggregate welfare damage must be established
-separately.
+\paragraph{Design implications.}  Version natural-language rules like code and log
+the proposal, execution contract, and transition behind every outcome.  Evaluate a
+rule on the relations it does not name, not only on the one it names.  State
+exclusions explicitly, because in this population a positive scope predicate did
+not confine behavior and an exclusion did.  Measure welfare against model-free
+benchmarks on the same schedules, because named compliance, cross-role spread,
+and welfare moved independently: the most compliant package destroyed value in
+its named relation, and the most effective package was not the one that named the
+welfare-maximizing transfer.  Finally, when prompts are a function of logged state,
+frozen traces support exact replay, fixed-state comparison, and exact accounting at
+no inference cost.
 
 \section{Limitations}
 
-The primary results concern one hosted endpoint, one provider-labeled era, and
-one finite-horizon economy.  Temperature zero and healthy pre/post brackets do
-not establish immutable weights or cross-model generality.  W-SGB identifies
-whole-message packages rather than tokens or parses.  The unengaged money arm
-cannot locate a priced-semantic boundary; one frozen repair attempt ended
-incomplete after a provider transport failure and yields no inference.
-The only cross-family concordance is three unpaired, unbracketed historical
-grok-4.5 seeds and is too weak to count as replication.  More usefully, that
-earlier interface produced 24 mark sales in 44 opportunities while the current
-one produces none, demonstrating context dependence without identifying an era
-effect.
-
-Treatment changes population trajectories, so seed-level runs are the units and
-the work does not identify natural-mediation shares.  The economy fixes price,
-mark supply, horizon, and task technology, omitting issuance, price discovery,
-counterfeiting, currency competition, and participant-funded enforcement.
-Frozen account-level summaries are exploratory diagnostics only and do not
-identify fairness or legitimacy.  The studies observe public messages, proposals,
-executions, and outcomes, not private belief, common knowledge, consent, or
-consciousness.
-Protocols were hash-frozen locally before target calls but not externally
-registered.  The H--H endpoint was selected after W-CO's mechanism failure;
-fresh-seed prospective tests assess this selected phenotype, not the original
-mechanism hypothesis or an unselected program-wide claim.  Future work should
-use fresh seeds and matched directive-force,
-reciprocity, actor-scope, beneficiary-scope, and engagement-gated price variants,
-then replicate on a verifiably distinct model family.
+All model evidence comes from one hosted model in one provider-labeled serving
+era; health brackets bound the service interval but do not establish immutable
+weights or cross-model generality.  The only cross-family evidence is three
+historical grok-4.5 seeds, too few to count as replication.  Packages are not
+length- or token-matched.  Fixed-state comparisons cover first decisions only; a
+cross-announcement replay of later states with identical full histories requires
+new model calls.  W-RG lacks the neutral-with-H--H-blocked arm needed to identify
+how much of the gift effect depends on H--H circulation.  The economy fixes price,
+supply, horizon, and technology, and mean score is its only welfare criterion.
+The H--H endpoint was selected after W-CO's planned mechanism failed; later
+studies test that selected phenotype on fresh seeds.  The reanalysis in
+\S\ref{sec:audit} is post hoc.  The supplement provides frozen-ready protocols for
+the factorial, the full-history replay, a payoff-salience test of the harmful
+directive, a buyer-side money diagnostic, and a second-model replication.
 
 \section{Related Work}
 
-\paragraph{Institutional statements and operative rules.}
-Institutional grammar decomposes rules into attributes, deontic operators,
-aims, conditions, and sanctions \cite{crawford1995}; formal accounts distinguish
-institutional power from permission and physical possibility \cite{jones1996},
-and constitutive rules from regulative norms \cite{boella2004}.  Normative
-multi-agent-systems work then represents role-indexed obligations, permissions,
-monitoring, enforcement, and institutional change explicitly
-\cite{esteva2002,fornara2008,king2015}.  These traditions specify what a rule
-means or authorizes.  \vbe asks a complementary execution question: when the
-rule is natural language interpreted by model policies, do its realized actor,
-beneficiary, action, and condition scopes match the written ones?  Separating
-model proposal from engine execution operationalizes the distinction between a
-normative statement and a state transition.
+\paragraph{Norms and institutions.}  Institutional grammar and normative
+multi-agent systems formalize role-indexed obligations, permissions, monitoring,
+and sanctions~\cite{crawford1995,jones1996,boella2004,esteva2002,fornara2008,king2015};
+social-law synthesis and norm-emergence work study top-down constraints and
+bottom-up convergence~\cite{shoham1992,sen2007,savarimuthu2007,savarimuthu2011,morrismartin2019}.
+These traditions specify what a rule means or authorizes.  We ask what a
+natural-language rule executes when model policies interpret it, and find that its
+realized actor and beneficiary scope exceeds the written one unless an exclusion is
+stated.  Convention research separates shared observation from common
+knowledge~\cite{lewis1969,rubinstein1989,centola2015,centola2018}; our
+announcement is common exposure, and we infer no epistemic state.
 
-\paragraph{Institutions, conventions, and norm emergence.}
-Accounts of convention and common knowledge separate shared observation from
-higher-order epistemic states \cite{lewis1969,rubinstein1989}, while experiments
-study spontaneous convention formation and tipping \cite{centola2015,centola2018}.
-Social-law synthesis studies top-down constraints \cite{shoham1992}; work on
-norm emergence studies bottom-up convergence through social learning,
-interaction, propagation, and norm life cycles
-\cite{sen2007,savarimuthu2007,savarimuthu2011,morrismartin2019}.  \vbe's public
-artifact is top-down and its response is immediate, so we do not label it
-bottom-up emergence, internalization, or common belief.  Searle's collective
-status functions and Ostrom's participant-fitted governance similarly set a
-higher bar for ``institution'' than behavioral compliance alone
-\cite{searle2005,ostrom1990}.
-
-\paragraph{Generative social simulation.}
-Agent-based computational social science explains macro-patterns by specifying
-interacting actors and generating population dynamics \cite{macy2002,epstein2006}.
-LLM work extends this program to believable agents, simulated human samples,
-replications of human-subject studies, and interactive social-intelligence
-evaluation \cite{park2023,aher2023,argyle2023,zhou2024,anthis2025}.  Concordia
-provides a componentized generative agent-based modeling framework with a
-grounded action resolver \cite{vezhnevets2023concordia}; economic simulations
-such as Homo Silicus and EconAgent use language models to instantiate
-heterogeneous economic actors and market dynamics
-\cite{horton2023homosilicus,li2024econagent}.  These systems establish the
-usefulness of language-mediated simulation, but they do not by themselves
-identify whether a public rule engages its named relation before a macro-level
-outcome is interpreted.  Our target is therefore not human fidelity or
-believability, but a causal systems property of a hosted model population:
-how a versioned public artifact changes proposals, executable transitions,
-cross-role spillovers, and welfare under a fixed engine.
-
-\paragraph{Language-model collectives.}
-Recent studies examine coordination, cooperation, convention formation, legal
-structures, and economic interaction in LLM populations
-\cite{ren2024,agashe2025,flint2025,zhu2025,madmoun2026,qi2026,wang2026}.
-GovSim studies sustainable cooperation in a common-resource society, and
-Welfare Diplomacy benchmarks general-sum cooperation under strategic pressure
-\cite{piatti2024govsim,mukobi2023welfarediplomacy}.  These benchmarks make
-collective welfare and failure modes visible, but their aggregate outcomes do
-not separate named proposal engagement from the execution channel that carries
-the outcome.
-The naming-game debate further shows that collective behavior can be
-observationally compatible with training-data reproduction
-\cite{barrie2025,flintreply2025}.  We therefore do not infer emergence from
-novelty.  Our contribution is an identification design: a byte-identical
-execution intervention locates a welfare-relevant contrast within the gift arm,
-and an engaged
-harmful control tests cross-role spillover without equating surface compliance
-with mechanism or value.
-
-\paragraph{Causal effects in interacting populations.}
-General-interference frameworks make outcomes functions of other units'
-treatments or exposures and require estimands matched to that dependence
-\cite{hudgens2008,aronow2017}.  In \vbe, early actions change holdings, later
-partners' opportunities, and future prompts, so the inferential unit is the
-paired seed-level population trajectory rather than a meeting or account.  This
-supports dynamic total effects, not individual direct effects or natural
-mediation shares.  Correlated-equilibrium theory formalizes how shared
-information can coordinate pure actions without explicit randomization
-\cite{aumann1974subjectivity,aumann1987correlated}; our design does not infer a
-common prior or equilibrium.  Search-theoretic monetary models motivate the matching and
-token environment \cite{kiyotaki1989,kiyotaki1993}, but fixed supply, horizon,
-and prices preclude a monetary-equilibrium claim.  These causal and economic
-frameworks motivate our separation of proposal, execution, and welfare, but the
-contribution here is a population-level identification design rather than a
-training or calibration method.
+\paragraph{Language-model populations.}  Generative agent-based models, simulated
+samples, and economic agents~\cite{park2023,aher2023,argyle2023,zhou2024,anthis2025,horton2023homosilicus,li2024econagent,macy2002,epstein2006}
+and studies of coordination, cooperation, conventions, and legal or economic
+structure in LLM collectives~\cite{ren2024,agashe2025,flint2025,zhu2025,madmoun2026,qi2026,wang2026}
+show what such populations can do.  Concordia separates agents' described actions
+from outcomes a game master resolves~\cite{vezhnevets2023concordia}; GovSim pairs
+aggregate outcomes with communication ablations and capability
+probes~\cite{piatti2024govsim}; Welfare Diplomacy scores general-sum
+welfare~\cite{mukobi2023welfarediplomacy}.  Our design adds three elements we have not
+found combined in this literature: execution-layer intervention under a fixed
+prompt, an exact transaction-level welfare identity, and comparison of decisions
+at states that are identical across treatments.  Together they show that the
+named relation is not the welfare channel.  The naming-game
+debate shows that collective behavior can reproduce training
+data~\cite{barrie2025,flintreply2025}, so we claim no emergence.  Search-theoretic
+money motivates the token environment~\cite{kiyotaki1989,kiyotaki1993}; fixed
+supply, horizon, and prices preclude a monetary-equilibrium claim.
 
 \section{Conclusion}
 
-A public sentence can change a language-model population without directly
-specifying the welfare-carrying transition.  In \vbe, a byte-identical
-visible-announcement execution intervention shows that blocking feasible \hh
-giving lowers welfare by 3.2083 points per account within the gift arm; without
-a neutral-with-blocked comparison, this does not establish a necessary channel
-or a mediation share for the gift-versus-neutral effect.  The proposal audit
-shows that the named \eh relation fails the post-hoc screen, so no
-helping-specific expansion claim is identified.  The harmful E--E directive
-spills into \hh behavior, while Easy-only remains near neutral and cannot
-identify actor exclusivity; money is unengaged and sets no priced-semantic
-boundary.  The contribution is an audit rule: separate proposal, execution,
-feedback, and welfare.
+A public sentence changed a language-model population's welfare, but not through
+the transaction it named.  The gain came from cooperation in an unnamed
+Prisoner's Dilemma, net of waste the same sentence induced; the text acted on
+unnamed roles directly; and only explicit exclusions bounded it.  Evaluating such
+rules requires auditing named compliance, cross-role response, executed
+transitions, and welfare as separate quantities.
 
-\paragraph{AI assistance and artifacts.}
-OpenAI Codex (GPT-5-based agent; exact backend revision unavailable) assisted
-hypothesis/design iteration, code, analysis, and editing.  Authors remain
-responsible; no AI system is an author.  Frozen protocols, traces, and full
-hashes are retained locally.  The AI disclosure currently contains representative
-prompts; complete contextualized prompt records, author verification, and the
-anonymized supplement must be completed before submission.
+\paragraph{AI assistance and artifacts.}  OpenAI Codex (GPT-5-based agent; exact
+backend revision unavailable) and Anthropic Claude assisted design iteration,
+code, analysis, and editing; the authors are responsible for all content, and no
+AI system is an author.  The anonymized supplement accompanying this submission
+contains the frozen protocols, manifests, traces, health brackets, engine,
+analyzers, the zero-call reanalysis, and the AI-use record required by the
+AAMAS policy.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{VBE-paper1-aamas2027}

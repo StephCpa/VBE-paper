@@ -1,5 +1,14 @@
 import { readFileSync } from "node:fs";
-import { describe, expect, test } from "bun:test";
+import assert from "node:assert/strict";
+import { describe, test } from "node:test";
+
+// Minimal adapter so the original Bun assertions run unchanged under node:test.
+const expect = (actual: unknown) => ({
+  toBe: (expected: unknown) => assert.equal(actual, expected),
+  toEqual: (expected: unknown) => assert.deepEqual(actual, expected),
+  toHaveLength: (n: number) => assert.equal((actual as { length: number }).length, n),
+  toBeCloseTo: (expected: number, digits = 2) => assert.ok(Math.abs((actual as number) - expected) < 10 ** -digits / 2, `${actual} != ${expected}`),
+});
 import { buildPaperOneScopeExploratoryReport, SCOPE_CELLS } from "./analyze-paper1-scope-exploratory.ts";
 import type { SemanticBoundaryReport } from "./welfare-semantic-boundary.ts";
 
