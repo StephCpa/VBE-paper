@@ -1,0 +1,118 @@
+{
+  "audit": "VBE-CENTRAL-NULL-CONTAMINATION-AUDIT-2026-09-13",
+  "status": "POST-HOC READ-ONLY AUDIT — NO MODEL CALLS",
+  "knownWindowAnchors": {
+    "latestAuditedNullCompletion": "2026-09-05T02:01:17.537Z",
+    "laterHealthyBehavior": {
+      "study": "E-BUY-WRAP-D",
+      "generatedAt": "2026-09-08T06:04:40.783Z",
+      "exactNarrowBuy": "12/12",
+      "exactPublicHardBuy": "0/12"
+    },
+    "firstObservedCollapsedStudyCompletion": {
+      "study": "E-BUY-EV-L",
+      "generatedAt": "2026-09-13T15:26:28.414Z",
+      "constantParsedProposal": "72/72"
+    },
+    "inference": "E-BIS, E-CI, and C-M completed before a later demonstrably discriminating service window. Any transition to the observed Flash collapse occurred after that healthy anchor and before E-BUY-EV-L completion, subject to missing historical returned-model metadata."
+  },
+  "eBis": {
+    "study": "E-BIS",
+    "generatedAt": "2026-09-05T01:06:50.465Z",
+    "modelRequested": "deepseek-v4-flash",
+    "calls": 299,
+    "llmProposalPatterns": {
+      "n": 299,
+      "unique": 4,
+      "entropyBits": 1.4781418857469593,
+      "counts": {
+        "false|0|false": 158,
+        "true|0|true": 108,
+        "true|1|true": 17,
+        "true|0|false": 16
+      }
+    },
+    "parsedFullOutputPatterns": {
+      "n": 299,
+      "unique": 11,
+      "entropyBits": 2.4910559018631524
+    },
+    "beliefPairs": {
+      "reports": 216,
+      "unique": 4,
+      "midpoint": 204,
+      "nonMidpoint": 12,
+      "pAcceptEqualsPSecond": 216,
+      "counts": {
+        "0.5|0.5": 204,
+        "0.9|0.9": 8,
+        "0.93|0.93": 3,
+        "1|1": 1
+      }
+    },
+    "rawResponsesStored": false,
+    "perCallProviderMetadataStored": false,
+    "auditVerdict": "NOT CONTAMINATED BY THE OBSERVED FLASH CONSTANT COLLAPSE — ORIGINAL NARROW INTERPRETATION STANDS"
+  },
+  "eCi": {
+    "study": "E-CI",
+    "generatedAt": "2026-09-05T02:01:17.537Z",
+    "modelRequested": "deepseek-v4-flash",
+    "calls": 2091,
+    "llmProposalPatterns": {
+      "n": 2091,
+      "unique": 4,
+      "entropyBits": 1.4899970368231523,
+      "counts": {
+        "false|0|false": 951,
+        "true|0|true": 894,
+        "true|0|false": 196,
+        "true|1|true": 50
+      }
+    },
+    "byCertificateLevel": {
+      "0": {
+        "calls": 697,
+        "uniqueProposalPatterns": 4,
+        "entropyBits": 1.4551813934904267,
+        "sellerIntentSupport": [1, 2, 3, 4, 5, 6],
+        "buyerIntentSupport": [0, 1, 2, 3],
+        "tradeSupport": [0, 1, 2, 3]
+      },
+      "2": {
+        "calls": 697,
+        "uniqueProposalPatterns": 4,
+        "entropyBits": 1.4148775789425079,
+        "sellerIntentSupport": [1, 2, 3, 4, 5, 6],
+        "buyerIntentSupport": [0, 1, 2, 3],
+        "tradeSupport": [0, 1, 2, 3]
+      },
+      "4": {
+        "calls": 697,
+        "uniqueProposalPatterns": 4,
+        "entropyBits": 1.5805043101991219,
+        "sellerIntentSupport": [1, 2, 3, 4, 5, 6],
+        "buyerIntentSupport": [0, 1, 2, 3],
+        "tradeSupport": [0, 1, 2, 3]
+      }
+    },
+    "rawResponsesStored": false,
+    "perCallProviderMetadataStored": false,
+    "auditVerdict": "DISCRIMINATING ACTION OUTPUT CONFIRMED — ITT NULL REMAINS INTERPRETABLE"
+  },
+  "cM": {
+    "study": "C-M",
+    "generatedAt": "2026-09-05T00:47:18.401Z",
+    "seedBlocks": 512,
+    "populationRuns": 6656,
+    "modelCalls": 0,
+    "policy": "frozen deterministic KW robot",
+    "codeImportsProviderCaller": false,
+    "auditVerdict": "IMMUNE TO HOSTED-MODEL SERVING COLLAPSE"
+  },
+  "limitations": [
+    "E-BIS and E-CI do not store raw response strings, per-call timestamps, returned model, or system fingerprint.",
+    "Parsed-output diversity excludes the observed one-constant collapse but cannot reconstruct historical backend weight identity.",
+    "Study-level generatedAt timestamps bound completion, not every individual call."
+  ]
+}

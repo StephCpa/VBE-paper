@@ -1,0 +1,34 @@
+{
+  "protocolVersion": "1.1",
+  "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+  "establishedFromStudyId": "VBE-W-CO-WELFARE-CROWDING-OUT",
+  "establishedAt": "2026-09-14T04:12:28.991Z",
+  "requestedModel": "deepseek-flash",
+  "catalogModels": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "returnedModels": [
+    "deepseek-flash"
+  ],
+  "fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "promptHashes": [
+    "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+    "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+    "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+    "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+    "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+    "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+    "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+    "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+    "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+    "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+    "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+    "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+    "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+    "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1"
+  ],
+  "historicalSentinelInterpretation": "DESCRIPTIVE CROSS-ERA DRIFT ONLY — EXCLUDED FROM HEALTH GATES"
+}

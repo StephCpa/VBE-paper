@@ -1,0 +1,23 @@
+import { createHash } from "node:crypto";
+import { existsSync,mkdirSync,readFileSync,writeFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { hasChatApiKey,LLM_CONFIG } from "./llm.ts";
+import { runCrowdingBridgeRecord,runCrowdingCell,printCrowdingDryRun } from "./welfare-crowding-out-execution.ts";
+import { CROWDING_ARMS,CROWDING_BRIDGE_BLOCKS,CROWDING_SEEDS,buildCrowdingReport,crowdingBridgeOrder,crowdingOrder,type CrowdingBridgeRecord,type CrowdingReport,type CrowdingRun } from "./welfare-crowding-out.ts";
+
+const DATA="src/data/welfare-crowding-out.json",PUBLIC="public/data/welfare-crowding-out.json",FREEZE="src/data/welfare-crowding-out-freeze.json";
+const HEALTH="src/data/provider-health-welfare-crowding-out.json";
+type Manifest={model:string;targetCallsAtFreeze:0;files:Record<string,{path:string;sha256:string}>;dryRunSha256:string};
+function hash(value:string|Uint8Array):string{return createHash("sha256").update(value).digest("hex");}
+function validateFreeze(checkModel:boolean):void{const manifest=JSON.parse(readFileSync(FREEZE,"utf8")) as Manifest;if(checkModel&&manifest.model!==LLM_CONFIG.model)throw new Error(`freeze model mismatch ${manifest.model} != ${LLM_CONFIG.model}`);for(const [name,item] of Object.entries(manifest.files)){const actual=hash(readFileSync(resolve(item.path)));if(actual!==item.sha256)throw new Error(`freeze mismatch ${name}: ${actual} != ${item.sha256}`);}}
+function load():{runs:CrowdingRun[];bridge:CrowdingBridgeRecord[]}{if(!existsSync(DATA))return{runs:[],bridge:[]};const report=JSON.parse(readFileSync(DATA,"utf8")) as CrowdingReport;if(report.model!==LLM_CONFIG.model)throw new Error(`model mismatch ${report.model}`);return{runs:report.runs,bridge:report.bridgeRecords};}
+function bracketValidity():boolean|null{if(!existsSync(HEALTH))return null;const stored=JSON.parse(readFileSync(HEALTH,"utf8")) as {comparison?:{bracketValid?:boolean}};return typeof stored.comparison?.bracketValid==="boolean"?stored.comparison.bracketValid:null;}
+function write(runs:CrowdingRun[],bridge:CrowdingBridgeRecord[]):void{mkdirSync("src/data",{recursive:true});mkdirSync("public/data",{recursive:true});const value=JSON.stringify(buildCrowdingReport(runs,bridge,LLM_CONFIG.model,bracketValidity()),null,2);writeFileSync(DATA,value);writeFileSync(PUBLIC,value);}
+function requireHealthyOpenBracket(hasPendingCalls:boolean):void{if(!existsSync(HEALTH))throw new Error(`missing frozen pre-flight bracket ${HEALTH}`);const stored=JSON.parse(readFileSync(HEALTH,"utf8")) as {plan?:{studyId?:string;requestedModel?:string};pre?:{healthy?:boolean};eraBaselineCheck?:{passed?:boolean};post?:unknown};if(stored.plan?.studyId!=="VBE-W-CO-WELFARE-CROWDING-OUT"||stored.plan.requestedModel!==LLM_CONFIG.model||!stored.pre?.healthy||!stored.eraBaselineCheck?.passed)throw new Error("provider-health pre-flight did not authorize this study/model");if(hasPendingCalls&&stored.post)throw new Error("post-flight already exists while target calls remain incomplete");}
+const dry=process.argv.includes("--dry-run");validateFreeze(!dry);if(dry){printCrowdingDryRun();process.exit(0);}if(!hasChatApiKey())throw new Error(`${LLM_CONFIG.apiKeyEnv} missing`);
+const state=load(),bridgeDone=new Set(state.bridge.map(record=>`${record.block}|${record.arm}`)),runDone=new Set(state.runs.map(run=>`${run.seed}|${run.arm}`));
+requireHealthyOpenBracket(state.bridge.length<12||state.runs.length<36);
+console.log(`resume bridge=${state.bridge.length}/12 target=${state.runs.length}/36`);
+for(const block of CROWDING_BRIDGE_BLOCKS)for(const arm of crowdingBridgeOrder(block)){const key=`${block}|${arm}`;if(bridgeDone.has(key))continue;state.bridge.push(await runCrowdingBridgeRecord(block,arm));bridgeDone.add(key);write(state.runs,state.bridge);console.log(`done bridge ${key}`);}
+for(const seed of CROWDING_SEEDS)for(const arm of crowdingOrder(seed)){const key=`${seed}|${arm}`;if(runDone.has(key))continue;const run=await runCrowdingCell(arm,seed);state.runs.push(run);runDone.add(key);write(state.runs,state.bridge);console.log(`done ${key} calls=${run.calls} score=${run.meanScore.toFixed(3)} gifts=${run.gifts.accepts}/${run.gifts.offers} sales=${run.sales.accepts}/${run.sales.offers}`);}
+write(state.runs,state.bridge);const final=buildCrowdingReport(state.runs,state.bridge,LLM_CONFIG.model,bracketValidity());console.log(`verdict ${final.verdict}`);if(final.verdict==="AWAITING POST-FLIGHT")console.log("Run provider-health post-flight, then rerun this command to finalize with zero additional target calls.");console.log(JSON.stringify({byArm:final.byArm,effects:final.effects,gates:final.gates,integrity:final.integrity,bridge:final.bridge,providerBracket:final.providerBracket},null,2));

@@ -1,0 +1,47 @@
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/VBE-paper1-aamas2027.pdf
+paper/.check/
+
+# Local/editor files
+.DS_Store
+engine/node_modules/
+
+# The repository keeps only the VBE paper's executable core and reanalysis files;
+# unrelated historical experiments remain in the local working tree but are not
+# part of this public materials package.
+engine/src/lib/vbe/*
+!engine/src/lib/vbe/env.ts
+!engine/src/lib/vbe/env.test.ts
+!engine/src/lib/vbe/env-payoff-accounting.test.ts
+!engine/src/lib/vbe/params.ts
+!engine/src/lib/vbe/rng.ts
+!engine/src/lib/vbe/types.ts
+!engine/src/lib/vbe/reanalyze-welfare-review.ts
+!engine/src/lib/vbe/reanalyze-welfare-review-x0-v1_1.ts
+!engine/src/lib/vbe/reanalyze-welfare-review-x0-v1_1.test.ts
+!engine/src/lib/vbe/epistemic-analysis.ts
+!engine/src/lib/vbe/epistemic-reward-confirmatory.ts
+engine/src/data/*
+!engine/src/data/welfare-crowding-out.json
+!engine/src/data/welfare-crowding-out-freeze.json
+!engine/src/data/welfare-role-channel.json
+!engine/src/data/welfare-role-channel-freeze.json
+!engine/src/data/welfare-semantic-boundary.json
+!engine/src/data/welfare-semantic-boundary-freeze.json
+!engine/src/data/welfare-review-x0.json
+!engine/src/data/welfare-review-x0.md
+!engine/src/data/welfare-review-x0-v1.1.json
+!engine/src/data/welfare-review-x0-v1.1.md
+!engine/src/data/central-null-contamination-audit.json
+!engine/src/data/provider-health-welfare-crowding-out.json
+!engine/src/data/provider-health-welfare-role-channel.json
+!engine/src/data/provider-health-welfare-semantic-boundary.json
+!engine/src/data/provider-health-freeze.json
+!engine/src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json

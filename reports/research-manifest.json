@@ -1,0 +1,24 @@
+{
+  "schema": 2,
+  "project": {
+    "id": "aamas-2027-adversarial-review-of-vbe-pap",
+    "title": "AAMAS 2027 adversarial review of VBE Paper 1",
+    "domain": "multi-agent systems / conference review",
+    "created": "2026-09-29T05:12:15.741Z",
+    "status": "active"
+  },
+  "question": {
+    "text": "Does the narrative-refined VBE Paper 1 meet the AAMAS 2027 full-paper bar under multi-perspective adversarial review, and which claims fail soundness, novelty, evaluation, or venue-fit scrutiny?",
+    "updatedAt": "2026-09-29T05:12:15.741Z"
+  },
+  "hypotheses": [],
+  "loop": {
+    "phase": "literature",
+    "iteration": 0,
+    "history": []
+  },
+  "experiments": [],
+  "artifacts": [],
+  "reviews": [],
+  "updatedAt": "2026-09-29T05:12:15.792Z"
+}

@@ -1,0 +1,1077 @@
+{
+  "plan": {
+    "protocolVersion": "1.1",
+    "studyId": "VBE-W-RG-ROLE-GENERALIZATION-CHANNEL",
+    "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+    "eraBaselineMode": "compare",
+    "eraBaselinePath": "src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json",
+    "requestedModel": "deepseek-flash",
+    "allowedReturnedModels": [
+      "deepseek-flash"
+    ],
+    "expectedCatalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "requireFingerprint": true,
+    "historicalSentinelInterpretation": "DESCRIPTIVE CROSS-ERA DRIFT ONLY — EXCLUDED FROM HEALTH GATES",
+    "outputPath": "src/data/provider-health-welfare-role-channel.json"
+  },
+  "pre": {
+    "phase": "pre",
+    "calls": 14,
+    "catalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "records": [
+      {
+        "phase": "pre",
+        "position": 1,
+        "anchorId": "control-arithmetic",
+        "kind": "external-control",
+        "promptHash": "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+        "requestBodySha256": "870f6e7c9a30c8c1098fc95d0412142124c25c8eff56c53c7564a04c1828133c",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":1,\"requireChit\":false}",
+        "rawResponseSha256": "f15cc3d2abc6aecf9c2865a6da49577a90c93baecc8f37ed3fc053568d2b3c98",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "14125240-0f23-4a37-b071-065dbefe5f09",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360204,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 373,
+            "completionTokens": 18,
+            "totalTokens": 391,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 245
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:04 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 2,
+        "anchorId": "control-order",
+        "kind": "external-control",
+        "promptHash": "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+        "requestBodySha256": "5646656d218efd997d0e0503971bffbdb731d12ae9b601874184be4e7c790ef2",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "8557f9365f7e7a2de0cd0394548f525f0d6b383ee551637e970eae75a212af2e",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "b7be8617-ba10-47d9-9a4a-256b06a7bd7d",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360205,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:05 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 3,
+        "anchorId": "control-count",
+        "kind": "external-control",
+        "promptHash": "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+        "requestBodySha256": "0c90c40e3e44ad286e11a9497bde5ff408b18006f4d017aabb9363921f6c48e5",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "9ff4333b-e0bf-4137-b05c-82dd953d4769",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360206,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:06 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 4,
+        "anchorId": "control-parity",
+        "kind": "external-control",
+        "promptHash": "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+        "requestBodySha256": "ff09fc267ed2e778fc86778b9e0425628a2d00b671518dae38414c0e3a4be908",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "14169252eb7eebc265b5df43686146ef0bce9e15bb04dadbb2b9c1c8a6e935c3",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "ca6c2f11-3641-48a6-b69a-d53f5a0f22c3",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360207,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 369,
+            "completionTokens": 18,
+            "totalTokens": 387,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 241
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:06 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 5,
+        "anchorId": "dominant-positive-1",
+        "kind": "dominant-positive",
+        "promptHash": "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+        "requestBodySha256": "9048e4a333765c20f5e686a40073f2b531cb62929985292ca84b9c3b66a36ee0",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "c99108b0-a5f6-4339-bd48-06a33b800145",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360207,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:07 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 6,
+        "anchorId": "dominant-positive-2",
+        "kind": "dominant-positive",
+        "promptHash": "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+        "requestBodySha256": "d5448c541ab078ede5c20a38aa650f2430ec914a7a638346448bdb9a0a26708e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "3c5c662c-f39c-4a46-9f0f-6f78dd35bf52",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360208,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:08 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 7,
+        "anchorId": "dominant-positive-3",
+        "kind": "dominant-positive",
+        "promptHash": "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+        "requestBodySha256": "a6efd3e045d8c1f309c8db4222325cbfecd316d7f298a27a30084fc550d93c22",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "ecf70650-0eec-45a5-ad6d-f6d3dee09827",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360209,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:09 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 8,
+        "anchorId": "dominant-positive-4",
+        "kind": "dominant-positive",
+        "promptHash": "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+        "requestBodySha256": "fb2c27deda53af38745a38f365e2d772d172ebc830df4e0f041a67f967ab7fc2",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "78ca19c8-b779-4f07-8bf8-0e93ca27a20b",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360209,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:09 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 9,
+        "anchorId": "dominant-negative-1",
+        "kind": "dominant-negative",
+        "promptHash": "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+        "requestBodySha256": "ee41ae0a72662c26165df16c639aa9508f378cd3b04cefa7129b479439c1a300",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "443d9291-f0b0-4ebf-90ae-86048d4f47da",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360210,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:10 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 10,
+        "anchorId": "dominant-negative-2",
+        "kind": "dominant-negative",
+        "promptHash": "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+        "requestBodySha256": "5de085d02c3144f48ca76f0fc4a2abfe48f64cf09892acb50dde6ebc6da7f870",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "02d47315-d926-4c50-95b8-8058fbfd31d3",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360211,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:11 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 11,
+        "anchorId": "dominant-negative-3",
+        "kind": "dominant-negative",
+        "promptHash": "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+        "requestBodySha256": "9c97bfb7a078a47eb0f55a67abf84bd055e23d3a114f1bd9f6119e5b0b903859",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "92fdd297-556f-4640-bcde-727b96d953d6",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360212,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:12 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 12,
+        "anchorId": "dominant-negative-4",
+        "kind": "dominant-negative",
+        "promptHash": "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+        "requestBodySha256": "76aae4e47a61ac37ae6bc44382154370083ba0067d56aa73785e5a87fa50db0e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "aa38456e-98cd-4297-9c9a-562c4955c999",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360213,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:13 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 13,
+        "anchorId": "historical-wrapper-narrow",
+        "kind": "historical-sentinel",
+        "promptHash": "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+        "requestBodySha256": "dd8f3f29b5130ad889e92f3eaf3bd769446868b679b054ec831abad728932902",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "8768379c-2ca2-4498-94d1-453de34d3cd4",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360213,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 998,
+            "completionTokens": 18,
+            "totalTokens": 1016,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 230
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:13 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 14,
+        "anchorId": "historical-high-guaranteed",
+        "kind": "historical-sentinel",
+        "promptHash": "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1",
+        "requestBodySha256": "4620f2658ca4555936428bf676d3ced2d592e17ce0237d343318ec1d6dcbfe86",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "fc1b1c9d-5f91-4302-b126-3540c086d565",
+          "returnedModel": "deepseek-flash",
+          "created": 1789360214,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 942,
+            "completionTokens": 18,
+            "totalTokens": 960,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 174
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:30:14 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      }
+    ],
+    "metrics": {
+      "uniqueRawResponses": 6,
+      "rawEntropyBits": 2.324862957617356,
+      "externalControlsExact": 4,
+      "externalControlsN": 4,
+      "positiveBuys": 4,
+      "positiveN": 4,
+      "positiveBuyRate": 1,
+      "negativeBuys": 0,
+      "negativeN": 4,
+      "negativeBuyRate": 0,
+      "historicalSentinels": [
+        {
+          "anchorId": "historical-wrapper-narrow",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        },
+        {
+          "anchorId": "historical-high-guaranteed",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        }
+      ],
+      "returnedModels": [
+        "deepseek-flash"
+      ],
+      "fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ]
+    },
+    "gates": {
+      "complete": true,
+      "catalogExact": true,
+      "promptsExact": true,
+      "rawHashesValid": true,
+      "instrumentationComplete": true,
+      "returnedModelsAllowed": true,
+      "fingerprintPresentIfRequired": true,
+      "singleFingerprint": true,
+      "externalControlsExact": true,
+      "positiveRate": true,
+      "negativeRate": true,
+      "responseDiversity": true
+    },
+    "healthy": true
+  },
+  "eraBaselineCheck": {
+    "mode": "compare",
+    "status": "BASELINE MATCHED",
+    "passed": true,
+    "comparisons": {
+      "servingEra": true,
+      "requestedModel": true,
+      "catalogModels": true,
+      "returnedModels": true,
+      "fingerprints": true,
+      "promptHashes": true
+    }
+  },
+  "updatedAt": "2026-09-14T04:44:13.866Z",
+  "post": {
+    "phase": "post",
+    "calls": 14,
+    "catalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "records": [
+      {
+        "phase": "post",
+        "position": 1,
+        "anchorId": "control-arithmetic",
+        "kind": "external-control",
+        "promptHash": "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+        "requestBodySha256": "870f6e7c9a30c8c1098fc95d0412142124c25c8eff56c53c7564a04c1828133c",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":1,\"requireChit\":false}",
+        "rawResponseSha256": "f15cc3d2abc6aecf9c2865a6da49577a90c93baecc8f37ed3fc053568d2b3c98",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "192f8ffa-8fcf-4025-b997-fff95c1733e8",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361058,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 373,
+            "completionTokens": 18,
+            "totalTokens": 391,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 245
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:18 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 2,
+        "anchorId": "control-order",
+        "kind": "external-control",
+        "promptHash": "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+        "requestBodySha256": "5646656d218efd997d0e0503971bffbdb731d12ae9b601874184be4e7c790ef2",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "8557f9365f7e7a2de0cd0394548f525f0d6b383ee551637e970eae75a212af2e",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "c1375f6e-bf76-466b-84cc-3fb9a607738b",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361058,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:18 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 3,
+        "anchorId": "control-count",
+        "kind": "external-control",
+        "promptHash": "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+        "requestBodySha256": "0c90c40e3e44ad286e11a9497bde5ff408b18006f4d017aabb9363921f6c48e5",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "2a1db6e6-c79e-4b0f-8d79-266be9547850",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361059,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:19 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 4,
+        "anchorId": "control-parity",
+        "kind": "external-control",
+        "promptHash": "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+        "requestBodySha256": "ff09fc267ed2e778fc86778b9e0425628a2d00b671518dae38414c0e3a4be908",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "14169252eb7eebc265b5df43686146ef0bce9e15bb04dadbb2b9c1c8a6e935c3",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "d2757f58-d4e3-465a-b0bb-510def28de35",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361059,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 369,
+            "completionTokens": 18,
+            "totalTokens": 387,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 241
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:19 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 5,
+        "anchorId": "dominant-positive-1",
+        "kind": "dominant-positive",
+        "promptHash": "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+        "requestBodySha256": "9048e4a333765c20f5e686a40073f2b531cb62929985292ca84b9c3b66a36ee0",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "1422e0af-5041-4a6b-b174-3f42d633ea93",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361060,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:20 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 6,
+        "anchorId": "dominant-positive-2",
+        "kind": "dominant-positive",
+        "promptHash": "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+        "requestBodySha256": "d5448c541ab078ede5c20a38aa650f2430ec914a7a638346448bdb9a0a26708e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "1c082b7e-0bf9-4b44-8025-d2d165f108ab",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361061,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:20 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 7,
+        "anchorId": "dominant-positive-3",
+        "kind": "dominant-positive",
+        "promptHash": "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+        "requestBodySha256": "a6efd3e045d8c1f309c8db4222325cbfecd316d7f298a27a30084fc550d93c22",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "b4deb531-e3e6-47f3-93f5-be25d8e406e9",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361061,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:21 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 8,
+        "anchorId": "dominant-positive-4",
+        "kind": "dominant-positive",
+        "promptHash": "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+        "requestBodySha256": "fb2c27deda53af38745a38f365e2d772d172ebc830df4e0f041a67f967ab7fc2",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "523fe311-fde1-4c31-b4aa-61a18ae9ca6a",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361062,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:22 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 9,
+        "anchorId": "dominant-negative-1",
+        "kind": "dominant-negative",
+        "promptHash": "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+        "requestBodySha256": "ee41ae0a72662c26165df16c639aa9508f378cd3b04cefa7129b479439c1a300",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "0ae9c2eb-0fdc-4a1d-aee8-75a602916238",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361062,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:22 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 10,
+        "anchorId": "dominant-negative-2",
+        "kind": "dominant-negative",
+        "promptHash": "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+        "requestBodySha256": "5de085d02c3144f48ca76f0fc4a2abfe48f64cf09892acb50dde6ebc6da7f870",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "8069066b-b366-4d3d-87a8-beac32d931c1",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361063,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:23 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 11,
+        "anchorId": "dominant-negative-3",
+        "kind": "dominant-negative",
+        "promptHash": "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+        "requestBodySha256": "9c97bfb7a078a47eb0f55a67abf84bd055e23d3a114f1bd9f6119e5b0b903859",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "d0d21461-b046-4487-a5a2-884eb4931c3f",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361063,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:23 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 12,
+        "anchorId": "dominant-negative-4",
+        "kind": "dominant-negative",
+        "promptHash": "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+        "requestBodySha256": "76aae4e47a61ac37ae6bc44382154370083ba0067d56aa73785e5a87fa50db0e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "e1666a60-0178-4387-95c7-fa38824b2284",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361064,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:24 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 13,
+        "anchorId": "historical-wrapper-narrow",
+        "kind": "historical-sentinel",
+        "promptHash": "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+        "requestBodySha256": "dd8f3f29b5130ad889e92f3eaf3bd769446868b679b054ec831abad728932902",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "4d284320-fa95-45d5-b171-c9d44e46a397",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361065,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 998,
+            "completionTokens": 18,
+            "totalTokens": 1016,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 230
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:25 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 14,
+        "anchorId": "historical-high-guaranteed",
+        "kind": "historical-sentinel",
+        "promptHash": "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1",
+        "requestBodySha256": "4620f2658ca4555936428bf676d3ced2d592e17ce0237d343318ec1d6dcbfe86",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "fed7c544-42d3-45a6-a703-a32f54bf9835",
+          "returnedModel": "deepseek-flash",
+          "created": 1789361066,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 942,
+            "completionTokens": 18,
+            "totalTokens": 960,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 174
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:44:26 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      }
+    ],
+    "metrics": {
+      "uniqueRawResponses": 6,
+      "rawEntropyBits": 2.324862957617356,
+      "externalControlsExact": 4,
+      "externalControlsN": 4,
+      "positiveBuys": 4,
+      "positiveN": 4,
+      "positiveBuyRate": 1,
+      "negativeBuys": 0,
+      "negativeN": 4,
+      "negativeBuyRate": 0,
+      "historicalSentinels": [
+        {
+          "anchorId": "historical-wrapper-narrow",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        },
+        {
+          "anchorId": "historical-high-guaranteed",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        }
+      ],
+      "returnedModels": [
+        "deepseek-flash"
+      ],
+      "fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ]
+    },
+    "gates": {
+      "complete": true,
+      "catalogExact": true,
+      "promptsExact": true,
+      "rawHashesValid": true,
+      "instrumentationComplete": true,
+      "returnedModelsAllowed": true,
+      "fingerprintPresentIfRequired": true,
+      "singleFingerprint": true,
+      "externalControlsExact": true,
+      "positiveRate": true,
+      "negativeRate": true,
+      "responseDiversity": true
+    },
+    "healthy": true
+  },
+  "comparison": {
+    "preHealthy": true,
+    "postHealthy": true,
+    "promptHashesMatched": true,
+    "returnedModelsMatched": true,
+    "fingerprintsMatched": true,
+    "bracketValid": true,
+    "verdict": "BRACKET HEALTHY"
+  }
+}

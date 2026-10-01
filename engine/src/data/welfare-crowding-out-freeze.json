@@ -1,0 +1,71 @@
+{
+  "study": "VBE-W-CO-WELFARE-CROWDING-OUT",
+  "version": "1.0",
+  "frozenAt": "2026-09-14T04:00:42Z",
+  "status": "PROJECT-INTERNAL PROSPECTIVE REPLICATION — NOT EXTERNALLY REGISTERED",
+  "targetCallsAtFreeze": 0,
+  "bridgeCallsAtFreeze": 0,
+  "bracketCallsAtFreeze": 0,
+  "model": "deepseek-flash",
+  "providerLabel": "V4.1 Flash",
+  "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+  "temperature": 0,
+  "thinking": "disabled",
+  "expectedSeeds": 18,
+  "expectedArms": 2,
+  "expectedTargetRuns": 36,
+  "expectedTargetCalls": 2728,
+  "expectedBridgeCalls": 12,
+  "expectedHealthCalls": 28,
+  "expectedTotalCalls": 2768,
+  "catalogObservation": {
+    "observedAt": "2026-09-14T04:00:19.668Z",
+    "models": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "thresholds": {
+    "welfareScoreMres": 0.5,
+    "giftRateMres": 0.25,
+    "saleRateMres": 0.25,
+    "oneSidedExactAlpha": 0.025
+  },
+  "priorSeedAudit": {
+    "storedUniqueSeeds": 838,
+    "candidateOverlap": 0,
+    "canonicalSortedSeedListSha256": "f7ead207c1b9518e95413b25a0d574245a6422d1ff0c0ee2045c62f69834a7ab"
+  },
+  "files": {
+    "protocol": { "path": "../VBE-welfare-crowding-out-protocol.md", "sha256": "cee7e8cda43a7795056020afdb9834c66f273da08ad8bda7155f4784fe7519d8" },
+    "protocolEnglish": { "path": "../VBE-welfare-crowding-out-protocol_EN.md", "sha256": "bf0bad4c2a81fe620f6c21e37df19341743eb87dbe200fc8cef9d257706df3d3" },
+    "core": { "path": "src/lib/vbe/welfare-crowding-out.ts", "sha256": "fa4a758d0b0b0223e3c9333b63f78efc4e390be8f821313042748a97b1192d9b" },
+    "execution": { "path": "src/lib/vbe/welfare-crowding-out-execution.ts", "sha256": "a35029336b8e55cc0355b7ff4e35f0fe9d22e0e1a89b664711762618fe0dd05a" },
+    "runner": { "path": "src/lib/vbe/run-welfare-crowding-out.ts", "sha256": "1986d0dab4e6ad4723e3d29b5f948c5da54e2343bf9cd5bcc7cd57e89b9551f8" },
+    "analyzer": { "path": "src/lib/vbe/analyze-welfare-crowding-out.ts", "sha256": "d6ff0fe2c00e2972d7d829ea1bc1b0ab56168b1e5b550ca567a7583515c0cbea" },
+    "tests": { "path": "src/lib/vbe/welfare-crowding-out.test.ts", "sha256": "97d53d474757bfe8d7e7d11742065b2a03956c0bdd32b3486e1764a51dc8b99e" },
+    "healthPlan": { "path": "src/data/provider-health-welfare-crowding-out-plan.json", "sha256": "4eb34b8025721d543ea29994900ef0fad91281cd9e33086c633bbbd68440fcbd" },
+    "environment": { "path": "src/lib/vbe/env.ts", "sha256": "91772d632f01fc60e71cc52f7e8e016edf0c34819f3a074c899e5ce9061771f9" },
+    "rng": { "path": "src/lib/vbe/rng.ts", "sha256": "99a476ab1bf319bb731a2d096dfbeb4d89539bff8d5fc380e9a86725e228df9d" },
+    "prompts": { "path": "src/lib/vbe/prompts.ts", "sha256": "785e25c53aa2fea1134c1f8e05300c025356ee46de232ce737a5339000f66786" },
+    "giftSpeech": { "path": "src/lib/vbe/speech.ts", "sha256": "7cb30ed1d53af9e103fdbf16f0738345fc06a293ccc9ab8d93c452db3fa5624b" },
+    "moneySpeech": { "path": "src/lib/vbe/unconfound.ts", "sha256": "37528e9514359a2b5190ff9d60f5298ff7bd3928c22b200a5e0a4babf2fb1db9" },
+    "behaviorSlices": { "path": "src/lib/vbe/minority.ts", "sha256": "913a07906ab0ce73194d9053253fa3bea81e0dabd5f0e2ef4aae2c976a0d7a8a" },
+    "parameters": { "path": "src/lib/vbe/params.ts", "sha256": "af7b99c1aaa613cb5c2254237c31867ace34bf1284822c48741b2ef0950330fe" },
+    "types": { "path": "src/lib/vbe/types.ts", "sha256": "8ace079ad20081c1bbc4eb7b3d4514464b1ca8b72395fe77094106369b6686cc" },
+    "llmAdapter": { "path": "src/lib/vbe/llm.ts", "sha256": "7efea2a7bcdd99f736797f3ba7b9fcfb8ec50e14c7f9bdb4082ae178010c3420" },
+    "observedCaller": { "path": "src/lib/vbe/observed-chat.ts", "sha256": "91740cd8c4b032a72420f09950a28703f4d7e1fd2029e342d68a597aa05b3ff2" },
+    "providerHealthCore": { "path": "src/lib/vbe/provider-health.ts", "sha256": "76dec54ae7bd7b04c294fb78f4ab1a299e78a82d17decfd480c857e2c6773d87" },
+    "providerHealthExecution": { "path": "src/lib/vbe/provider-health-execution.ts", "sha256": "09ffeea605f5ec88130de9bc20ff2f570720c7bdc5e3a9451d60431aa1ea07a5" },
+    "providerHealthRunner": { "path": "src/lib/vbe/run-provider-health.ts", "sha256": "c39d090e7c95c5f8c8702da7cd4b6e1fb11e6bd483d3e607b2b5321c58db8066" },
+    "providerHealthFreeze": { "path": "src/data/provider-health-freeze.json", "sha256": "2e7bc4c8900ee14963d454f2102b8946e2b6450020fc97cf4a87a0d79dd1d509" },
+    "wrapperPromptBuilder": { "path": "src/lib/vbe/buyer-wrapper-disassembly.ts", "sha256": "67edb5fbbae9d36a792960411321eed4912b1044a926228fb817dabca410100f" },
+    "capabilityPromptBuilder": { "path": "src/lib/vbe/buyer-capability.ts", "sha256": "7134f43ce7747b2d52eec6859c96c54df9156b7a4b13d8b632fc9eb8bfff9a72" },
+    "scheduleHasher": { "path": "src/lib/vbe/epistemic.ts", "sha256": "17c129e47bd408b0f192d94dd7b06f3a9d097640554325681ddbbe7c5f5d8f13" },
+    "pairedAnalysis": { "path": "src/lib/vbe/epistemic-analysis.ts", "sha256": "6e191f378c4484a84b634bd97fac53bf022cff4f03074cb71323ad4b0f731df7" },
+    "exactInference": { "path": "src/lib/vbe/epistemic-reward-confirmatory.ts", "sha256": "135180d49fb14d3f0806da6e53a4fead1426f830650f8ccebaa035559bd890ed" },
+    "historicalWrapperResults": { "path": "src/data/buyer-wrapper-disassembly.json", "sha256": "1073d9e70db9d06cddaff8d6cc2c908feea12e5bd6d73ed3bdf7d6bf6ea8b6da" },
+    "historicalCapabilityResults": { "path": "src/data/buyer-capability.json", "sha256": "1bca4d50d862c07a1bcc05a674615bfcdc10237f0dea00388970bd03816d3fcc" }
+  },
+  "dryRunSha256": "b417a175320f53caa706caf08dfa8461a163bb0a1cdc64f811c6022c984b55d2"
+}

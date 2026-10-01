@@ -1,0 +1,1513 @@
+{
+  "study": "VBE-X0-WELFARE-REVIEW-REANALYSIS",
+  "generatedAt": "2026-10-01T04:54:55.917Z",
+  "sourceStudies": [
+    "VBE-W-RG-ROLE-GENERALIZATION-CHANNEL",
+    "VBE-W-SGB-SEMANTIC-GENERALIZATION-BOUNDARY"
+  ],
+  "threshold": 0.25,
+  "proposalMap": [
+    {
+      "arm": "neutral",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 0,
+      "sale": 9,
+      "markOffer": 0,
+      "keep": 219,
+      "giftRate": 0,
+      "saleRate": 0.039473684210526314,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 9
+    },
+    {
+      "arm": "neutral",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 0,
+      "sale": 285,
+      "markOffer": 0,
+      "keep": 19,
+      "giftRate": 0,
+      "saleRate": 0.9375,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 285
+    },
+    {
+      "arm": "neutral",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 3,
+      "sale": 301,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.009868421052631578,
+      "saleRate": 0.9901315789473685,
+      "executedGiftRate": 0.009868421052631578,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 301
+    },
+    {
+      "arm": "neutral",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 64,
+      "sale": 186,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.256,
+      "saleRate": 0.744,
+      "executedGiftRate": 0.256,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 186
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 16,
+      "sale": 2,
+      "markOffer": 0,
+      "keep": 210,
+      "giftRate": 0.07017543859649122,
+      "saleRate": 0.008771929824561403,
+      "executedGiftRate": 0.07017543859649122,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 2
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 37,
+      "sale": 248,
+      "markOffer": 0,
+      "keep": 19,
+      "giftRate": 0.12171052631578948,
+      "saleRate": 0.8157894736842105,
+      "executedGiftRate": 0.12171052631578948,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 248
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 127,
+      "sale": 177,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.41776315789473684,
+      "saleRate": 0.5822368421052632,
+      "executedGiftRate": 0.41776315789473684,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 177
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 228,
+      "sale": 22,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.912,
+      "saleRate": 0.088,
+      "executedGiftRate": 0.912,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 22
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 6,
+      "sale": 6,
+      "markOffer": 0,
+      "keep": 216,
+      "giftRate": 0.02631578947368421,
+      "saleRate": 0.02631578947368421,
+      "executedGiftRate": 0.02631578947368421,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 6
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 0,
+      "sale": 281,
+      "markOffer": 0,
+      "keep": 23,
+      "giftRate": 0,
+      "saleRate": 0.9243421052631579,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 281
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 16,
+      "sale": 287,
+      "markOffer": 0,
+      "keep": 1,
+      "giftRate": 0.05263157894736842,
+      "saleRate": 0.944078947368421,
+      "executedGiftRate": 0.05263157894736842,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 287
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 87,
+      "sale": 163,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.348,
+      "saleRate": 0.652,
+      "executedGiftRate": 0.348,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 163
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 6,
+      "sale": 1,
+      "markOffer": 0,
+      "keep": 221,
+      "giftRate": 0.02631578947368421,
+      "saleRate": 0.0043859649122807015,
+      "executedGiftRate": 0.02631578947368421,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 1
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 35,
+      "sale": 236,
+      "markOffer": 0,
+      "keep": 33,
+      "giftRate": 0.11513157894736842,
+      "saleRate": 0.7763157894736842,
+      "executedGiftRate": 0.11513157894736842,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 236
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 123,
+      "sale": 180,
+      "markOffer": 0,
+      "keep": 1,
+      "giftRate": 0.40460526315789475,
+      "saleRate": 0.5921052631578947,
+      "executedGiftRate": 0.40460526315789475,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 180
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 233,
+      "sale": 17,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.932,
+      "saleRate": 0.068,
+      "executedGiftRate": 0.932,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 17
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 0,
+      "sale": 0,
+      "markOffer": 0,
+      "keep": 228,
+      "giftRate": 0,
+      "saleRate": 0,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 0
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 5,
+      "sale": 147,
+      "markOffer": 0,
+      "keep": 152,
+      "giftRate": 0.01644736842105263,
+      "saleRate": 0.48355263157894735,
+      "executedGiftRate": 0.01644736842105263,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 147
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 19,
+      "sale": 282,
+      "markOffer": 0,
+      "keep": 3,
+      "giftRate": 0.0625,
+      "saleRate": 0.9276315789473685,
+      "executedGiftRate": 0.0625,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 282
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 240,
+      "sale": 10,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.96,
+      "saleRate": 0.04,
+      "executedGiftRate": 0.96,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 10
+    },
+    {
+      "arm": "money-exact",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 0,
+      "sale": 38,
+      "markOffer": 0,
+      "keep": 190,
+      "giftRate": 0,
+      "saleRate": 0.16666666666666666,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 38
+    },
+    {
+      "arm": "money-exact",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 0,
+      "sale": 304,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0,
+      "saleRate": 1,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 304
+    },
+    {
+      "arm": "money-exact",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 0,
+      "sale": 304,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0,
+      "saleRate": 1,
+      "executedGiftRate": 0,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 304
+    },
+    {
+      "arm": "money-exact",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 48,
+      "sale": 202,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.192,
+      "saleRate": 0.808,
+      "executedGiftRate": 0.192,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 202
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "E->E",
+      "opportunities": 228,
+      "gift": 227,
+      "sale": 0,
+      "markOffer": 0,
+      "keep": 1,
+      "giftRate": 0.9956140350877193,
+      "saleRate": 0,
+      "executedGiftRate": 0.9956140350877193,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 0
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "E->H",
+      "opportunities": 304,
+      "gift": 4,
+      "sale": 296,
+      "markOffer": 0,
+      "keep": 4,
+      "giftRate": 0.013157894736842105,
+      "saleRate": 0.9736842105263158,
+      "executedGiftRate": 0.013157894736842105,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 296
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "H->E",
+      "opportunities": 304,
+      "gift": 36,
+      "sale": 268,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.11842105263157894,
+      "saleRate": 0.881578947368421,
+      "executedGiftRate": 0.11842105263157894,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 268
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "H->H",
+      "opportunities": 250,
+      "gift": 184,
+      "sale": 66,
+      "markOffer": 0,
+      "keep": 0,
+      "giftRate": 0.736,
+      "saleRate": 0.264,
+      "executedGiftRate": 0.736,
+      "executedSaleRate": 0,
+      "giftNonexecution": 0,
+      "saleNonexecution": 66
+    }
+  ],
+  "namedAudit": [
+    {
+      "arm": "neutral",
+      "relation": "none",
+      "proposalRateMean": 0,
+      "proposalRateCI": [
+        0,
+        0
+      ],
+      "neutralProposalRateMean": 0,
+      "deltaMean": 0,
+      "deltaCI": [
+        0,
+        0
+      ],
+      "passesMRE": false
+    },
+    {
+      "arm": "gift-exact",
+      "relation": "E→H gift",
+      "proposalRateMean": 0.12292365042365043,
+      "proposalRateCI": [
+        0.08125635607778464,
+        0.1653424353424353
+      ],
+      "neutralProposalRateMean": 0,
+      "deltaMean": 0.12292365042365043,
+      "deltaCI": [
+        0.08125635607778464,
+        0.1653424353424353
+      ],
+      "passesMRE": false
+    },
+    {
+      "arm": "gift-easy-only",
+      "relation": "E→H gift",
+      "proposalRateMean": 0,
+      "proposalRateCI": [
+        0,
+        0
+      ],
+      "neutralProposalRateMean": 0,
+      "deltaMean": 0,
+      "deltaCI": [
+        0,
+        0
+      ],
+      "passesMRE": false
+    },
+    {
+      "arm": "gift-any-holder",
+      "relation": "E/H→H gift",
+      "proposalRateMean": 0.48397194130237314,
+      "proposalRateCI": [
+        0.4332845349162347,
+        0.5319111452850532
+      ],
+      "neutralProposalRateMean": 0.11911485306179807,
+      "deltaMean": 0.36485708824057506,
+      "deltaCI": [
+        0.30154780319867425,
+        0.4284817217752425
+      ],
+      "passesMRE": true
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "relation": "actor→H gift",
+      "proposalRateMean": 0.44633080341549664,
+      "proposalRateCI": [
+        0.40386919501494006,
+        0.4924417688654127
+      ],
+      "neutralProposalRateMean": 0.11911485306179807,
+      "deltaMean": 0.32721595035369866,
+      "deltaCI": [
+        0.2769205565470798,
+        0.3799744540608984
+      ],
+      "passesMRE": true
+    },
+    {
+      "arm": "money-exact",
+      "relation": "E→H sale",
+      "proposalRateMean": 1,
+      "proposalRateCI": [
+        1,
+        1
+      ],
+      "neutralProposalRateMean": 0.93699309288595,
+      "deltaMean": 0.06300690711404998,
+      "deltaCI": [
+        0.03930967759092759,
+        0.08689398580916437
+      ],
+      "passesMRE": false
+    },
+    {
+      "arm": "easy-easy-negative",
+      "relation": "E↔E gift proposal",
+      "proposalRateMean": 0.9910714285714286,
+      "proposalRateCI": [
+        0.9732142857142857,
+        1
+      ],
+      "neutralProposalRateMean": 0,
+      "deltaMean": 0.9910714285714286,
+      "deltaCI": [
+        0.9732142857142857,
+        1
+      ],
+      "passesMRE": true
+    }
+  ],
+  "spillover": [
+    {
+      "arm": "neutral",
+      "cell": "H->H",
+      "proposalRateMean": 0.2614718614718615,
+      "proposalRateCI": [
+        0.17543225623582767,
+        0.35079919088847655
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0,
+      "deltaCI": [
+        0,
+        0
+      ]
+    },
+    {
+      "arm": "neutral",
+      "cell": "H->E",
+      "proposalRateMean": 0.011595547309833023,
+      "proposalRateCI": [
+        0,
+        0.02504638218923933
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0,
+      "deltaCI": [
+        0,
+        0
+      ]
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "H->H",
+      "proposalRateMean": 0.9057655638012783,
+      "proposalRateCI": [
+        0.8480300453514741,
+        0.9546047206761493
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0.6442937023294165,
+      "deltaCI": [
+        0.5658279542877758,
+        0.7245166911461554
+      ]
+    },
+    {
+      "arm": "gift-exact",
+      "cell": "H->E",
+      "proposalRateMean": 0.427139847780604,
+      "proposalRateCI": [
+        0.36029482670107665,
+        0.4984959893048127
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0.415544300470771,
+      "deltaCI": [
+        0.34981450636781514,
+        0.48587147737883024
+      ]
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "H->H",
+      "proposalRateMean": 0.3533562667491239,
+      "proposalRateCI": [
+        0.2390277133580705,
+        0.4720779864976295
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0.09188440527726242,
+      "deltaCI": [
+        0.041414141414141424,
+        0.1449431818181818
+      ]
+    },
+    {
+      "arm": "gift-easy-only",
+      "cell": "H->E",
+      "proposalRateMean": 0.05360434539005967,
+      "proposalRateCI": [
+        0.03352192252192253,
+        0.07489740715633571
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0.04200879808022665,
+      "deltaCI": [
+        0.015730487766202055,
+        0.06747818682640111
+      ]
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "H->H",
+      "proposalRateMean": 0.9274621212121212,
+      "proposalRateCI": [
+        0.8805184175943104,
+        0.9672077922077922
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0.6659902597402597,
+      "deltaCI": [
+        0.5769037633992993,
+        0.7555151966089465
+      ]
+    },
+    {
+      "arm": "gift-any-holder",
+      "cell": "H->E",
+      "proposalRateMean": 0.41955050590554793,
+      "proposalRateCI": [
+        0.35821637786816357,
+        0.48403419678866105
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0.4079549585957149,
+      "deltaCI": [
+        0.3506058307841396,
+        0.46957406537789925
+      ]
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "H->H",
+      "proposalRateMean": 0.9630076272933417,
+      "proposalRateCI": [
+        0.9292207792207793,
+        0.9895382395382395
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0.70153576582148,
+      "deltaCI": [
+        0.6070293496186354,
+        0.7936672850958564
+      ]
+    },
+    {
+      "arm": "gift-hard-partner-only",
+      "cell": "H->E",
+      "proposalRateMean": 0.06571398722659227,
+      "proposalRateCI": [
+        0.042101484824699116,
+        0.09059011425082852
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0.05411843991675924,
+      "deltaCI": [
+        0.03636410712303569,
+        0.07323826879236543
+      ]
+    },
+    {
+      "arm": "money-exact",
+      "cell": "H->H",
+      "proposalRateMean": 0.19121830550401978,
+      "proposalRateCI": [
+        0.11875876108018966,
+        0.2723255514326943
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": -0.07025355596784168,
+      "deltaCI": [
+        -0.12386801690373118,
+        -0.030174190888476598
+      ]
+    },
+    {
+      "arm": "money-exact",
+      "cell": "H->E",
+      "proposalRateMean": 0,
+      "proposalRateCI": [
+        0,
+        0
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": -0.011595547309833023,
+      "deltaCI": [
+        -0.02504638218923933,
+        0
+      ]
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "H->H",
+      "proposalRateMean": 0.7370116986188415,
+      "proposalRateCI": [
+        0.6560435670480314,
+        0.8169097222222221
+      ],
+      "neutralMean": 0.2614718614718615,
+      "deltaMean": 0.47553983714698006,
+      "deltaCI": [
+        0.40647459930942076,
+        0.5496660160276232
+      ]
+    },
+    {
+      "arm": "easy-easy-negative",
+      "cell": "H->E",
+      "proposalRateMean": 0.12951931977142062,
+      "proposalRateCI": [
+        0.08369846423417852,
+        0.18043596471222517
+      ],
+      "neutralMean": 0.011595547309833023,
+      "deltaMean": 0.11792377246158758,
+      "deltaCI": [
+        0.0731202329416615,
+        0.16912179090750523
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "name": "never-transfer",
+      "meanScore": 54.24107142857143,
+      "scoreCI": [
+        53.705357142857146,
+        54.830357142857146
+      ],
+      "hhSwapRate": 0,
+      "hhSwapCI": [
+        0,
+        0
+      ],
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "meanScore": 63.1875,
+      "scoreCI": [
+        62.4375,
+        63.857142857142854
+      ],
+      "hhSwapRate": 1,
+      "hhSwapCI": [
+        1,
+        1
+      ],
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "meanScore": 60.8125,
+      "scoreCI": [
+        60.058035714285715,
+        61.495535714285715
+      ],
+      "hhSwapRate": 1,
+      "hhSwapCI": [
+        1,
+        1
+      ],
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "meanScore": 56.79017857142857,
+      "scoreCI": [
+        55.986607142857146,
+        57.580468749999994
+      ],
+      "hhSwapRate": 0.7906694495980212,
+      "hhSwapCI": [
+        0.7266130694702123,
+        0.8519454751597608
+      ],
+      "eeSwapRate": 0.0071428571428571435,
+      "ehGiftRate": 0.048560285030873264,
+      "heGiftRate": 0.38294304823716585
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "meanScore": 57.879464285714285,
+      "scoreCI": [
+        57.21417410714286,
+        58.55357142857143
+      ],
+      "hhSwapRate": 0.7906694495980212,
+      "hhSwapCI": [
+        0.7266130694702123,
+        0.8519454751597608
+      ],
+      "eeSwapRate": 0.0071428571428571435,
+      "ehGiftRate": 0.08239863583350979,
+      "heGiftRate": 0
+    }
+  ],
+  "benchmarkRuns": [
+    {
+      "name": "never-transfer",
+      "seed": 13331,
+      "meanScore": 53.25,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13337,
+      "meanScore": 55.5,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13339,
+      "meanScore": 53.25,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13367,
+      "meanScore": 56.625,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13381,
+      "meanScore": 54,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13397,
+      "meanScore": 54,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13411,
+      "meanScore": 54.75,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13417,
+      "meanScore": 52.5,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13421,
+      "meanScore": 55.875,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13441,
+      "meanScore": 54.375,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13451,
+      "meanScore": 53.625,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13457,
+      "meanScore": 54,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13463,
+      "meanScore": 54.375,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "never-transfer",
+      "seed": 13469,
+      "meanScore": 53.25,
+      "hhSwapRate": 0,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13331,
+      "meanScore": 63,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13337,
+      "meanScore": 63.75,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13339,
+      "meanScore": 59.625,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13367,
+      "meanScore": 65.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13381,
+      "meanScore": 63.375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13397,
+      "meanScore": 62.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13411,
+      "meanScore": 64.5,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13417,
+      "meanScore": 62.625,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13421,
+      "meanScore": 64.5,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13441,
+      "meanScore": 62.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13451,
+      "meanScore": 64.125,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13457,
+      "meanScore": 61.875,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13463,
+      "meanScore": 64.125,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "first-best",
+      "seed": 13469,
+      "meanScore": 63.375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 1,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13331,
+      "meanScore": 60.5625,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13337,
+      "meanScore": 61.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13339,
+      "meanScore": 57.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13367,
+      "meanScore": 63.125,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13381,
+      "meanScore": 60.625,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13397,
+      "meanScore": 60.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13411,
+      "meanScore": 61.9375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13417,
+      "meanScore": 60,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13421,
+      "meanScore": 62.375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13441,
+      "meanScore": 59.9375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13451,
+      "meanScore": 61.0625,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13457,
+      "meanScore": 59.75,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13463,
+      "meanScore": 62,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "always-give",
+      "seed": 13469,
+      "meanScore": 61.25,
+      "hhSwapRate": 1,
+      "eeSwapRate": 1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13331,
+      "meanScore": 55.8125,
+      "hhSwapRate": 0.7142857142857143,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.07407407407407407,
+      "heGiftRate": 0.25925925925925924
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13337,
+      "meanScore": 57.375,
+      "hhSwapRate": 0.6,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.4444444444444444
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13339,
+      "meanScore": 55,
+      "hhSwapRate": 0.875,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.5
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13367,
+      "meanScore": 59.875,
+      "hhSwapRate": 0.9090909090909091,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.22727272727272727
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13381,
+      "meanScore": 55.1875,
+      "hhSwapRate": 0.5714285714285714,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.08333333333333333,
+      "heGiftRate": 0.375
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13397,
+      "meanScore": 58.0625,
+      "hhSwapRate": 0.9090909090909091,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.35714285714285715
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13411,
+      "meanScore": 57.4375,
+      "hhSwapRate": 0.7,
+      "eeSwapRate": 0.1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.47619047619047616
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13417,
+      "meanScore": 54.3125,
+      "hhSwapRate": 0.8,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.038461538461538464,
+      "heGiftRate": 0.5384615384615384
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13421,
+      "meanScore": 57.875,
+      "hhSwapRate": 0.6666666666666666,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.08333333333333333,
+      "heGiftRate": 0.2916666666666667
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13441,
+      "meanScore": 57.375,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.058823529411764705,
+      "heGiftRate": 0.4117647058823529
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13451,
+      "meanScore": 56.625,
+      "hhSwapRate": 0.8888888888888888,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.16,
+      "heGiftRate": 0.48
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13457,
+      "meanScore": 54.6875,
+      "hhSwapRate": 0.8571428571428571,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0.5
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13463,
+      "meanScore": 57.75,
+      "hhSwapRate": 0.8,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.045454545454545456,
+      "heGiftRate": 0.22727272727272727
+    },
+    {
+      "name": "gift-rho-surrogate",
+      "seed": 13469,
+      "meanScore": 57.6875,
+      "hhSwapRate": 0.7777777777777778,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.13636363636363635,
+      "heGiftRate": 0.2727272727272727
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13331,
+      "meanScore": 57.0625,
+      "hhSwapRate": 0.7142857142857143,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.14814814814814814,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13337,
+      "meanScore": 57.75,
+      "hhSwapRate": 0.6,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13339,
+      "meanScore": 56.5625,
+      "hhSwapRate": 0.875,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.0625,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13367,
+      "meanScore": 60.75,
+      "hhSwapRate": 0.9090909090909091,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.09090909090909091,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13381,
+      "meanScore": 56.6875,
+      "hhSwapRate": 0.5714285714285714,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.08333333333333333,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13397,
+      "meanScore": 58.5,
+      "hhSwapRate": 0.9090909090909091,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.07142857142857142,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13411,
+      "meanScore": 58.9375,
+      "hhSwapRate": 0.7,
+      "eeSwapRate": 0.1,
+      "ehGiftRate": 0,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13417,
+      "meanScore": 55.4375,
+      "hhSwapRate": 0.8,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.038461538461538464,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13421,
+      "meanScore": 58.625,
+      "hhSwapRate": 0.6666666666666666,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.08333333333333333,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13441,
+      "meanScore": 58.125,
+      "hhSwapRate": 1,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.058823529411764705,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13451,
+      "meanScore": 58.5,
+      "hhSwapRate": 0.8888888888888888,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.16,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13457,
+      "meanScore": 56.625,
+      "hhSwapRate": 0.8571428571428571,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.038461538461538464,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13463,
+      "meanScore": 58.5625,
+      "hhSwapRate": 0.8,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.09090909090909091,
+      "heGiftRate": 0
+    },
+    {
+      "name": "gift-rho-without-H-to-E",
+      "seed": 13469,
+      "meanScore": 58.1875,
+      "hhSwapRate": 0.7777777777777778,
+      "eeSwapRate": 0,
+      "ehGiftRate": 0.22727272727272727,
+      "heGiftRate": 0
+    }
+  ],
+  "payoffTable": [
+    {
+      "relation": "H→H swap",
+      "giverDelta": 1.83,
+      "receiverDelta": 1.83,
+      "totalExpectedDelta": 3.66,
+      "basis": "Each Hard agent replaces pHard=.32 with pPartner=.93; marks absent."
+    },
+    {
+      "relation": "E→H gift",
+      "giverDelta": -0.5,
+      "receiverDelta": 2.33,
+      "totalExpectedDelta": 1.83,
+      "basis": "Easy forfeits salvage v; Hard gains R·(pPartner−pHard) and retains its own check for salvage v. The received check itself is not inventoried."
+    },
+    {
+      "relation": "H→E gift",
+      "giverDelta": -0.96,
+      "receiverDelta": 0,
+      "totalExpectedDelta": -0.96,
+      "basis": "Hard gives away its only check and loses expected own solve R·pHard=.96; received check is not added to Easy inventory."
+    },
+    {
+      "relation": "E↔E swap",
+      "giverDelta": -0.5,
+      "receiverDelta": -0.5,
+      "totalExpectedDelta": -1,
+      "basis": "Both Easy checks lose salvage value v=.5; no received-check salvage is created."
+    },
+    {
+      "relation": "E→H mark sale",
+      "giverDelta": -0.5,
+      "receiverDelta": 2.33,
+      "totalExpectedDelta": 1.83,
+      "basis": "Easy forfeits salvage v and receives an intrinsically worthless mark; Hard gains R·(pPartner−pHard) and retains its own check for salvage v. The received check itself is not inventoried."
+    }
+  ],
+  "limitations": [
+    "The frozen W-SGB meeting record stores structured proposals and executed outcomes, but not a separate engine rejection code; non-executed proposals are therefore classified as unresolved incompatibility/infeasibility rather than attributed to a single cause.",
+    "Proposal feasibility is one check per agent per round under the frozen VBE engine; directed meeting opportunities are therefore used as the denominator.",
+    "The scripted benchmarks are model-free engine runs on the 14 W-SGB seeds and are descriptive surplus yardsticks, not new model evidence."
+  ]
+}

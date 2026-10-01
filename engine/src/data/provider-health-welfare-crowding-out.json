@@ -1,0 +1,1111 @@
+{
+  "plan": {
+    "protocolVersion": "1.1",
+    "studyId": "VBE-W-CO-WELFARE-CROWDING-OUT",
+    "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+    "eraBaselineMode": "establish",
+    "eraBaselinePath": "src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json",
+    "requestedModel": "deepseek-flash",
+    "allowedReturnedModels": [
+      "deepseek-flash"
+    ],
+    "expectedCatalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "requireFingerprint": true,
+    "historicalSentinelInterpretation": "DESCRIPTIVE CROSS-ERA DRIFT ONLY — EXCLUDED FROM HEALTH GATES",
+    "outputPath": "src/data/provider-health-welfare-crowding-out.json"
+  },
+  "pre": {
+    "phase": "pre",
+    "calls": 14,
+    "catalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "records": [
+      {
+        "phase": "pre",
+        "position": 1,
+        "anchorId": "control-arithmetic",
+        "kind": "external-control",
+        "promptHash": "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+        "requestBodySha256": "870f6e7c9a30c8c1098fc95d0412142124c25c8eff56c53c7564a04c1828133c",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":1,\"requireChit\":false}",
+        "rawResponseSha256": "f15cc3d2abc6aecf9c2865a6da49577a90c93baecc8f37ed3fc053568d2b3c98",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "8c095f4b-ac9c-49c2-9e7e-a805ebb815b3",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358513,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 373,
+            "completionTokens": 18,
+            "totalTokens": 391,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 245
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:53 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 2,
+        "anchorId": "control-order",
+        "kind": "external-control",
+        "promptHash": "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+        "requestBodySha256": "5646656d218efd997d0e0503971bffbdb731d12ae9b601874184be4e7c790ef2",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "8557f9365f7e7a2de0cd0394548f525f0d6b383ee551637e970eae75a212af2e",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "7aebc950-d80a-4ec9-8ddb-594b831d4158",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358514,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:54 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 3,
+        "anchorId": "control-count",
+        "kind": "external-control",
+        "promptHash": "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+        "requestBodySha256": "0c90c40e3e44ad286e11a9497bde5ff408b18006f4d017aabb9363921f6c48e5",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "2fcb74b6-f2a2-45db-99ba-705ae3151805",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358515,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:55 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 4,
+        "anchorId": "control-parity",
+        "kind": "external-control",
+        "promptHash": "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+        "requestBodySha256": "ff09fc267ed2e778fc86778b9e0425628a2d00b671518dae38414c0e3a4be908",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "14169252eb7eebc265b5df43686146ef0bce9e15bb04dadbb2b9c1c8a6e935c3",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "1a177f7d-9a82-450b-8938-1d2ec03f9787",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358515,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 369,
+            "completionTokens": 18,
+            "totalTokens": 387,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 241
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:55 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 5,
+        "anchorId": "dominant-positive-1",
+        "kind": "dominant-positive",
+        "promptHash": "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+        "requestBodySha256": "9048e4a333765c20f5e686a40073f2b531cb62929985292ca84b9c3b66a36ee0",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "ee57e698-642d-414e-94f3-0f2b8841704a",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358516,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:56 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 6,
+        "anchorId": "dominant-positive-2",
+        "kind": "dominant-positive",
+        "promptHash": "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+        "requestBodySha256": "d5448c541ab078ede5c20a38aa650f2430ec914a7a638346448bdb9a0a26708e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "e4661683-096b-4ef2-b765-599184a9f32d",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358517,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:57 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 7,
+        "anchorId": "dominant-positive-3",
+        "kind": "dominant-positive",
+        "promptHash": "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+        "requestBodySha256": "a6efd3e045d8c1f309c8db4222325cbfecd316d7f298a27a30084fc550d93c22",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "f680c2a7-db5f-41b3-a5d0-e444909990e8",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358518,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:58 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 8,
+        "anchorId": "dominant-positive-4",
+        "kind": "dominant-positive",
+        "promptHash": "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+        "requestBodySha256": "fb2c27deda53af38745a38f365e2d772d172ebc830df4e0f041a67f967ab7fc2",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "88017397-a922-4d39-8ab7-1686d553050a",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358518,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:58 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 9,
+        "anchorId": "dominant-negative-1",
+        "kind": "dominant-negative",
+        "promptHash": "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+        "requestBodySha256": "ee41ae0a72662c26165df16c639aa9508f378cd3b04cefa7129b479439c1a300",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "bf988714-405f-4d21-b8d4-d56cc6eb5fd6",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358519,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:01:59 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 10,
+        "anchorId": "dominant-negative-2",
+        "kind": "dominant-negative",
+        "promptHash": "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+        "requestBodySha256": "5de085d02c3144f48ca76f0fc4a2abfe48f64cf09892acb50dde6ebc6da7f870",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "26c9deef-bf83-4f7b-b992-e74476afaff1",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358520,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:02:00 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 11,
+        "anchorId": "dominant-negative-3",
+        "kind": "dominant-negative",
+        "promptHash": "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+        "requestBodySha256": "9c97bfb7a078a47eb0f55a67abf84bd055e23d3a114f1bd9f6119e5b0b903859",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "1d616f6c-4c67-499c-b676-332acc8fbb0a",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358521,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:02:01 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 12,
+        "anchorId": "dominant-negative-4",
+        "kind": "dominant-negative",
+        "promptHash": "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+        "requestBodySha256": "76aae4e47a61ac37ae6bc44382154370083ba0067d56aa73785e5a87fa50db0e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "256b726e-6a53-4f39-9493-03ead5cd2192",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358522,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:02:02 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 13,
+        "anchorId": "historical-wrapper-narrow",
+        "kind": "historical-sentinel",
+        "promptHash": "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+        "requestBodySha256": "dd8f3f29b5130ad889e92f3eaf3bd769446868b679b054ec831abad728932902",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "8a21fa58-2196-48a8-98a1-af4db275debb",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358522,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 998,
+            "completionTokens": 18,
+            "totalTokens": 1016,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 230
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:02:02 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "pre",
+        "position": 14,
+        "anchorId": "historical-high-guaranteed",
+        "kind": "historical-sentinel",
+        "promptHash": "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1",
+        "requestBodySha256": "4620f2658ca4555936428bf676d3ced2d592e17ce0237d343318ec1d6dcbfe86",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "3f85cbc6-0b26-450a-8609-8f1c8167dec0",
+          "returnedModel": "deepseek-flash",
+          "created": 1789358523,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 942,
+            "completionTokens": 18,
+            "totalTokens": 960,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 174
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:02:03 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      }
+    ],
+    "metrics": {
+      "uniqueRawResponses": 6,
+      "rawEntropyBits": 2.324862957617356,
+      "externalControlsExact": 4,
+      "externalControlsN": 4,
+      "positiveBuys": 4,
+      "positiveN": 4,
+      "positiveBuyRate": 1,
+      "negativeBuys": 0,
+      "negativeN": 4,
+      "negativeBuyRate": 0,
+      "historicalSentinels": [
+        {
+          "anchorId": "historical-wrapper-narrow",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        },
+        {
+          "anchorId": "historical-high-guaranteed",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        }
+      ],
+      "returnedModels": [
+        "deepseek-flash"
+      ],
+      "fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ]
+    },
+    "gates": {
+      "complete": true,
+      "catalogExact": true,
+      "promptsExact": true,
+      "rawHashesValid": true,
+      "instrumentationComplete": true,
+      "returnedModelsAllowed": true,
+      "fingerprintPresentIfRequired": true,
+      "singleFingerprint": true,
+      "externalControlsExact": true,
+      "positiveRate": true,
+      "negativeRate": true,
+      "responseDiversity": true
+    },
+    "healthy": true
+  },
+  "eraBaselineCheck": {
+    "mode": "establish",
+    "status": "FIRST RUN — PENDING HEALTHY POST",
+    "passed": true,
+    "comparisons": {
+      "servingEra": true,
+      "requestedModel": true,
+      "catalogModels": true,
+      "returnedModels": true,
+      "fingerprints": true,
+      "promptHashes": true
+    }
+  },
+  "updatedAt": "2026-09-14T04:12:28.998Z",
+  "post": {
+    "phase": "post",
+    "calls": 14,
+    "catalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "records": [
+      {
+        "phase": "post",
+        "position": 1,
+        "anchorId": "control-arithmetic",
+        "kind": "external-control",
+        "promptHash": "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+        "requestBodySha256": "870f6e7c9a30c8c1098fc95d0412142124c25c8eff56c53c7564a04c1828133c",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":1,\"requireChit\":false}",
+        "rawResponseSha256": "f15cc3d2abc6aecf9c2865a6da49577a90c93baecc8f37ed3fc053568d2b3c98",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "638bc8e4-a1d2-400d-ba22-ab936bc02d11",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359154,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 373,
+            "completionTokens": 18,
+            "totalTokens": 391,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 245
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:34 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 2,
+        "anchorId": "control-order",
+        "kind": "external-control",
+        "promptHash": "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+        "requestBodySha256": "5646656d218efd997d0e0503971bffbdb731d12ae9b601874184be4e7c790ef2",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "8557f9365f7e7a2de0cd0394548f525f0d6b383ee551637e970eae75a212af2e",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "1f8cf991-ea11-4280-856a-1e1e32b54fe8",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359154,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:34 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 3,
+        "anchorId": "control-count",
+        "kind": "external-control",
+        "promptHash": "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+        "requestBodySha256": "0c90c40e3e44ad286e11a9497bde5ff408b18006f4d017aabb9363921f6c48e5",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "b7055918-2412-4367-bda2-37901d389629",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359155,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 372,
+            "completionTokens": 18,
+            "totalTokens": 390,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 244
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:35 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 4,
+        "anchorId": "control-parity",
+        "kind": "external-control",
+        "promptHash": "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+        "requestBodySha256": "ff09fc267ed2e778fc86778b9e0425628a2d00b671518dae38414c0e3a4be908",
+        "rawResponse": "{\"giveCheck\":false,\"giveChits\":0,\"requireChit\":false}",
+        "rawResponseSha256": "14169252eb7eebc265b5df43686146ef0bce9e15bb04dadbb2b9c1c8a6e935c3",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "a4a114ad-b399-41a8-ba04-4dfaa923341c",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359155,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 369,
+            "completionTokens": 18,
+            "totalTokens": 387,
+            "promptCacheHitTokens": 128,
+            "promptCacheMissTokens": 241
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:35 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 5,
+        "anchorId": "dominant-positive-1",
+        "kind": "dominant-positive",
+        "promptHash": "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+        "requestBodySha256": "9048e4a333765c20f5e686a40073f2b531cb62929985292ca84b9c3b66a36ee0",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "0f8f9283-300c-47ac-9b39-b8a8652f56f7",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359156,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:36 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 6,
+        "anchorId": "dominant-positive-2",
+        "kind": "dominant-positive",
+        "promptHash": "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+        "requestBodySha256": "d5448c541ab078ede5c20a38aa650f2430ec914a7a638346448bdb9a0a26708e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "a0db3672-6efb-4c5a-a8eb-e6ff72b6b011",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359156,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:36 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 7,
+        "anchorId": "dominant-positive-3",
+        "kind": "dominant-positive",
+        "promptHash": "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+        "requestBodySha256": "a6efd3e045d8c1f309c8db4222325cbfecd316d7f298a27a30084fc550d93c22",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "2c05f1e5-4934-4ed4-bb8d-615f5617e799",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359157,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:37 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 8,
+        "anchorId": "dominant-positive-4",
+        "kind": "dominant-positive",
+        "promptHash": "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+        "requestBodySha256": "fb2c27deda53af38745a38f365e2d772d172ebc830df4e0f041a67f967ab7fc2",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 1, \"requireChit\": false}",
+        "rawResponseSha256": "ce9e1b274567261e06a04edfa070d0374dc5fc2802e85fe521cf8f563a181e13",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 1,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "66202e5d-aa2f-4085-97af-229c08e08919",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359157,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 394,
+            "completionTokens": 21,
+            "totalTokens": 415,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 138
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:37 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 9,
+        "anchorId": "dominant-negative-1",
+        "kind": "dominant-negative",
+        "promptHash": "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+        "requestBodySha256": "ee41ae0a72662c26165df16c639aa9508f378cd3b04cefa7129b479439c1a300",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "8908d285-df62-4810-877f-effa014aa74a",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359158,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:38 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 10,
+        "anchorId": "dominant-negative-2",
+        "kind": "dominant-negative",
+        "promptHash": "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+        "requestBodySha256": "5de085d02c3144f48ca76f0fc4a2abfe48f64cf09892acb50dde6ebc6da7f870",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "4f149c6f-81d7-4122-9382-16c4ae975e93",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359159,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:39 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 11,
+        "anchorId": "dominant-negative-3",
+        "kind": "dominant-negative",
+        "promptHash": "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+        "requestBodySha256": "9c97bfb7a078a47eb0f55a67abf84bd055e23d3a114f1bd9f6119e5b0b903859",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "4b2dee5c-7d5d-401a-b39d-9741bdb60db4",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359159,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:39 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 12,
+        "anchorId": "dominant-negative-4",
+        "kind": "dominant-negative",
+        "promptHash": "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+        "requestBodySha256": "76aae4e47a61ac37ae6bc44382154370083ba0067d56aa73785e5a87fa50db0e",
+        "rawResponse": "{\"giveCheck\": false, \"giveChits\": 0, \"requireChit\": false}",
+        "rawResponseSha256": "c9ec09ef17dc8cd2ddd4867a9a76beeafba031a028ad3feeebd76956c30d8d9e",
+        "proposal": {
+          "giveCheck": false,
+          "giveChits": 0,
+          "requireChit": false
+        },
+        "provider": {
+          "responseId": "6da0d9f4-0754-4489-ac43-238d220cdda8",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359160,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 395,
+            "completionTokens": 21,
+            "totalTokens": 416,
+            "promptCacheHitTokens": 256,
+            "promptCacheMissTokens": 139
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:40 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 13,
+        "anchorId": "historical-wrapper-narrow",
+        "kind": "historical-sentinel",
+        "promptHash": "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+        "requestBodySha256": "dd8f3f29b5130ad889e92f3eaf3bd769446868b679b054ec831abad728932902",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "2d604bc8-61e7-4f50-90ce-f28ca2e4fd68",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359160,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 998,
+            "completionTokens": 18,
+            "totalTokens": 1016,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 230
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:40 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      },
+      {
+        "phase": "post",
+        "position": 14,
+        "anchorId": "historical-high-guaranteed",
+        "kind": "historical-sentinel",
+        "promptHash": "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1",
+        "requestBodySha256": "4620f2658ca4555936428bf676d3ced2d592e17ce0237d343318ec1d6dcbfe86",
+        "rawResponse": "{\"giveCheck\":true,\"giveChits\":0,\"requireChit\":true}",
+        "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a",
+        "proposal": {
+          "giveCheck": true,
+          "giveChits": 0,
+          "requireChit": true
+        },
+        "provider": {
+          "responseId": "ac806b26-df87-47ea-9eba-01720a99149d",
+          "returnedModel": "deepseek-flash",
+          "created": 1789359161,
+          "systemFingerprint": "aeb56401ca74e127821c4f9126dcb669",
+          "usage": {
+            "promptTokens": 942,
+            "completionTokens": 18,
+            "totalTokens": 960,
+            "promptCacheHitTokens": 768,
+            "promptCacheMissTokens": 174
+          },
+          "headers": {
+            "date": "Mon, 14 Sep 2026 04:12:41 GMT",
+            "server": "openresty"
+          },
+          "attempt": 1
+        }
+      }
+    ],
+    "metrics": {
+      "uniqueRawResponses": 6,
+      "rawEntropyBits": 2.324862957617356,
+      "externalControlsExact": 4,
+      "externalControlsN": 4,
+      "positiveBuys": 4,
+      "positiveN": 4,
+      "positiveBuyRate": 1,
+      "negativeBuys": 0,
+      "negativeN": 4,
+      "negativeBuyRate": 0,
+      "historicalSentinels": [
+        {
+          "anchorId": "historical-wrapper-narrow",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        },
+        {
+          "anchorId": "historical-high-guaranteed",
+          "buy": false,
+          "rawResponseSha256": "5f6bd67248f7d739dd92ade00c165e640e757ab850e83a00de2cb9fc5234279a"
+        }
+      ],
+      "returnedModels": [
+        "deepseek-flash"
+      ],
+      "fingerprints": [
+        "aeb56401ca74e127821c4f9126dcb669"
+      ]
+    },
+    "gates": {
+      "complete": true,
+      "catalogExact": true,
+      "promptsExact": true,
+      "rawHashesValid": true,
+      "instrumentationComplete": true,
+      "returnedModelsAllowed": true,
+      "fingerprintPresentIfRequired": true,
+      "singleFingerprint": true,
+      "externalControlsExact": true,
+      "positiveRate": true,
+      "negativeRate": true,
+      "responseDiversity": true
+    },
+    "healthy": true
+  },
+  "comparison": {
+    "preHealthy": true,
+    "postHealthy": true,
+    "promptHashesMatched": true,
+    "returnedModelsMatched": true,
+    "fingerprintsMatched": true,
+    "bracketValid": true,
+    "verdict": "BRACKET HEALTHY"
+  },
+  "eraBaselineEstablished": {
+    "protocolVersion": "1.1",
+    "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+    "establishedFromStudyId": "VBE-W-CO-WELFARE-CROWDING-OUT",
+    "establishedAt": "2026-09-14T04:12:28.991Z",
+    "requestedModel": "deepseek-flash",
+    "catalogModels": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "returnedModels": [
+      "deepseek-flash"
+    ],
+    "fingerprints": [
+      "aeb56401ca74e127821c4f9126dcb669"
+    ],
+    "promptHashes": [
+      "99174cf59c4e836c88b075499c0cbfda14d87fb6f69b431c42037d0bf2320bcb",
+      "45aa9067120566bde487b939f1ac5942d4860227e4a0a62e429468319dd1492a",
+      "ab037d797bf503f4ef03c88bcc9fd8c30081171b40d61549c221e326452789c5",
+      "568005f107eb80e35fc59da89ac8d27a3a31f4f75bf07de00b010cd32be4ec66",
+      "c212806c2d8fb57e4146a8a3135966a101426703854e02ffcf48154146917a9c",
+      "60ec06ae6d1937ff07fcb72ec5c4552c692bb0b77b8882148ed9232536634797",
+      "f816b4f1cab8743cf90371ebbb5c1301b8032ecc25430f9941cf7ed409df1ef7",
+      "f2fe605b537cadfd56ea8dc4a74a3b5dbf3c2f6a34697ecb2603a3b49f397f54",
+      "adccb130080d9b8226ba22bc2ebe08b33ce90f71762564fb5438e749b24bfb91",
+      "fa80ad094d0950415088fa8823e19c9ddb752537dd4cc75bd338096547274a4b",
+      "b9373419029a4abe7fffb6d87f6ac52036ea00907ba11fcb8cab9af575975554",
+      "705fceb800104138975e00f395e8ff60c1d89d43ea9924efa45eff21c5051caa",
+      "12ff359e589738a12fdd6c6a8d69b0a4de18c9dfee30cde1b80a8671d90604ab",
+      "edd5190515b06e7948e244c9ef56cb0a1ba7fa61f0d1e957777b96c6900a99b1"
+    ],
+    "historicalSentinelInterpretation": "DESCRIPTIVE CROSS-ERA DRIFT ONLY — EXCLUDED FROM HEALTH GATES"
+  }
+}

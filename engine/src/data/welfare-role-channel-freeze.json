@@ -1,0 +1,65 @@
+{
+  "study": "VBE-W-RG-ROLE-GENERALIZATION-CHANNEL",
+  "version": "1.0",
+  "frozenAt": "2026-09-14T04:29:10Z",
+  "status": "PROJECT-INTERNAL PROSPECTIVE MECHANISM EXPERIMENT — NOT EXTERNALLY REGISTERED",
+  "targetCallsAtFreeze": 0,
+  "bracketCallsAtFreeze": 0,
+  "model": "deepseek-flash",
+  "providerLabel": "V4.1 Flash",
+  "servingEraId": "deepseek-v4.1-flash-post-2026-09-14T04:00Z",
+  "temperature": 0,
+  "thinking": "disabled",
+  "expectedSeeds": 12,
+  "expectedArms": 4,
+  "expectedTargetRuns": 48,
+  "expectedTargetCalls": 3680,
+  "expectedHealthCalls": 28,
+  "expectedTotalCalls": 3708,
+  "catalogObservation": {
+    "observedAt": "2026-09-14T04:29:08.062Z",
+    "models": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "thresholds": {
+    "scoreMres": 0.5,
+    "hhSwapRateMres": 0.5,
+    "oneSidedExactAlpha": 0.025
+  },
+  "priorSeedAudit": {
+    "storedUniqueSeeds": 851,
+    "candidateOverlap": 0,
+    "canonicalSortedSeedListSha256": "2e86a5c58fa6ff8f0446880f07fe487e2dae56830ba84506de8158f06e4b980f"
+  },
+  "files": {
+    "protocol": { "path": "../VBE-welfare-role-generalization-channel-protocol.md", "sha256": "40188712cd744e9d3c1817d15beee467c742a9a5984f232a11345dfee3e721a3" },
+    "protocolEnglish": { "path": "../VBE-welfare-role-generalization-channel-protocol_EN.md", "sha256": "857aafaaaba163ab968533ee11ec67ba8b4cd590edf556786f6fc56a6be3cc18" },
+    "core": { "path": "src/lib/vbe/welfare-role-channel.ts", "sha256": "f504d4e08fe9c53b0a03a118ffef053559bdaf5c7143163b8635e8338e430711" },
+    "execution": { "path": "src/lib/vbe/welfare-role-channel-execution.ts", "sha256": "6c65b2c06e8589f0eb2bf61b950412a14639695e4578d0deb1970bfdab32810c" },
+    "runner": { "path": "src/lib/vbe/run-welfare-role-channel.ts", "sha256": "634f5a49df29a579c6edc3178e8e81a58309ce4a21c92f4274012ef2bbc9060e" },
+    "analyzer": { "path": "src/lib/vbe/analyze-welfare-role-channel.ts", "sha256": "3f4ca90d9cc5b4377cf9dc117c1353b9d6a7443fc9dbade89e3b977fb5a25f30" },
+    "tests": { "path": "src/lib/vbe/welfare-role-channel.test.ts", "sha256": "cf23034a9528c95a3fdf4c94e78ff9aa8e984c08230cab8f38cb8dbde113285b" },
+    "healthPlan": { "path": "src/data/provider-health-welfare-role-channel-plan.json", "sha256": "7b805d234ace1bbd76162e802d13e7fb8c5fb248117a8c08935774d3d5ade49e" },
+    "environment": { "path": "src/lib/vbe/env.ts", "sha256": "91772d632f01fc60e71cc52f7e8e016edf0c34819f3a074c899e5ce9061771f9" },
+    "rng": { "path": "src/lib/vbe/rng.ts", "sha256": "99a476ab1bf319bb731a2d096dfbeb4d89539bff8d5fc380e9a86725e228df9d" },
+    "prompts": { "path": "src/lib/vbe/prompts.ts", "sha256": "785e25c53aa2fea1134c1f8e05300c025356ee46de232ce737a5339000f66786" },
+    "giftSpeech": { "path": "src/lib/vbe/speech.ts", "sha256": "7cb30ed1d53af9e103fdbf16f0738345fc06a293ccc9ab8d93c452db3fa5624b" },
+    "parameters": { "path": "src/lib/vbe/params.ts", "sha256": "af7b99c1aaa613cb5c2254237c31867ace34bf1284822c48741b2ef0950330fe" },
+    "types": { "path": "src/lib/vbe/types.ts", "sha256": "8ace079ad20081c1bbc4eb7b3d4514464b1ca8b72395fe77094106369b6686cc" },
+    "llmAdapter": { "path": "src/lib/vbe/llm.ts", "sha256": "7efea2a7bcdd99f736797f3ba7b9fcfb8ec50e14c7f9bdb4082ae178010c3420" },
+    "observedCaller": { "path": "src/lib/vbe/observed-chat.ts", "sha256": "91740cd8c4b032a72420f09950a28703f4d7e1fd2029e342d68a597aa05b3ff2" },
+    "providerHealthCore": { "path": "src/lib/vbe/provider-health.ts", "sha256": "76dec54ae7bd7b04c294fb78f4ab1a299e78a82d17decfd480c857e2c6773d87" },
+    "providerHealthExecution": { "path": "src/lib/vbe/provider-health-execution.ts", "sha256": "09ffeea605f5ec88130de9bc20ff2f570720c7bdc5e3a9451d60431aa1ea07a5" },
+    "providerHealthRunner": { "path": "src/lib/vbe/run-provider-health.ts", "sha256": "c39d090e7c95c5f8c8702da7cd4b6e1fb11e6bd483d3e607b2b5321c58db8066" },
+    "providerHealthFreeze": { "path": "src/data/provider-health-freeze.json", "sha256": "2e7bc4c8900ee14963d454f2102b8946e2b6450020fc97cf4a87a0d79dd1d509" },
+    "eraBaseline": { "path": "src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json", "sha256": "dca639517b544a4486885754153640560bb92a76b92cc8191b0466b88ea3d7ce" },
+    "scheduleHasher": { "path": "src/lib/vbe/epistemic.ts", "sha256": "17c129e47bd408b0f192d94dd7b06f3a9d097640554325681ddbbe7c5f5d8f13" },
+    "pairedAnalysis": { "path": "src/lib/vbe/epistemic-analysis.ts", "sha256": "6e191f378c4484a84b634bd97fac53bf022cff4f03074cb71323ad4b0f731df7" },
+    "exactInference": { "path": "src/lib/vbe/epistemic-reward-confirmatory.ts", "sha256": "135180d49fb14d3f0806da6e53a4fead1426f830650f8ccebaa035559bd890ed" },
+    "hypothesisSourceResults": { "path": "src/data/welfare-crowding-out.json", "sha256": "f6438915387c05fc1eb1b4a94c9b70ba7ae4a77b0addd0e6bf1ed86d66779c96" },
+    "hypothesisSourceAnalyzer": { "path": "src/lib/vbe/analyze-welfare-crowding-out-mechanism.ts", "sha256": "8dae8763791d2491a7b3a09d08f1195236ca5e6397302c2a2910bdfabd5693c7" }
+  },
+  "dryRunSha256": "8cbec02342f328fc0de6fd3f109cb0be530d868b559dd79a32cc6ec25652e628"
+}

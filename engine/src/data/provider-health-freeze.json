@@ -1,0 +1,79 @@
+{
+  "study": "VBE-PROVIDER-HEALTH-BRACKET",
+  "version": "1.1",
+  "frozenAt": "2026-09-13T18:23:41-07:00",
+  "supersedesVersion": "1.0",
+  "previousFreezeManifest": "src/data/provider-health-freeze-v1.0.json",
+  "previousManifestSha256": "142fb486ef770e74a5aca04a9cfa2934fa46221cc5872efd29cb83dee4161a8e",
+  "amendment": "Pre-call baseline-only revision: the first healthy study in a serving era establishes the observable baseline after its post-flight; later pre-flights must match it. Historical sentinels remain descriptive and excluded from health gates. Anchors, thresholds, and dry run are unchanged.",
+  "targetCallsAtFreeze": 0,
+  "bracketCallsAtFreeze": 0,
+  "scope": "generic pre/post serving-health bracket; every target study must separately freeze a run-specific plan",
+  "thresholds": {
+    "callsPerBracket": 14,
+    "externalControlsExact": "4/4",
+    "dominantPositiveBuyRateMinimum": 0.75,
+    "dominantNegativeBuyRateMaximum": 0.25,
+    "minimumUniqueRawResponses": 4,
+    "minimumRawEntropyBits": 1.25
+  },
+  "dryRunSha256": "1b96cff9ea31349a9b51c3c3b7ee3e5476e0a0c9ca692ffe1bbddb9569b9219d",
+  "files": {
+    "protocol": {
+      "path": "../VBE-provider-health-bracket-protocol.md",
+      "sha256": "52b842f9c947ff703ed6bc5297fd37db810e1ac0a1dbb7e947777dd213216459"
+    },
+    "protocolEnglish": {
+      "path": "../VBE-provider-health-bracket-protocol_EN.md",
+      "sha256": "dc85a9631ea0a336bb533280253d98ed67f29fbc4b490e132c1fecceed493f83"
+    },
+    "core": {
+      "path": "src/lib/vbe/provider-health.ts",
+      "sha256": "76dec54ae7bd7b04c294fb78f4ab1a299e78a82d17decfd480c857e2c6773d87"
+    },
+    "execution": {
+      "path": "src/lib/vbe/provider-health-execution.ts",
+      "sha256": "09ffeea605f5ec88130de9bc20ff2f570720c7bdc5e3a9451d60431aa1ea07a5"
+    },
+    "runner": {
+      "path": "src/lib/vbe/run-provider-health.ts",
+      "sha256": "c39d090e7c95c5f8c8702da7cd4b6e1fb11e6bd483d3e607b2b5321c58db8066"
+    },
+    "tests": {
+      "path": "src/lib/vbe/provider-health.test.ts",
+      "sha256": "3d50ca7c2be9046f7be39a328ac2d4440d711e314bb65fbc8a358028f0715a5f"
+    },
+    "observedCaller": {
+      "path": "src/lib/vbe/observed-chat.ts",
+      "sha256": "91740cd8c4b032a72420f09950a28703f4d7e1fd2029e342d68a597aa05b3ff2"
+    },
+    "llmConfig": {
+      "path": "src/lib/vbe/llm.ts",
+      "sha256": "7efea2a7bcdd99f736797f3ba7b9fcfb8ec50e14c7f9bdb4082ae178010c3420"
+    },
+    "rules": {
+      "path": "src/lib/vbe/prompts.ts",
+      "sha256": "785e25c53aa2fea1134c1f8e05300c025356ee46de232ce737a5339000f66786"
+    },
+    "buyerCapability": {
+      "path": "src/lib/vbe/buyer-capability.ts",
+      "sha256": "7134f43ce7747b2d52eec6859c96c54df9156b7a4b13d8b632fc9eb8bfff9a72"
+    },
+    "temporalPromptSelector": {
+      "path": "src/lib/vbe/buyer-temporal-replay.ts",
+      "sha256": "e6189a02ff3fb37d34dddde1e27adb1fc306a4c3522d9dcbc2300e671624126f"
+    },
+    "wrapperPromptBuilder": {
+      "path": "src/lib/vbe/buyer-wrapper-disassembly.ts",
+      "sha256": "67edb5fbbae9d36a792960411321eed4912b1044a926228fb817dabca410100f"
+    },
+    "historicalContextSource": {
+      "path": "src/data/online-source-quarantine.json",
+      "sha256": "4756d053a7533fffb4be5acf1e04f9c2caab3b4ca9bbb50dca89ff02ab0f32ff"
+    },
+    "planSchemaExample": {
+      "path": "src/data/provider-health-plan.example.json",
+      "sha256": "40fb2ddb02f26ecfda072efbe6ad9d3e4716355da1672b344aa8a562a30cbe9f"
+    }
+  }
+}
