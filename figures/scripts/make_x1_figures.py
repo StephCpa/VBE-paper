@@ -97,30 +97,51 @@ ROW_LABELS = {
 }
 
 
-def accounting_panel(ax, acc, net_ci, xlim, highlight=True, value_x=1.03):
+def accounting_panel(ax, acc, net_ci, xlim, value_mode="all", value_x=1.03):
+    """Accounting bars with seed-bootstrap whiskers for every row.
+
+    value_mode="all" prints each row's mean and interval in a column to the
+    right (supplementary tables-as-figures); value_mode="key" prints only the
+    largest positive component, the largest negative component, and the net
+    change next to their whiskers, leaving exact values to the tables.
+    """
     comps = acc["components"]
     n = len(comps)
     ys = [n + 0.6 - k for k in range(n)]           # components on top
     y_net = 0.0
-    for y, c in zip(ys, comps):
-        v = c["mean"]
-        ax.barh(y, v, height=0.62, color=BLUE if v >= 0 else RED, edgecolor="white", linewidth=1.0, zorder=2)
-        lo, hi = c["ci"]
+    key = set()
+    if value_mode == "key":
+        key = {max(comps, key=lambda c: c["mean"])["group"], min(comps, key=lambda c: c["mean"])["group"]}
+
+    def whisker(lo, hi, y):
         ax.plot([lo, hi], [y, y], color=INK, linewidth=0.9, zorder=3, solid_capstyle="butt")
         for x in (lo, hi):
             ax.plot([x, x], [y - 0.13, y + 0.13], color=INK, linewidth=0.9, zorder=3)
-        ax.text(value_x, y, f"{signed(v)}  {interval(c['ci'])}", transform=blended_transform_factory(ax.transAxes, ax.transData),
-                va="center", ha="left", fontsize=FS_SMALL, color=INK)
+
+    def inline(v, ci, y, bold=False):
+        right = v >= 0
+        ax.text(ci[1] + 0.09 if right else ci[0] - 0.09, y, signed(v), va="center", ha="left" if right else "right",
+                fontsize=FS, color=INK, fontweight="bold" if bold else "normal")
+
+    for y, c in zip(ys, comps):
+        v = c["mean"]
+        ax.barh(y, v, height=0.62, color=BLUE if v >= 0 else RED, edgecolor="white", linewidth=1.0, zorder=2)
+        whisker(*c["ci"], y)
+        if value_mode == "all":
+            ax.text(value_x, y, f"{signed(v)}  {interval(c['ci'])}", transform=blended_transform_factory(ax.transAxes, ax.transData),
+                    va="center", ha="left", fontsize=FS_SMALL, color=INK)
+        elif c["group"] in key:
+            inline(v, c["ci"], y)
     net = acc["net"]["mean"]
     ax.barh(y_net, net, height=0.62, color=INK2, edgecolor="white", linewidth=1.0, zorder=2)
-    ax.plot(net_ci, [y_net, y_net], color=INK, linewidth=0.9, zorder=3)
-    for x in net_ci:
-        ax.plot([x, x], [y_net - 0.13, y_net + 0.13], color=INK, linewidth=0.9, zorder=3)
-    ax.text(value_x, y_net, f"{signed(net)}  {interval(net_ci)}", transform=blended_transform_factory(ax.transAxes, ax.transData),
-            va="center", ha="left", fontsize=FS, fontweight="bold", color=INK)
+    whisker(*net_ci, y_net)
+    if value_mode == "all":
+        ax.text(value_x, y_net, f"{signed(net)}  {interval(net_ci)}", transform=blended_transform_factory(ax.transAxes, ax.transData),
+                va="center", ha="left", fontsize=FS, fontweight="bold", color=INK)
+    else:
+        inline(net, net_ci, y_net, bold=True)
     ax.axhline((y_net + ys[-1]) / 2, color=MUTED, linewidth=0.7)
-    del highlight
-    ax.axvline(0, color=INK2, linewidth=0.7, zorder=1)
+    ax.axvline(0, color=INK2, linewidth=0.8, zorder=1)
     ax.set_yticks(ys + [y_net], [ROW_LABELS[c["group"]] for c in comps] + ["Net welfare change"])
     ax.get_yticklabels()[-1].set_fontweight("bold")
     ax.set_ylim(-0.6, n + 1.1)
@@ -133,11 +154,11 @@ def accounting_panel(ax, acc, net_ci, xlim, highlight=True, value_x=1.03):
 # Figure 1: execution intervention and realized welfare accounting
 # ---------------------------------------------------------------------------
 def figure_mechanism():
-    fig = plt.figure(figsize=(TEXTWIDTH_IN, 2.95))
-    a = fig.add_axes([0.072, 0.155, 0.318, 0.655])
-    b = fig.add_axes([0.585, 0.235, 0.185, 0.575])
+    fig = plt.figure(figsize=(TEXTWIDTH_IN, 2.75))
+    a = fig.add_axes([0.072, 0.2, 0.33, 0.625])
+    b = fig.add_axes([0.62, 0.2, 0.355, 0.625])
 
-    # Panel A ---------------------------------------------------------------
+    # Panel A: seed trajectories, arm means, never-transfer, one paired contrast.
     arms = ["neutral-standard", "gift-standard", "gift-hh-blocked", "gift-eh-gift-blocked"]
     labels = ["Neutral", "Gift", "Gift +\nH–H filter", "Gift +\nE→H filter"]
     xs = [0.0, 1.25, 2.55, 3.85]
@@ -150,43 +171,35 @@ def figure_mechanism():
     a.scatter(xs, means, s=46, color=INK, marker="o", zorder=4, edgecolors="white", linewidths=0.8)
     never = X1["benchmarks"]["W-RG"]["never-transfer"]
     a.axhline(never, color=INK2, linestyle=(0, (3, 2)), linewidth=0.8, zorder=0)
+    a.text(4.12, never, "Never-\ntransfer", ha="left", va="center", fontsize=FS_SMALL, color=INK2, clip_on=False, linespacing=1.0)
 
     eff = next(e for e in X1["inference"]["W-RG"] if e["name"] == "gift-standard - gift-hh-blocked welfare")
     lo, hi = -eff["bootstrap95"][1], -eff["bootstrap95"][0]
-    lower = eff["positive"]
     yb = 58.0
     a.plot([xs[1], xs[1], xs[2], xs[2]], [yb - 0.3, yb, yb, yb - 0.3], color=INK, linewidth=0.8)
-    a.text((xs[1] + xs[2]) / 2, yb + 0.15, f"Blocked − standard: {signed(-eff['mean'])}\n95% CI {interval((lo, hi))}; {lower}/{eff['n']} seeds lower",
+    a.text((xs[1] + xs[2]) / 2, yb + 0.15, f"Δ = {signed(-eff['mean'])}\n95% CI {interval((lo, hi))}",
            ha="center", va="bottom", fontsize=FS_SMALL, color=INK, linespacing=1.15)
-    yg = 60.6
+    yg = 60.4
     a.plot([xs[1] - 0.25, xs[1] - 0.25, xs[3] + 0.25, xs[3] + 0.25], [yg - 0.25, yg, yg, yg - 0.25], color=MUTED, linewidth=0.7)
-    a.text((xs[1] + xs[3]) / 2, yg + 0.12, "Same Gift announcement; execution filter varies", ha="center", va="bottom", fontsize=FS_SMALL, color=INK2)
+    a.text((xs[1] + xs[3]) / 2, yg + 0.12, "Same Gift announcement", ha="center", va="bottom", fontsize=FS_SMALL, color=INK2)
 
     a.set_xticks(xs, labels, fontsize=FS_SMALL)
-    a.set_xlim(-0.5, 4.4)
-    a.set_ylim(47.3, 61.6)
+    a.set_xlim(-0.5, 4.3)
+    a.set_ylim(49.6, 61.4)
     a.set_yticks([50, 52, 54, 56, 58])
     a.set_ylabel("Mean final score per account")
     recessive(a)
-    handles = [
-        Line2D([], [], color=AXIS, linewidth=0.8, marker="o", markersize=2.6, markerfacecolor="#a8a7a0", markeredgewidth=0, label="Paired seed"),
-        Line2D([], [], color="none", marker="o", markersize=6.5, markerfacecolor=INK, markeredgecolor="white", label="Arm mean"),
-        Line2D([], [], color=INK2, linestyle=(0, (3, 2)), linewidth=0.8, label=f"Never transfer, same seeds ({never:.2f})"),
-    ]
-    a.legend(handles=handles, loc="lower left", ncol=2, frameon=False, fontsize=7.0, handlelength=1.8,
-             columnspacing=0.9, handletextpad=0.4, borderaxespad=0.1)
-    title(a, "A  Execution intervention (W-RG)", sub="12 paired seeds", y=1.0)
+    title(a, "A  Execution intervention", sub="W-RG · 12 paired seeds", y=1.0)
 
-    # Panel B ---------------------------------------------------------------
+    # Panel B: every component keeps its bar and whisker; only key rows carry values.
     acc = next(x for x in X2["accounting"] if x["study"] == "W-SGB" and x["arm"] == "gift-exact")
     frozen = next(e for e in X1["inference"]["W-SGB welfare"] if e["name"] == "gift-exact - neutral welfare")
-    accounting_panel(b, acc, frozen["bootstrap95"], (-1.0, 3.05))
+    accounting_panel(b, acc, frozen["bootstrap95"], (-1.8, 3.45), value_mode="key")
+    b.set_xticks([-1, 0, 1, 2, 3], ["−1", "0", "1", "2", "3"])
     b.set_xlabel("Contribution to Gift − Neutral welfare\n(points per account)", fontsize=FS_SMALL)
-    b.text(-0.78, -0.33, "*Involves the named E→H transfer.  Whiskers: seed-bootstrap 95% CIs.",
-           transform=b.transAxes, ha="left", va="top", fontsize=7.0, color=INK2)
-    title(b, "B  Realized welfare accounting (W-SGB)", sub="14 paired seeds; mean and 95% CI per account", y=1.0)
+    title(b, "B  Realized welfare accounting", sub="W-SGB · 14 paired seeds · Gift − Neutral", y=1.0)
     for t in b.texts[-2:]:
-        t.set_x(-0.78)
+        t.set_x(-0.37)
     save(fig, "VBE-x1-fig-mechanism.pdf")
 
 
@@ -342,7 +355,7 @@ def figure_supp_accounting():
         ax = fig.add_axes([0.175 + 0.495 * k, 0.27, 0.13, 0.58])
         acc = next(x for x in X2["accounting"] if x["study"] == study and x["arm"] == arm)
         frozen = next(e for e in X1["inference"][fam] if e["name"] == name)
-        accounting_panel(ax, acc, frozen["bootstrap95"], (-1.6, 3.2), highlight=False)
+        accounting_panel(ax, acc, frozen["bootstrap95"], (-1.6, 3.2), value_mode="all")
         ax.set_xlabel(f"{xl}\n(points per account)", fontsize=7.0)
         for t in ax.texts:
             t.set_fontsize(7.0)

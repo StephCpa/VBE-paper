@@ -57,12 +57,12 @@ verification checks.  A public announcement naming Easy-to-Hard gifts raises
 welfare by 2.06 points per account over a no-recommendation announcement
 (14/14 paired seeds).  An exact accounting identity assigns the largest
 positive component to Hard--Hard check swaps---mutual cooperation in an unnamed
-stage game that is a Prisoner's Dilemma---while the named relation contributes
+give\slash keep subgame that is a Prisoner's Dilemma---while the named relation contributes
 smaller positive terms and dominated Hard-to-Easy giving induced by the same
 text subtracts.  Under the same gift announcement, blocking Hard--Hard transfers
 after the model responds lowers welfare by 3.21 (12/12 seeds).  Replaying the
-frozen traces through the engine, we compare first decisions at states that are
-byte-identical except for the announcement: the named gift is engaged, and both
+frozen traces through the engine, we compare first decisions whose
+reconstructed prompts differ only in the announcement: the named gift is engaged, and both
 the gift text and a harmful Easy--Easy directive (executed in 113 of 114
 Easy--Easy meetings) raise Hard--Hard giving directly.  In later meetings named
 giving drops sharply, while Hard--Hard giving stays high through the final
@@ -95,16 +95,17 @@ descriptive closed-loop diagnostics.  The results form one chain:
 
 \begin{itemize}
 \item \emph{Most of the welfare gain is accounted for by an unnamed relation.}
-The engine implies that a Hard--Hard meeting is a strict Prisoner's Dilemma and
-that giving in an Easy--Hard meeting is individually dominated for both roles.
+The engine implies that the unconditional give\slash keep subgame of a Hard--Hard
+meeting is a strict Prisoner's Dilemma and that giving in an Easy--Hard meeting
+is individually dominated for both roles.
 A gift announcement naming Easy-to-Hard gifts raises welfare.  An exact
 accounting identity assigns its largest positive component to Hard--Hard swaps,
 smaller positive terms to the named relation, and a negative term to wasteful
 Hard-to-Easy gifts.  Under the same announcement, blocking Hard--Hard transfers
 lowers welfare below the never-transfer benchmark (\S\ref{sec:welfare}).
 \item \emph{The text acts on unnamed roles directly.}  Because each prompt is a
-function of reconstructable state, we can find first decisions taken from states
-that are byte-identical across arms except for the announcement.  There, the
+function of reconstructable state, we can find first decisions whose
+reconstructed prompts are identical across arms except for the announcement.  There, the
 named Easy-to-Hard gift is engaged, and Hard--Hard giving is raised by the gift
 text and by a harmful Easy--Easy directive.  Among the tested packages,
 explicit exclusion clauses reduced specific off-scope responses; packages that
@@ -199,8 +200,9 @@ one-way H$\rightarrow$E gift destroys $0.96$.
 
 \begin{table}[t]
 \caption{Expected round payoffs (row, column) in a Hard--Hard meeting implied by
-Table~\ref{tab:payoffs}.  Keeping is strictly dominant and mutual giving maximizes
-welfare: a strict Prisoner's Dilemma.}
+Table~\ref{tab:payoffs}, for the binary unconditional check-transfer subgame (no
+mark offers or payment requirements).  Keeping is strictly dominant and mutual
+giving maximizes welfare: a strict Prisoner's Dilemma.}
 \label{tab:pd}
 \small
 \centering
@@ -214,11 +216,11 @@ Give & $(0.00,\ 3.29)$ & $(2.79,\ 2.79)$ \\
 \end{tabular}
 \end{table}
 
-The identities imply the stage games.  An H--H meeting is a strict Prisoner's
-Dilemma (Table~\ref{tab:pd}): keeping is dominant, and mutual giving maximizes
-welfare.  In an E--H meeting, keeping is
-strictly dominant for both roles, and the welfare-maximizing outcome is a one-way
-E$\rightarrow$H gift, which costs the Easy agent $0.5$.  Every welfare-improving
+The identities imply the stage games.  The unconditional give\slash keep subgame of an
+H--H meeting is a strict Prisoner's Dilemma (Table~\ref{tab:pd}): keeping is
+dominant, and mutual giving maximizes welfare.  In the corresponding E--H
+subgame, keeping is strictly dominant for both roles, and the welfare-maximizing
+outcome is a one-way E$\rightarrow$H gift, which costs the Easy agent $0.5$.  Every welfare-improving
 transfer therefore requires an agent to give up private payoff.  The population
 game is repeated under random rematching with private four-meeting histories,
 where cooperation can in principle be sustained by community
@@ -238,11 +240,13 @@ attainable welfare.  \emph{Never-transfer} sets the baseline.
 All model studies use \texttt{deepseek-flash} in one provider-labeled serving era
 at temperature zero.  Every protocol, seed list, prompt, contrast, and gate was
 hash-frozen locally before its first target call; none was externally
-registered.  Each study is bracketed by a 14-call provider-health check before
-the first and after the last target call, with external controls, dominance
-anchors, entropy, returned-model, catalog, and fingerprint gates; all brackets
-reported here are healthy and identity-consistent.  The supplement records the
-anomalous earlier service window that motivated the bracket.
+registered.  Within each seed, arms ran in a counterbalanced order: W-SGB used
+the seven cyclic rotations of its arm list and their reversals, so each arm
+occupies each position twice and each pair of arms runs in each order seven
+times; W-RG places each arm in each position three times and each pair in each
+order six times; W-CO alternates its two arms.  Each study is bracketed by a
+14-call provider-health check before the first and after the last target call;
+all brackets reported here are healthy and identity-consistent (supplement).
 
 \paragraph{W-CO (discovery).}  Gift versus money announcements on 18 fresh
 paired seeds.  Its welfare contrast was prospective; its planned
@@ -357,31 +361,20 @@ and W-RG's gift-minus-neutral contrast ($+1.682$, 9/12 seeds) agree in sign
   \includegraphics[width=\textwidth]{figures/VBE-x1-fig-mechanism.pdf}
   \Description{Left: seed-level welfare for twelve W-RG seeds under Neutral and
   three gift arms (standard, H--H filter, E-to-H filter), with thin gray seed
-  lines, large black arm means, and a dashed never-transfer line at 52.53.  A
-  bracket between Gift and Gift plus H--H filter reads: blocked minus standard
-  -3.21, 95\% CI -3.89 to -2.47, 12 of 12 seeds lower.  Right: horizontal bars
-  with confidence whiskers decomposing the W-SGB gift-minus-neutral welfare
-  difference by executed transfer type: H--H swaps +2.20 [1.53, 2.92], E--H swaps
-  +0.36 [0.17, 0.57], one-way H-to-H +0.12, one-way E-to-H +0.08 [0.00, 0.16],
-  one-way H-to-E -0.62 [-0.80, -0.46], E--E transfers -0.07, and a separated net
-  row +2.06 [1.43, 2.81].}
-  \caption{(A) Mean final score per account in W-RG under four execution regimes.
-  Thin lines connect each seed's four paired runs; large markers are arm means;
-  the dashed line is the same seeds' never-transfer benchmark (the ex-ante first
-  best, 61.81, lies above the plotted range).  The bracket gives the paired
-  difference between the H--H-filtered and standard gift arms with its
-  seed-bootstrap 95\% CI.  Neutral is an external reference; the three gift arms
-  share the announcement, not the full prompt, because later prompts carry
-  realized history.  Blocking H--H transfers lowers welfare within the gift
-  announcement condition; W-RG has no neutral arm with H--H blocked.  (B)
-  Realized welfare accounting of the W-SGB gift-minus-neutral difference by
-  executed transfer type, computed from actual transfers and payoff draws.  Bars
-  are seed means per account; whiskers are seed-bootstrap 95\% CIs, and the net
-  interval is the frozen contrast interval (Table~\ref{tab:contrasts}).  H--H
-  swaps are the largest positive component; rows marked * involve the named
-  E$\rightarrow$H transfer.  This is an accounting identity, not a mediation
-  estimate.  Rounded components may not sum to the displayed total.  The W-RG
-  decomposition is in the supplement.}
+  lines, large black arm means, and a dashed never-transfer line.  A bracket
+  between Gift and Gift plus H--H filter reads Delta = -3.21, 95\% CI -3.89 to
+  -2.47.  Right: horizontal bars with confidence whiskers decomposing the W-SGB
+  gift-minus-neutral welfare difference into H--H swaps (+2.20), E--H swaps,
+  one-way H-to-H, one-way E-to-H, one-way H-to-E (-0.62), and E--E transfers,
+  with a separated net row (+2.06).}
+  \caption{Execution intervention and realized welfare accounting.  (A) W-RG
+  welfare: thin lines connect paired seeds, large dots show arm means, and the
+  dashed line marks never-transfer.  The bracket reports the H--H-filtered minus
+  standard-Gift contrast under the same announcement.  (B) W-SGB Gift$-$Neutral
+  welfare decomposed by executed transfer type; bars show mean contributions and
+  whiskers show pointwise 95\% seed-bootstrap intervals.  Starred rows include
+  the named E$\rightarrow$H transfer.  Panel B is accounting, not causal
+  mediation; W-RG lacks a Neutral-with-H--H-blocked arm.}
   \label{fig:mechanism}
 \end{figure*}
 
@@ -394,7 +387,8 @@ difference exactly.  H--H swaps contribute $+2.20$ per account
 smaller positive terms: E--H swaps $+0.36$ ($[0.17,0.57]$) and one-way
 E$\rightarrow$H gifts $+0.08$ ($[0.00,0.16]$).  Ninety-nine one-way
 H$\rightarrow$E gifts (3 under neutral) cost $0.62$ ($[0.46,0.80]$).  W-RG gives
-the same pattern ($+2.41$ from H--H swaps, $-1.13$ from H$\rightarrow$E gifts).
+the same pattern ($+2.41$ from H--H swaps, $-1.13$ from H$\rightarrow$E gifts;
+supplementary accounting figure, which also lists every component's interval).
 The dominant positive component of the gain is therefore cooperation in the
 unnamed Prisoner's Dilemma, not the unilateral gift the announcement names, and
 the same text induces a dominated, welfare-destroying transfer that offsets part
@@ -444,12 +438,11 @@ Ex-post first best (uses realized draws) & 63.26 & 9.02 & 1.01 & --- & --- & ---
 \paragraph{Execution intervention.}  W-RG holds the announcement fixed and
 removes the H--H channel after the model responds.  Welfare falls by $3.208$
 ($[2.469,3.891]$, 12/12 seeds, Figure~\ref{fig:mechanism}A), from $55.30$ to
-$52.09$---below the same seeds' never-transfer benchmark ($52.53$) in 10 of 12
-seeds.  Without H--H circulation, the remaining transfers induced by the gift
-announcement are net negative.  Removing transfers worth $3.66$ each will lower
-welfare; the result is informative because the removed channel is the one the
-announcement does not name, and because what remains of the announcement's
-effect is wasteful.  The E$\rightarrow$H filter changed little: of its 20
+$52.09$.  Under H--H blocking, the Gift arm scores below the never-transfer
+benchmark ($52.53$ on these seeds; their ex-ante first best is $61.81$) in 10 of
+12 seeds.  Removing transfers worth $3.66$ each will lower welfare; the result
+is informative because the removed channel is the one the announcement does
+not name.  The E$\rightarrow$H filter changed little: of its 20
 blocked proposals, 16 would have produced E--H swaps and instead executed as
 one-way H$\rightarrow$E gifts, and 4 would have produced one-way E$\rightarrow$H
 gifts.  The regime contrast ``E$\rightarrow$H-blocked minus H--H-blocked''
@@ -541,18 +534,14 @@ decisions per arm).
   from 0.69 to about 0.3--0.4; the named gift E to H falls from 0.44 to under
   0.1.}
   \caption{(A) Unconditional-give rate at each agent's first meeting in W-SGB
-  (cells: rate and gives/decisions; first decisions from 14 paired seeds).  Within
-  each comparison with neutral, prompts are byte-identical except for the
-  announcement.  Cells measure one-sided proposals, not executed transactions;
-  orange outlines mark the relation a package's text names, not compliance or
-  welfare alignment.  Money exact names a sale, which this metric does not
-  measure.  (B) Unconditional-give rate by the decider's meeting index in the run
-  (not calendar round; 4th+ pools later meetings), W-SGB.  Points pool all
-  decisions in a bin, so first points equal panel A; whiskers are 95\%
-  intervals from resampling whole seeds; denominators are listed below the axis.
-  Later meetings condition on realized history, so this panel is descriptive and
-  does not identify a memory or learning effect.  Neutral curves and other cells
-  are in the supplement.}
+  (rate and gives/decisions; 14 paired seeds).  Within each comparison with
+  neutral, reconstructed user prompts differ only in the announcement.  Cells are
+  one-sided give proposals, not executed transactions.  (B) Unconditional-give
+  rate by the decider's meeting index in the run, W-SGB.  Points pool all
+  decisions in a bin, so first points equal panel A; whiskers are 95\% intervals
+  from resampling whole seeds.  Later meetings condition on realized history, so
+  this panel is descriptive.  Neutral curves and other cells are in the
+  supplement.}
   \label{fig:scope}
 \end{figure*}
 
@@ -601,7 +590,7 @@ favoring neutral).
 
 \paragraph{Noise floor.}  Temperature zero does not make the endpoint
 deterministic~\cite{atil2025nondeterminism}.  Across W-RG's three gift arms,
-decisions with byte-identical full prompts returned identical proposals in
+decisions with identical reconstructed full prompts returned identical proposals in
 87--90\% of 877 comparisons, and disagreements ran in both directions (10
 versus 16, 16 versus 15, and 13 versus 11); the seed-clustered interval of the
 net give-direction rate includes zero for every pair.  Cross-announcement
@@ -618,8 +607,9 @@ with the others.
 Figure~\ref{fig:scope}B follows the same cells over each agent's successive
 meetings.  The index counts an account's meetings in any role, and roles are
 redrawn each round, so a point does not track a fixed set of agents in one role.
-Everything in this subsection conditions on realized history, round, and
-partner, none of which is randomized; it is descriptive.
+These analyses stratify realized trajectories rather than experimentally
+manipulate history content or remaining horizon; their mechanism
+interpretations are descriptive.
 
 \paragraph{Named giving drops sharply after the first meeting.}  E$\rightarrow$H
 giving falls from the first to the second meeting in all three studies (W-CO
