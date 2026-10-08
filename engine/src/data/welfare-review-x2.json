@@ -1,0 +1,7376 @@
+{
+  "analysis": "VBE-X2-ZERO-CALL-BOUNDARY-AUDIT",
+  "version": "1.0",
+  "status": "POST-HOC ZERO-CALL DESCRIPTIVE REANALYSIS OF FROZEN TRACES — SUPPLEMENTARY; NOT A PROSPECTIVE CLAIM",
+  "modelCalls": 0,
+  "sources": {
+    "src/data/welfare-crowding-out.json": "f6438915387c05fc1eb1b4a94c9b70ba7ae4a77b0addd0e6bf1ed86d66779c96",
+    "src/data/welfare-role-channel.json": "149cedf566502b250e0dcaa53076698c9318188b9bb077d3ac96f5e8347b9b2c",
+    "src/data/welfare-semantic-boundary.json": "f4ab7c137903926871d9d1ef8d163f58d4b14dd60e209341cdf13d0597c09e26"
+  },
+  "bootstrap": {
+    "samples": 20000,
+    "seed": 20261008,
+    "unit": "seed (resampled with replacement within study)"
+  },
+  "decisions": 14010,
+  "endgame": [
+    {
+      "label": "Gift (standard execution), three studies pooled",
+      "cell": "H>H",
+      "final": {
+        "gives": 27,
+        "decisions": 30,
+        "seeds": 15,
+        "rate": 0.9,
+        "meetings": 15,
+        "bothGaveMeetings": 13
+      },
+      "lastThree": {
+        "gives": 93,
+        "decisions": 100,
+        "seeds": 34,
+        "rate": 0.93
+      },
+      "rounds1to21": {
+        "gives": 613,
+        "decisions": 672,
+        "seeds": 44,
+        "rate": 0.9122
+      },
+      "rounds1to8": {
+        "gives": 249,
+        "decisions": 268,
+        "seeds": 42,
+        "rate": 0.9291
+      },
+      "finalMinusEarlier": -0.0151,
+      "finalMinusEarlierCI": [
+        -0.1759,
+        0.0964
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 21,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.9545
+        },
+        {
+          "t": 2,
+          "gives": 37,
+          "decisions": 38,
+          "seeds": 19,
+          "rate": 0.9737
+        },
+        {
+          "t": 3,
+          "gives": 27,
+          "decisions": 32,
+          "seeds": 15,
+          "rate": 0.8438
+        },
+        {
+          "t": 4,
+          "gives": 24,
+          "decisions": 28,
+          "seeds": 14,
+          "rate": 0.8571
+        },
+        {
+          "t": 5,
+          "gives": 31,
+          "decisions": 32,
+          "seeds": 15,
+          "rate": 0.9688
+        },
+        {
+          "t": 6,
+          "gives": 32,
+          "decisions": 34,
+          "seeds": 16,
+          "rate": 0.9412
+        },
+        {
+          "t": 7,
+          "gives": 48,
+          "decisions": 50,
+          "seeds": 23,
+          "rate": 0.96
+        },
+        {
+          "t": 8,
+          "gives": 29,
+          "decisions": 32,
+          "seeds": 14,
+          "rate": 0.9063
+        },
+        {
+          "t": 9,
+          "gives": 30,
+          "decisions": 34,
+          "seeds": 15,
+          "rate": 0.8824
+        },
+        {
+          "t": 10,
+          "gives": 31,
+          "decisions": 36,
+          "seeds": 18,
+          "rate": 0.8611
+        },
+        {
+          "t": 11,
+          "gives": 22,
+          "decisions": 26,
+          "seeds": 13,
+          "rate": 0.8462
+        },
+        {
+          "t": 12,
+          "gives": 21,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.9545
+        },
+        {
+          "t": 13,
+          "gives": 28,
+          "decisions": 30,
+          "seeds": 15,
+          "rate": 0.9333
+        },
+        {
+          "t": 14,
+          "gives": 29,
+          "decisions": 32,
+          "seeds": 14,
+          "rate": 0.9063
+        },
+        {
+          "t": 15,
+          "gives": 36,
+          "decisions": 38,
+          "seeds": 19,
+          "rate": 0.9474
+        },
+        {
+          "t": 16,
+          "gives": 22,
+          "decisions": 24,
+          "seeds": 11,
+          "rate": 0.9167
+        },
+        {
+          "t": 17,
+          "gives": 24,
+          "decisions": 28,
+          "seeds": 12,
+          "rate": 0.8571
+        },
+        {
+          "t": 18,
+          "gives": 27,
+          "decisions": 28,
+          "seeds": 13,
+          "rate": 0.9643
+        },
+        {
+          "t": 19,
+          "gives": 34,
+          "decisions": 38,
+          "seeds": 19,
+          "rate": 0.8947
+        },
+        {
+          "t": 20,
+          "gives": 35,
+          "decisions": 40,
+          "seeds": 18,
+          "rate": 0.875
+        },
+        {
+          "t": 21,
+          "gives": 25,
+          "decisions": 28,
+          "seeds": 14,
+          "rate": 0.8929
+        },
+        {
+          "t": 22,
+          "gives": 30,
+          "decisions": 32,
+          "seeds": 15,
+          "rate": 0.9375
+        },
+        {
+          "t": 23,
+          "gives": 36,
+          "decisions": 38,
+          "seeds": 18,
+          "rate": 0.9474
+        },
+        {
+          "t": 24,
+          "gives": 27,
+          "decisions": 30,
+          "seeds": 15,
+          "rate": 0.9
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 85,
+          "decisions": 92,
+          "seeds": 31,
+          "rate": 0.9239,
+          "ci": [
+            0.8684,
+            0.9694
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 87,
+          "decisions": 94,
+          "seeds": 30,
+          "rate": 0.9255,
+          "ci": [
+            0.8667,
+            0.9717
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 107,
+          "decisions": 116,
+          "seeds": 35,
+          "rate": 0.9224,
+          "ci": [
+            0.8559,
+            0.9741
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 74,
+          "decisions": 84,
+          "seeds": 28,
+          "rate": 0.881,
+          "ci": [
+            0.814,
+            0.9487
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 93,
+          "decisions": 100,
+          "seeds": 31,
+          "rate": 0.93,
+          "ci": [
+            0.8696,
+            0.9783
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 73,
+          "decisions": 80,
+          "seeds": 25,
+          "rate": 0.9125,
+          "ci": [
+            0.8511,
+            0.973
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 94,
+          "decisions": 106,
+          "seeds": 34,
+          "rate": 0.8868,
+          "ci": [
+            0.8148,
+            0.951
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 93,
+          "decisions": 100,
+          "seeds": 34,
+          "rate": 0.93,
+          "ci": [
+            0.875,
+            0.9783
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Gift (standard execution), three studies pooled",
+      "cell": "E>H",
+      "final": {
+        "gives": 4,
+        "decisions": 31,
+        "seeds": 20,
+        "rate": 0.129,
+        "meetings": 31,
+        "bothGaveMeetings": null
+      },
+      "lastThree": {
+        "gives": 7,
+        "decisions": 116,
+        "seeds": 40,
+        "rate": 0.0603
+      },
+      "rounds1to21": {
+        "gives": 105,
+        "decisions": 823,
+        "seeds": 44,
+        "rate": 0.1276
+      },
+      "rounds1to8": {
+        "gives": 70,
+        "decisions": 300,
+        "seeds": 44,
+        "rate": 0.2333
+      },
+      "finalMinusEarlier": 0.0101,
+      "finalMinusEarlierCI": [
+        -0.0814,
+        0.1043
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 28,
+          "decisions": 52,
+          "seeds": 31,
+          "rate": 0.5385
+        },
+        {
+          "t": 2,
+          "gives": 14,
+          "decisions": 49,
+          "seeds": 35,
+          "rate": 0.2857
+        },
+        {
+          "t": 3,
+          "gives": 7,
+          "decisions": 34,
+          "seeds": 26,
+          "rate": 0.2059
+        },
+        {
+          "t": 4,
+          "gives": 3,
+          "decisions": 34,
+          "seeds": 23,
+          "rate": 0.0882
+        },
+        {
+          "t": 5,
+          "gives": 1,
+          "decisions": 28,
+          "seeds": 22,
+          "rate": 0.0357
+        },
+        {
+          "t": 6,
+          "gives": 5,
+          "decisions": 37,
+          "seeds": 25,
+          "rate": 0.1351
+        },
+        {
+          "t": 7,
+          "gives": 9,
+          "decisions": 36,
+          "seeds": 27,
+          "rate": 0.25
+        },
+        {
+          "t": 8,
+          "gives": 3,
+          "decisions": 30,
+          "seeds": 25,
+          "rate": 0.1
+        },
+        {
+          "t": 9,
+          "gives": 7,
+          "decisions": 54,
+          "seeds": 33,
+          "rate": 0.1296
+        },
+        {
+          "t": 10,
+          "gives": 3,
+          "decisions": 41,
+          "seeds": 30,
+          "rate": 0.0732
+        },
+        {
+          "t": 11,
+          "gives": 4,
+          "decisions": 38,
+          "seeds": 26,
+          "rate": 0.1053
+        },
+        {
+          "t": 12,
+          "gives": 2,
+          "decisions": 29,
+          "seeds": 24,
+          "rate": 0.069
+        },
+        {
+          "t": 13,
+          "gives": 2,
+          "decisions": 35,
+          "seeds": 24,
+          "rate": 0.0571
+        },
+        {
+          "t": 14,
+          "gives": 5,
+          "decisions": 46,
+          "seeds": 30,
+          "rate": 0.1087
+        },
+        {
+          "t": 15,
+          "gives": 1,
+          "decisions": 42,
+          "seeds": 26,
+          "rate": 0.0238
+        },
+        {
+          "t": 16,
+          "gives": 4,
+          "decisions": 40,
+          "seeds": 25,
+          "rate": 0.1
+        },
+        {
+          "t": 17,
+          "gives": 1,
+          "decisions": 43,
+          "seeds": 28,
+          "rate": 0.0233
+        },
+        {
+          "t": 18,
+          "gives": 1,
+          "decisions": 42,
+          "seeds": 29,
+          "rate": 0.0238
+        },
+        {
+          "t": 19,
+          "gives": 3,
+          "decisions": 48,
+          "seeds": 35,
+          "rate": 0.0625
+        },
+        {
+          "t": 20,
+          "gives": 2,
+          "decisions": 34,
+          "seeds": 26,
+          "rate": 0.0588
+        },
+        {
+          "t": 21,
+          "gives": 0,
+          "decisions": 31,
+          "seeds": 26,
+          "rate": 0
+        },
+        {
+          "t": 22,
+          "gives": 2,
+          "decisions": 44,
+          "seeds": 31,
+          "rate": 0.0455
+        },
+        {
+          "t": 23,
+          "gives": 1,
+          "decisions": 41,
+          "seeds": 29,
+          "rate": 0.0244
+        },
+        {
+          "t": 24,
+          "gives": 4,
+          "decisions": 31,
+          "seeds": 20,
+          "rate": 0.129
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 49,
+          "decisions": 135,
+          "seeds": 42,
+          "rate": 0.363,
+          "ci": [
+            0.2791,
+            0.4436
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 9,
+          "decisions": 99,
+          "seeds": 42,
+          "rate": 0.0909,
+          "ci": [
+            0.0404,
+            0.1538
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 19,
+          "decisions": 120,
+          "seeds": 42,
+          "rate": 0.1583,
+          "ci": [
+            0.0991,
+            0.2185
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 9,
+          "decisions": 108,
+          "seeds": 42,
+          "rate": 0.0833,
+          "ci": [
+            0.0345,
+            0.1359
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 8,
+          "decisions": 123,
+          "seeds": 42,
+          "rate": 0.065,
+          "ci": [
+            0.0297,
+            0.0984
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 6,
+          "decisions": 125,
+          "seeds": 41,
+          "rate": 0.048,
+          "ci": [
+            0.009,
+            0.093
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 5,
+          "decisions": 113,
+          "seeds": 43,
+          "rate": 0.0442,
+          "ci": [
+            0.0093,
+            0.0826
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 7,
+          "decisions": 116,
+          "seeds": 40,
+          "rate": 0.0603,
+          "ci": [
+            0.0182,
+            0.1085
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Neutral, W-RG and W-SGB pooled",
+      "cell": "H>H",
+      "final": {
+        "gives": 4,
+        "decisions": 20,
+        "seeds": 10,
+        "rate": 0.2,
+        "meetings": 10,
+        "bothGaveMeetings": 2
+      },
+      "lastThree": {
+        "gives": 12,
+        "decisions": 62,
+        "seeds": 21,
+        "rate": 0.1935
+      },
+      "rounds1to21": {
+        "gives": 111,
+        "decisions": 402,
+        "seeds": 26,
+        "rate": 0.2761
+      },
+      "rounds1to8": {
+        "gives": 54,
+        "decisions": 142,
+        "seeds": 25,
+        "rate": 0.3803
+      },
+      "finalMinusEarlier": -0.068,
+      "finalMinusEarlierCI": [
+        -0.2903,
+        0.2092
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 3,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.2143
+        },
+        {
+          "t": 2,
+          "gives": 5,
+          "decisions": 20,
+          "seeds": 10,
+          "rate": 0.25
+        },
+        {
+          "t": 3,
+          "gives": 7,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.4375
+        },
+        {
+          "t": 4,
+          "gives": 4,
+          "decisions": 18,
+          "seeds": 9,
+          "rate": 0.2222
+        },
+        {
+          "t": 5,
+          "gives": 9,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.5625
+        },
+        {
+          "t": 6,
+          "gives": 6,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.375
+        },
+        {
+          "t": 7,
+          "gives": 11,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.5
+        },
+        {
+          "t": 8,
+          "gives": 9,
+          "decisions": 20,
+          "seeds": 9,
+          "rate": 0.45
+        },
+        {
+          "t": 9,
+          "gives": 2,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.125
+        },
+        {
+          "t": 10,
+          "gives": 2,
+          "decisions": 20,
+          "seeds": 10,
+          "rate": 0.1
+        },
+        {
+          "t": 11,
+          "gives": 5,
+          "decisions": 20,
+          "seeds": 10,
+          "rate": 0.25
+        },
+        {
+          "t": 12,
+          "gives": 0,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0
+        },
+        {
+          "t": 13,
+          "gives": 6,
+          "decisions": 18,
+          "seeds": 9,
+          "rate": 0.3333
+        },
+        {
+          "t": 14,
+          "gives": 4,
+          "decisions": 28,
+          "seeds": 12,
+          "rate": 0.1429
+        },
+        {
+          "t": 15,
+          "gives": 4,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.1818
+        },
+        {
+          "t": 16,
+          "gives": 2,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.1111
+        },
+        {
+          "t": 17,
+          "gives": 6,
+          "decisions": 22,
+          "seeds": 9,
+          "rate": 0.2727
+        },
+        {
+          "t": 18,
+          "gives": 4,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.25
+        },
+        {
+          "t": 19,
+          "gives": 7,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.3182
+        },
+        {
+          "t": 20,
+          "gives": 11,
+          "decisions": 30,
+          "seeds": 13,
+          "rate": 0.3667
+        },
+        {
+          "t": 21,
+          "gives": 4,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.2857
+        },
+        {
+          "t": 22,
+          "gives": 0,
+          "decisions": 20,
+          "seeds": 10,
+          "rate": 0
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 22,
+          "seeds": 11,
+          "rate": 0.3636
+        },
+        {
+          "t": 24,
+          "gives": 4,
+          "decisions": 20,
+          "seeds": 10,
+          "rate": 0.2
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 15,
+          "decisions": 50,
+          "seeds": 16,
+          "rate": 0.3,
+          "ci": [
+            0.1379,
+            0.5
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 19,
+          "decisions": 50,
+          "seeds": 17,
+          "rate": 0.38,
+          "ci": [
+            0.225,
+            0.5417
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 22,
+          "decisions": 58,
+          "seeds": 19,
+          "rate": 0.3793,
+          "ci": [
+            0.2143,
+            0.5405
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 7,
+          "decisions": 54,
+          "seeds": 18,
+          "rate": 0.1296,
+          "ci": [
+            0.02,
+            0.2708
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 14,
+          "decisions": 68,
+          "seeds": 18,
+          "rate": 0.2059,
+          "ci": [
+            0.0857,
+            0.3235
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 12,
+          "decisions": 56,
+          "seeds": 16,
+          "rate": 0.2143,
+          "ci": [
+            0.08,
+            0.3913
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 22,
+          "decisions": 66,
+          "seeds": 22,
+          "rate": 0.3333,
+          "ci": [
+            0.1806,
+            0.5
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 12,
+          "decisions": 62,
+          "seeds": 21,
+          "rate": 0.1935,
+          "ci": [
+            0.0781,
+            0.3393
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB gift-exact",
+      "cell": "H>H",
+      "final": {
+        "gives": 9,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.9,
+        "meetings": 5,
+        "bothGaveMeetings": 4
+      },
+      "lastThree": {
+        "gives": 30,
+        "decisions": 32,
+        "seeds": 10,
+        "rate": 0.9375
+      },
+      "rounds1to21": {
+        "gives": 198,
+        "decisions": 218,
+        "seeds": 14,
+        "rate": 0.9083
+      },
+      "rounds1to8": {
+        "gives": 69,
+        "decisions": 74,
+        "seeds": 13,
+        "rate": 0.9324
+      },
+      "finalMinusEarlier": -0.0125,
+      "finalMinusEarlierCI": [
+        -0.2375,
+        0.1348
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 3,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 4,
+          "gives": 10,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.8333
+        },
+        {
+          "t": 5,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 6,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 7,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 8,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 9,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 10,
+          "gives": 10,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.8333
+        },
+        {
+          "t": 11,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 12,
+          "gives": 3,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.75
+        },
+        {
+          "t": 13,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 14,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.9167
+        },
+        {
+          "t": 15,
+          "gives": 12,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.8571
+        },
+        {
+          "t": 16,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.875
+        },
+        {
+          "t": 17,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.9167
+        },
+        {
+          "t": 18,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 6,
+          "rate": 0.9286
+        },
+        {
+          "t": 19,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 20,
+          "gives": 19,
+          "decisions": 22,
+          "seeds": 10,
+          "rate": 0.8636
+        },
+        {
+          "t": 21,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 22,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.9286
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 24,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 21,
+          "decisions": 22,
+          "seeds": 8,
+          "rate": 0.9545,
+          "ci": [
+            0.875,
+            1
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 29,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.9063,
+          "ci": [
+            0.7692,
+            1
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 29,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.9667,
+          "ci": [
+            0.875,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 20,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.8333,
+          "ci": [
+            0.6923,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 30,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.8824,
+          "ci": [
+            0.7,
+            1
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 31,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.9118,
+          "ci": [
+            0.825,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 38,
+          "decisions": 42,
+          "seeds": 13,
+          "rate": 0.9048,
+          "ci": [
+            0.8,
+            1
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 30,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.9375,
+          "ci": [
+            0.8529,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB gift-exact",
+      "cell": "H>E",
+      "final": {
+        "gives": 8,
+        "decisions": 13,
+        "seeds": 9,
+        "rate": 0.6154,
+        "meetings": 13,
+        "bothGaveMeetings": null
+      },
+      "lastThree": {
+        "gives": 20,
+        "decisions": 43,
+        "seeds": 13,
+        "rate": 0.4651
+      },
+      "rounds1to21": {
+        "gives": 107,
+        "decisions": 261,
+        "seeds": 14,
+        "rate": 0.41
+      },
+      "rounds1to8": {
+        "gives": 42,
+        "decisions": 91,
+        "seeds": 14,
+        "rate": 0.4615
+      },
+      "finalMinusEarlier": 0.2064,
+      "finalMinusEarlierCI": [
+        -0.1122,
+        0.5119
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 16,
+          "decisions": 20,
+          "seeds": 11,
+          "rate": 0.8
+        },
+        {
+          "t": 2,
+          "gives": 7,
+          "decisions": 13,
+          "seeds": 10,
+          "rate": 0.5385
+        },
+        {
+          "t": 3,
+          "gives": 5,
+          "decisions": 13,
+          "seeds": 9,
+          "rate": 0.3846
+        },
+        {
+          "t": 4,
+          "gives": 2,
+          "decisions": 10,
+          "seeds": 7,
+          "rate": 0.2
+        },
+        {
+          "t": 5,
+          "gives": 1,
+          "decisions": 9,
+          "seeds": 6,
+          "rate": 0.1111
+        },
+        {
+          "t": 6,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 3,
+          "rate": 0.5
+        },
+        {
+          "t": 7,
+          "gives": 5,
+          "decisions": 12,
+          "seeds": 9,
+          "rate": 0.4167
+        },
+        {
+          "t": 8,
+          "gives": 4,
+          "decisions": 10,
+          "seeds": 10,
+          "rate": 0.4
+        },
+        {
+          "t": 9,
+          "gives": 9,
+          "decisions": 18,
+          "seeds": 11,
+          "rate": 0.5
+        },
+        {
+          "t": 10,
+          "gives": 4,
+          "decisions": 12,
+          "seeds": 11,
+          "rate": 0.3333
+        },
+        {
+          "t": 11,
+          "gives": 7,
+          "decisions": 16,
+          "seeds": 10,
+          "rate": 0.4375
+        },
+        {
+          "t": 12,
+          "gives": 7,
+          "decisions": 11,
+          "seeds": 9,
+          "rate": 0.6364
+        },
+        {
+          "t": 13,
+          "gives": 2,
+          "decisions": 10,
+          "seeds": 7,
+          "rate": 0.2
+        },
+        {
+          "t": 14,
+          "gives": 5,
+          "decisions": 15,
+          "seeds": 9,
+          "rate": 0.3333
+        },
+        {
+          "t": 15,
+          "gives": 6,
+          "decisions": 16,
+          "seeds": 10,
+          "rate": 0.375
+        },
+        {
+          "t": 16,
+          "gives": 3,
+          "decisions": 8,
+          "seeds": 6,
+          "rate": 0.375
+        },
+        {
+          "t": 17,
+          "gives": 4,
+          "decisions": 17,
+          "seeds": 10,
+          "rate": 0.2353
+        },
+        {
+          "t": 18,
+          "gives": 5,
+          "decisions": 15,
+          "seeds": 10,
+          "rate": 0.3333
+        },
+        {
+          "t": 19,
+          "gives": 4,
+          "decisions": 14,
+          "seeds": 9,
+          "rate": 0.2857
+        },
+        {
+          "t": 20,
+          "gives": 3,
+          "decisions": 6,
+          "seeds": 6,
+          "rate": 0.5
+        },
+        {
+          "t": 21,
+          "gives": 6,
+          "decisions": 12,
+          "seeds": 9,
+          "rate": 0.5
+        },
+        {
+          "t": 22,
+          "gives": 5,
+          "decisions": 13,
+          "seeds": 10,
+          "rate": 0.3846
+        },
+        {
+          "t": 23,
+          "gives": 7,
+          "decisions": 17,
+          "seeds": 10,
+          "rate": 0.4118
+        },
+        {
+          "t": 24,
+          "gives": 8,
+          "decisions": 13,
+          "seeds": 9,
+          "rate": 0.6154
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 28,
+          "decisions": 46,
+          "seeds": 13,
+          "rate": 0.6087,
+          "ci": [
+            0.4444,
+            0.7619
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 5,
+          "decisions": 23,
+          "seeds": 12,
+          "rate": 0.2174,
+          "ci": [
+            0.0714,
+            0.4444
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 18,
+          "decisions": 40,
+          "seeds": 14,
+          "rate": 0.45,
+          "ci": [
+            0.2857,
+            0.6129
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 18,
+          "decisions": 39,
+          "seeds": 14,
+          "rate": 0.4615,
+          "ci": [
+            0.3556,
+            0.5946
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 13,
+          "decisions": 41,
+          "seeds": 13,
+          "rate": 0.3171,
+          "ci": [
+            0.1714,
+            0.4286
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 12,
+          "decisions": 40,
+          "seeds": 14,
+          "rate": 0.3,
+          "ci": [
+            0.1579,
+            0.439
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 13,
+          "decisions": 32,
+          "seeds": 13,
+          "rate": 0.4063,
+          "ci": [
+            0.2162,
+            0.6429
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 20,
+          "decisions": 43,
+          "seeds": 13,
+          "rate": 0.4651,
+          "ci": [
+            0.3415,
+            0.5909
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB gift-exact",
+      "cell": "E>H",
+      "final": {
+        "gives": 3,
+        "decisions": 13,
+        "seeds": 9,
+        "rate": 0.2308,
+        "meetings": 13,
+        "bothGaveMeetings": null
+      },
+      "lastThree": {
+        "gives": 4,
+        "decisions": 43,
+        "seeds": 13,
+        "rate": 0.093
+      },
+      "rounds1to21": {
+        "gives": 33,
+        "decisions": 261,
+        "seeds": 14,
+        "rate": 0.1264
+      },
+      "rounds1to8": {
+        "gives": 24,
+        "decisions": 91,
+        "seeds": 14,
+        "rate": 0.2637
+      },
+      "finalMinusEarlier": 0.1139,
+      "finalMinusEarlierCI": [
+        -0.0925,
+        0.2975
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 9,
+          "decisions": 20,
+          "seeds": 11,
+          "rate": 0.45
+        },
+        {
+          "t": 2,
+          "gives": 4,
+          "decisions": 13,
+          "seeds": 10,
+          "rate": 0.3077
+        },
+        {
+          "t": 3,
+          "gives": 2,
+          "decisions": 13,
+          "seeds": 9,
+          "rate": 0.1538
+        },
+        {
+          "t": 4,
+          "gives": 1,
+          "decisions": 10,
+          "seeds": 7,
+          "rate": 0.1
+        },
+        {
+          "t": 5,
+          "gives": 0,
+          "decisions": 9,
+          "seeds": 6,
+          "rate": 0
+        },
+        {
+          "t": 6,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 3,
+          "rate": 0.5
+        },
+        {
+          "t": 7,
+          "gives": 5,
+          "decisions": 12,
+          "seeds": 9,
+          "rate": 0.4167
+        },
+        {
+          "t": 8,
+          "gives": 1,
+          "decisions": 10,
+          "seeds": 10,
+          "rate": 0.1
+        },
+        {
+          "t": 9,
+          "gives": 0,
+          "decisions": 18,
+          "seeds": 11,
+          "rate": 0
+        },
+        {
+          "t": 10,
+          "gives": 0,
+          "decisions": 12,
+          "seeds": 11,
+          "rate": 0
+        },
+        {
+          "t": 11,
+          "gives": 3,
+          "decisions": 16,
+          "seeds": 10,
+          "rate": 0.1875
+        },
+        {
+          "t": 12,
+          "gives": 0,
+          "decisions": 11,
+          "seeds": 9,
+          "rate": 0
+        },
+        {
+          "t": 13,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 7,
+          "rate": 0
+        },
+        {
+          "t": 14,
+          "gives": 3,
+          "decisions": 15,
+          "seeds": 9,
+          "rate": 0.2
+        },
+        {
+          "t": 15,
+          "gives": 1,
+          "decisions": 16,
+          "seeds": 10,
+          "rate": 0.0625
+        },
+        {
+          "t": 16,
+          "gives": 1,
+          "decisions": 8,
+          "seeds": 6,
+          "rate": 0.125
+        },
+        {
+          "t": 17,
+          "gives": 0,
+          "decisions": 17,
+          "seeds": 10,
+          "rate": 0
+        },
+        {
+          "t": 18,
+          "gives": 0,
+          "decisions": 15,
+          "seeds": 10,
+          "rate": 0
+        },
+        {
+          "t": 19,
+          "gives": 1,
+          "decisions": 14,
+          "seeds": 9,
+          "rate": 0.0714
+        },
+        {
+          "t": 20,
+          "gives": 0,
+          "decisions": 6,
+          "seeds": 6,
+          "rate": 0
+        },
+        {
+          "t": 21,
+          "gives": 0,
+          "decisions": 12,
+          "seeds": 9,
+          "rate": 0
+        },
+        {
+          "t": 22,
+          "gives": 1,
+          "decisions": 13,
+          "seeds": 10,
+          "rate": 0.0769
+        },
+        {
+          "t": 23,
+          "gives": 0,
+          "decisions": 17,
+          "seeds": 10,
+          "rate": 0
+        },
+        {
+          "t": 24,
+          "gives": 3,
+          "decisions": 13,
+          "seeds": 9,
+          "rate": 0.2308
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 15,
+          "decisions": 46,
+          "seeds": 13,
+          "rate": 0.3261,
+          "ci": [
+            0.175,
+            0.4706
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 3,
+          "decisions": 23,
+          "seeds": 12,
+          "rate": 0.1304,
+          "ci": [
+            0,
+            0.3
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 6,
+          "decisions": 40,
+          "seeds": 14,
+          "rate": 0.15,
+          "ci": [
+            0.0256,
+            0.2857
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 3,
+          "decisions": 39,
+          "seeds": 14,
+          "rate": 0.0769,
+          "ci": [
+            0,
+            0.1579
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 4,
+          "decisions": 41,
+          "seeds": 13,
+          "rate": 0.0976,
+          "ci": [
+            0.0286,
+            0.15
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 1,
+          "decisions": 40,
+          "seeds": 14,
+          "rate": 0.025,
+          "ci": [
+            0,
+            0.0789
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 1,
+          "decisions": 32,
+          "seeds": 13,
+          "rate": 0.0313,
+          "ci": [
+            0,
+            0.0938
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 4,
+          "decisions": 43,
+          "seeds": 13,
+          "rate": 0.093,
+          "ci": [
+            0,
+            0.2059
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB gift-any-holder",
+      "cell": "H>H",
+      "final": {
+        "gives": 9,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.9,
+        "meetings": 5,
+        "bothGaveMeetings": 4
+      },
+      "lastThree": {
+        "gives": 29,
+        "decisions": 32,
+        "seeds": 10,
+        "rate": 0.9063
+      },
+      "rounds1to21": {
+        "gives": 204,
+        "decisions": 218,
+        "seeds": 14,
+        "rate": 0.9358
+      },
+      "rounds1to8": {
+        "gives": 69,
+        "decisions": 74,
+        "seeds": 13,
+        "rate": 0.9324
+      },
+      "finalMinusEarlier": -0.0333,
+      "finalMinusEarlierCI": [
+        -0.267,
+        0.104
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 3,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 4,
+          "gives": 10,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.8333
+        },
+        {
+          "t": 5,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.9
+        },
+        {
+          "t": 6,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 7,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 8,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 9,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.9
+        },
+        {
+          "t": 10,
+          "gives": 10,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.8333
+        },
+        {
+          "t": 11,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 12,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 13,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 14,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.9167
+        },
+        {
+          "t": 15,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 16,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.875
+        },
+        {
+          "t": 17,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 18,
+          "gives": 12,
+          "decisions": 14,
+          "seeds": 6,
+          "rate": 0.8571
+        },
+        {
+          "t": 19,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 20,
+          "gives": 21,
+          "decisions": 22,
+          "seeds": 10,
+          "rate": 0.9545
+        },
+        {
+          "t": 21,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 22,
+          "gives": 12,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.8571
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 24,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 22,
+          "decisions": 22,
+          "seeds": 8,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 28,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.875,
+          "ci": [
+            0.7273,
+            0.9722
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 28,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.9333,
+          "ci": [
+            0.8235,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 21,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.875,
+          "ci": [
+            0.65,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 33,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.9706,
+          "ci": [
+            0.9167,
+            1
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 31,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.9118,
+          "ci": [
+            0.7333,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 41,
+          "decisions": 42,
+          "seeds": 13,
+          "rate": 0.9762,
+          "ci": [
+            0.9286,
+            1
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 29,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.9063,
+          "ci": [
+            0.7778,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB gift-hard-partner-only",
+      "cell": "H>H",
+      "final": {
+        "gives": 10,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 1,
+        "meetings": 5,
+        "bothGaveMeetings": 5
+      },
+      "lastThree": {
+        "gives": 32,
+        "decisions": 32,
+        "seeds": 10,
+        "rate": 1
+      },
+      "rounds1to21": {
+        "gives": 208,
+        "decisions": 218,
+        "seeds": 14,
+        "rate": 0.9541
+      },
+      "rounds1to8": {
+        "gives": 69,
+        "decisions": 74,
+        "seeds": 13,
+        "rate": 0.9324
+      },
+      "finalMinusEarlier": 0.0417,
+      "finalMinusEarlierCI": [
+        0.0117,
+        0.0798
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 3,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 4,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 5,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 6,
+          "gives": 8,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.8
+        },
+        {
+          "t": 7,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 8,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 9,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 10,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.9167
+        },
+        {
+          "t": 11,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 12,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.5
+        },
+        {
+          "t": 13,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 14,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 15,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 16,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.875
+        },
+        {
+          "t": 17,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 18,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 6,
+          "rate": 0.9286
+        },
+        {
+          "t": 19,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 20,
+          "gives": 22,
+          "decisions": 22,
+          "seeds": 10,
+          "rate": 1
+        },
+        {
+          "t": 21,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 22,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 24,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 21,
+          "decisions": 22,
+          "seeds": 8,
+          "rate": 0.9545,
+          "ci": [
+            0.85,
+            1
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 29,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.9063,
+          "ci": [
+            0.8125,
+            1
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 29,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.9667,
+          "ci": [
+            0.8846,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 21,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.875,
+          "ci": [
+            0.7273,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 34,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 32,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.9412,
+          "ci": [
+            0.881,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 42,
+          "decisions": 42,
+          "seeds": 13,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 32,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB neutral",
+      "cell": "H>H",
+      "final": {
+        "gives": 4,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.4,
+        "meetings": 5,
+        "bothGaveMeetings": 2
+      },
+      "lastThree": {
+        "gives": 5,
+        "decisions": 32,
+        "seeds": 10,
+        "rate": 0.1563
+      },
+      "rounds1to21": {
+        "gives": 59,
+        "decisions": 218,
+        "seeds": 14,
+        "rate": 0.2706
+      },
+      "rounds1to8": {
+        "gives": 28,
+        "decisions": 74,
+        "seeds": 13,
+        "rate": 0.3784
+      },
+      "finalMinusEarlier": 0.15,
+      "finalMinusEarlierCI": [
+        -0.2792,
+        0.7439
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 3,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.5
+        },
+        {
+          "t": 2,
+          "gives": 2,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.1667
+        },
+        {
+          "t": 3,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.5
+        },
+        {
+          "t": 4,
+          "gives": 2,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.1667
+        },
+        {
+          "t": 5,
+          "gives": 5,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.5
+        },
+        {
+          "t": 6,
+          "gives": 6,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.6
+        },
+        {
+          "t": 7,
+          "gives": 2,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.25
+        },
+        {
+          "t": 8,
+          "gives": 6,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.5
+        },
+        {
+          "t": 9,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 10,
+          "gives": 2,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.1667
+        },
+        {
+          "t": 11,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 12,
+          "gives": 0,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0
+        },
+        {
+          "t": 13,
+          "gives": 6,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.75
+        },
+        {
+          "t": 14,
+          "gives": 2,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.1667
+        },
+        {
+          "t": 15,
+          "gives": 2,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.1429
+        },
+        {
+          "t": 16,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0
+        },
+        {
+          "t": 17,
+          "gives": 2,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.1667
+        },
+        {
+          "t": 18,
+          "gives": 4,
+          "decisions": 14,
+          "seeds": 6,
+          "rate": 0.2857
+        },
+        {
+          "t": 19,
+          "gives": 4,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.3333
+        },
+        {
+          "t": 20,
+          "gives": 9,
+          "decisions": 22,
+          "seeds": 10,
+          "rate": 0.4091
+        },
+        {
+          "t": 21,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 22,
+          "gives": 0,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0
+        },
+        {
+          "t": 23,
+          "gives": 1,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.125
+        },
+        {
+          "t": 24,
+          "gives": 4,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.4
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 7,
+          "decisions": 22,
+          "seeds": 8,
+          "rate": 0.3182,
+          "ci": [
+            0.0833,
+            0.6
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 13,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.4063,
+          "ci": [
+            0.2143,
+            0.6053
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 8,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.2667,
+          "ci": [
+            0,
+            0.5333
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 2,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.0833,
+          "ci": [
+            0,
+            0.2308
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 10,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.2941,
+          "ci": [
+            0.0714,
+            0.5
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 6,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.1765,
+          "ci": [
+            0,
+            0.4
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 13,
+          "decisions": 42,
+          "seeds": 13,
+          "rate": 0.3095,
+          "ci": [
+            0.1136,
+            0.5333
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 5,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.1563,
+          "ci": [
+            0,
+            0.3846
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB easy-easy-negative",
+      "cell": "H>H",
+      "final": {
+        "gives": 7,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.7,
+        "meetings": 5,
+        "bothGaveMeetings": 3
+      },
+      "lastThree": {
+        "gives": 23,
+        "decisions": 32,
+        "seeds": 10,
+        "rate": 0.7188
+      },
+      "rounds1to21": {
+        "gives": 161,
+        "decisions": 218,
+        "seeds": 14,
+        "rate": 0.7385
+      },
+      "rounds1to8": {
+        "gives": 62,
+        "decisions": 74,
+        "seeds": 13,
+        "rate": 0.8378
+      },
+      "finalMinusEarlier": -0.0375,
+      "finalMinusEarlierCI": [
+        -0.4423,
+        0.312
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 9,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.75
+        },
+        {
+          "t": 3,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.5
+        },
+        {
+          "t": 4,
+          "gives": 8,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.6667
+        },
+        {
+          "t": 5,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.9
+        },
+        {
+          "t": 6,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 7,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 8,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 9,
+          "gives": 6,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.6
+        },
+        {
+          "t": 10,
+          "gives": 6,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.5
+        },
+        {
+          "t": 11,
+          "gives": 5,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.625
+        },
+        {
+          "t": 12,
+          "gives": 3,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.75
+        },
+        {
+          "t": 13,
+          "gives": 6,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.75
+        },
+        {
+          "t": 14,
+          "gives": 10,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.8333
+        },
+        {
+          "t": 15,
+          "gives": 9,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.6429
+        },
+        {
+          "t": 16,
+          "gives": 6,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.75
+        },
+        {
+          "t": 17,
+          "gives": 9,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.75
+        },
+        {
+          "t": 18,
+          "gives": 7,
+          "decisions": 14,
+          "seeds": 6,
+          "rate": 0.5
+        },
+        {
+          "t": 19,
+          "gives": 9,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.75
+        },
+        {
+          "t": 20,
+          "gives": 17,
+          "decisions": 22,
+          "seeds": 10,
+          "rate": 0.7727
+        },
+        {
+          "t": 21,
+          "gives": 6,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.75
+        },
+        {
+          "t": 22,
+          "gives": 8,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.5714
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 24,
+          "gives": 7,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.7
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 17,
+          "decisions": 22,
+          "seeds": 8,
+          "rate": 0.7727,
+          "ci": [
+            0.5417,
+            0.9583
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 26,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.8125,
+          "ci": [
+            0.6923,
+            0.9118
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 25,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.8333,
+          "ci": [
+            0.675,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 14,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.5833,
+          "ci": [
+            0.35,
+            0.7727
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 25,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.7353,
+          "ci": [
+            0.4667,
+            0.9375
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 22,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.6471,
+          "ci": [
+            0.5,
+            0.7667
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 32,
+          "decisions": 42,
+          "seeds": 13,
+          "rate": 0.7619,
+          "ci": [
+            0.6087,
+            0.9063
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 23,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 0.7188,
+          "ci": [
+            0.5,
+            0.8889
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-SGB easy-easy-negative",
+      "cell": "E>E",
+      "final": {
+        "gives": 6,
+        "decisions": 6,
+        "seeds": 3,
+        "rate": 1,
+        "meetings": 3,
+        "bothGaveMeetings": 3
+      },
+      "lastThree": {
+        "gives": 20,
+        "decisions": 20,
+        "seeds": 7,
+        "rate": 1
+      },
+      "rounds1to21": {
+        "gives": 207,
+        "decisions": 208,
+        "seeds": 14,
+        "rate": 0.9952
+      },
+      "rounds1to8": {
+        "gives": 78,
+        "decisions": 78,
+        "seeds": 13,
+        "rate": 1
+      },
+      "finalMinusEarlier": 0.0045,
+      "finalMinusEarlierCI": [
+        0,
+        0.0158
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 2,
+          "decisions": 2,
+          "seeds": 1,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 3,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 4,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 5,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 6,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 7,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 8,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 9,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 10,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 11,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 12,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 13,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.9286
+        },
+        {
+          "t": 14,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 15,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 16,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 17,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 18,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 19,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 20,
+          "gives": 14,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 1
+        },
+        {
+          "t": 21,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 22,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 23,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 24,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 20,
+          "decisions": 20,
+          "seeds": 8,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 42,
+          "decisions": 42,
+          "seeds": 11,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 26,
+          "decisions": 26,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 32,
+          "decisions": 32,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 35,
+          "decisions": 36,
+          "seeds": 10,
+          "rate": 0.9722,
+          "ci": [
+            0.9118,
+            1
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 26,
+          "decisions": 26,
+          "seeds": 9,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 26,
+          "decisions": 26,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 20,
+          "decisions": 20,
+          "seeds": 7,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-RG gift-standard",
+      "cell": "H>H",
+      "final": {
+        "gives": 8,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.8,
+        "meetings": 5,
+        "bothGaveMeetings": 4
+      },
+      "lastThree": {
+        "gives": 26,
+        "decisions": 30,
+        "seeds": 11,
+        "rate": 0.8667
+      },
+      "rounds1to21": {
+        "gives": 161,
+        "decisions": 184,
+        "seeds": 12,
+        "rate": 0.875
+      },
+      "rounds1to8": {
+        "gives": 60,
+        "decisions": 68,
+        "seeds": 12,
+        "rate": 0.8824
+      },
+      "finalMinusEarlier": -0.0775,
+      "finalMinusEarlierCI": [
+        -0.5076,
+        0.1589
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 2,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 3,
+          "gives": 8,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.6667
+        },
+        {
+          "t": 4,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 5,
+          "gives": 5,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.8333
+        },
+        {
+          "t": 6,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 7,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.9286
+        },
+        {
+          "t": 8,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.875
+        },
+        {
+          "t": 9,
+          "gives": 5,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.8333
+        },
+        {
+          "t": 10,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.875
+        },
+        {
+          "t": 11,
+          "gives": 9,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.75
+        },
+        {
+          "t": 12,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 13,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 14,
+          "gives": 14,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.875
+        },
+        {
+          "t": 15,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 16,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 17,
+          "gives": 8,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.8
+        },
+        {
+          "t": 18,
+          "gives": 2,
+          "decisions": 2,
+          "seeds": 1,
+          "rate": 1
+        },
+        {
+          "t": 19,
+          "gives": 7,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.7
+        },
+        {
+          "t": 20,
+          "gives": 7,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.875
+        },
+        {
+          "t": 21,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 22,
+          "gives": 5,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.8333
+        },
+        {
+          "t": 23,
+          "gives": 13,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.9286
+        },
+        {
+          "t": 24,
+          "gives": 8,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.8
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 23,
+          "decisions": 28,
+          "seeds": 8,
+          "rate": 0.8214,
+          "ci": [
+            0.65,
+            0.95
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 17,
+          "decisions": 18,
+          "seeds": 7,
+          "rate": 0.9444,
+          "ci": [
+            0.7857,
+            1
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 25,
+          "decisions": 28,
+          "seeds": 9,
+          "rate": 0.8929,
+          "ci": [
+            0.75,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 26,
+          "decisions": 30,
+          "seeds": 9,
+          "rate": 0.8667,
+          "ci": [
+            0.75,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 31,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.9118,
+          "ci": [
+            0.8,
+            0.9783
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 19,
+          "decisions": 22,
+          "seeds": 7,
+          "rate": 0.8636,
+          "ci": [
+            0.7083,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 20,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.8333,
+          "ci": [
+            0.6667,
+            0.9688
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 26,
+          "decisions": 30,
+          "seeds": 11,
+          "rate": 0.8667,
+          "ci": [
+            0.7188,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-RG neutral-standard",
+      "cell": "H>H",
+      "final": {
+        "gives": 0,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0,
+        "meetings": 5,
+        "bothGaveMeetings": 0
+      },
+      "lastThree": {
+        "gives": 7,
+        "decisions": 30,
+        "seeds": 11,
+        "rate": 0.2333
+      },
+      "rounds1to21": {
+        "gives": 52,
+        "decisions": 184,
+        "seeds": 12,
+        "rate": 0.2826
+      },
+      "rounds1to8": {
+        "gives": 26,
+        "decisions": 68,
+        "seeds": 12,
+        "rate": 0.3824
+      },
+      "finalMinusEarlier": -0.2892,
+      "finalMinusEarlierCI": [
+        -0.3933,
+        -0.2059
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 2,
+          "gives": 3,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.375
+        },
+        {
+          "t": 3,
+          "gives": 5,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.4167
+        },
+        {
+          "t": 4,
+          "gives": 2,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.3333
+        },
+        {
+          "t": 5,
+          "gives": 4,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.6667
+        },
+        {
+          "t": 6,
+          "gives": 0,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0
+        },
+        {
+          "t": 7,
+          "gives": 9,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.6429
+        },
+        {
+          "t": 8,
+          "gives": 3,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.375
+        },
+        {
+          "t": 9,
+          "gives": 2,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.3333
+        },
+        {
+          "t": 10,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 11,
+          "gives": 5,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.4167
+        },
+        {
+          "t": 12,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0
+        },
+        {
+          "t": 13,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0
+        },
+        {
+          "t": 14,
+          "gives": 2,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.125
+        },
+        {
+          "t": 15,
+          "gives": 2,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.25
+        },
+        {
+          "t": 16,
+          "gives": 2,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.2
+        },
+        {
+          "t": 17,
+          "gives": 4,
+          "decisions": 10,
+          "seeds": 4,
+          "rate": 0.4
+        },
+        {
+          "t": 18,
+          "gives": 0,
+          "decisions": 2,
+          "seeds": 1,
+          "rate": 0
+        },
+        {
+          "t": 19,
+          "gives": 3,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.3
+        },
+        {
+          "t": 20,
+          "gives": 2,
+          "decisions": 8,
+          "seeds": 3,
+          "rate": 0.25
+        },
+        {
+          "t": 21,
+          "gives": 4,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.6667
+        },
+        {
+          "t": 22,
+          "gives": 0,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0
+        },
+        {
+          "t": 23,
+          "gives": 7,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.5
+        },
+        {
+          "t": 24,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 8,
+          "decisions": 28,
+          "seeds": 8,
+          "rate": 0.2857,
+          "ci": [
+            0.0882,
+            0.5667
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 6,
+          "decisions": 18,
+          "seeds": 7,
+          "rate": 0.3333,
+          "ci": [
+            0.1111,
+            0.6364
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 14,
+          "decisions": 28,
+          "seeds": 9,
+          "rate": 0.5,
+          "ci": [
+            0.2727,
+            0.7
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 5,
+          "decisions": 30,
+          "seeds": 9,
+          "rate": 0.1667,
+          "ci": [
+            0,
+            0.4167
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 4,
+          "decisions": 34,
+          "seeds": 9,
+          "rate": 0.1176,
+          "ci": [
+            0,
+            0.2353
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 6,
+          "decisions": 22,
+          "seeds": 7,
+          "rate": 0.2727,
+          "ci": [
+            0.0667,
+            0.625
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 9,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.375,
+          "ci": [
+            0.1538,
+            0.6
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 7,
+          "decisions": 30,
+          "seeds": 11,
+          "rate": 0.2333,
+          "ci": [
+            0.0625,
+            0.4375
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-CO gift-talk",
+      "cell": "H>H",
+      "final": {
+        "gives": 10,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 1,
+        "meetings": 5,
+        "bothGaveMeetings": 5
+      },
+      "lastThree": {
+        "gives": 37,
+        "decisions": 38,
+        "seeds": 13,
+        "rate": 0.9737
+      },
+      "rounds1to21": {
+        "gives": 254,
+        "decisions": 270,
+        "seeds": 18,
+        "rate": 0.9407
+      },
+      "rounds1to8": {
+        "gives": 120,
+        "decisions": 126,
+        "seeds": 17,
+        "rate": 0.9524
+      },
+      "finalMinusEarlier": 0.057,
+      "finalMinusEarlierCI": [
+        0.0324,
+        0.085
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 2,
+          "gives": 18,
+          "decisions": 18,
+          "seeds": 9,
+          "rate": 1
+        },
+        {
+          "t": 3,
+          "gives": 15,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.9375
+        },
+        {
+          "t": 4,
+          "gives": 8,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.8
+        },
+        {
+          "t": 5,
+          "gives": 16,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 1
+        },
+        {
+          "t": 6,
+          "gives": 17,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.9444
+        },
+        {
+          "t": 7,
+          "gives": 27,
+          "decisions": 28,
+          "seeds": 12,
+          "rate": 0.9643
+        },
+        {
+          "t": 8,
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.9167
+        },
+        {
+          "t": 9,
+          "gives": 15,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.8333
+        },
+        {
+          "t": 10,
+          "gives": 14,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.875
+        },
+        {
+          "t": 11,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 12,
+          "gives": 8,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 1
+        },
+        {
+          "t": 13,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 14,
+          "gives": 4,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 1
+        },
+        {
+          "t": 15,
+          "gives": 16,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 1
+        },
+        {
+          "t": 16,
+          "gives": 6,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 1
+        },
+        {
+          "t": 17,
+          "gives": 5,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.8333
+        },
+        {
+          "t": 18,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 1
+        },
+        {
+          "t": 19,
+          "gives": 15,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.9375
+        },
+        {
+          "t": 20,
+          "gives": 9,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.9
+        },
+        {
+          "t": 21,
+          "gives": 12,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.8571
+        },
+        {
+          "t": 22,
+          "gives": 12,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 1
+        },
+        {
+          "t": 23,
+          "gives": 15,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.9375
+        },
+        {
+          "t": 24,
+          "gives": 10,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 1
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 41,
+          "decisions": 42,
+          "seeds": 15,
+          "rate": 0.9762,
+          "ci": [
+            0.9167,
+            1
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 41,
+          "decisions": 44,
+          "seeds": 13,
+          "rate": 0.9318,
+          "ci": [
+            0.8571,
+            1
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 53,
+          "decisions": 58,
+          "seeds": 16,
+          "rate": 0.9138,
+          "ci": [
+            0.7931,
+            1
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 28,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.9333,
+          "ci": [
+            0.8529,
+            1
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 32,
+          "decisions": 32,
+          "seeds": 13,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 23,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.9583,
+          "ci": [
+            0.8846,
+            1
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 36,
+          "decisions": 40,
+          "seeds": 12,
+          "rate": 0.9,
+          "ci": [
+            0.775,
+            1
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 37,
+          "decisions": 38,
+          "seeds": 13,
+          "rate": 0.9737,
+          "ci": [
+            0.9118,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "W-CO money-talk",
+      "cell": "H>H",
+      "final": {
+        "gives": 4,
+        "decisions": 10,
+        "seeds": 5,
+        "rate": 0.4,
+        "meetings": 5,
+        "bothGaveMeetings": 2
+      },
+      "lastThree": {
+        "gives": 12,
+        "decisions": 38,
+        "seeds": 13,
+        "rate": 0.3158
+      },
+      "rounds1to21": {
+        "gives": 55,
+        "decisions": 270,
+        "seeds": 18,
+        "rate": 0.2037
+      },
+      "rounds1to8": {
+        "gives": 27,
+        "decisions": 126,
+        "seeds": 17,
+        "rate": 0.2143
+      },
+      "finalMinusEarlier": 0.1886,
+      "finalMinusEarlierCI": [
+        -0.23,
+        0.7432
+      ],
+      "byRound": [
+        {
+          "t": 1,
+          "gives": 1,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0.125
+        },
+        {
+          "t": 2,
+          "gives": 5,
+          "decisions": 18,
+          "seeds": 9,
+          "rate": 0.2778
+        },
+        {
+          "t": 3,
+          "gives": 2,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.125
+        },
+        {
+          "t": 4,
+          "gives": 0,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0
+        },
+        {
+          "t": 5,
+          "gives": 1,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.0625
+        },
+        {
+          "t": 6,
+          "gives": 4,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.2222
+        },
+        {
+          "t": 7,
+          "gives": 9,
+          "decisions": 28,
+          "seeds": 12,
+          "rate": 0.3214
+        },
+        {
+          "t": 8,
+          "gives": 5,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.4167
+        },
+        {
+          "t": 9,
+          "gives": 5,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.2778
+        },
+        {
+          "t": 10,
+          "gives": 2,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.125
+        },
+        {
+          "t": 11,
+          "gives": 2,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0.3333
+        },
+        {
+          "t": 12,
+          "gives": 0,
+          "decisions": 8,
+          "seeds": 4,
+          "rate": 0
+        },
+        {
+          "t": 13,
+          "gives": 3,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.25
+        },
+        {
+          "t": 14,
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 2,
+          "rate": 0.5
+        },
+        {
+          "t": 15,
+          "gives": 2,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.125
+        },
+        {
+          "t": 16,
+          "gives": 0,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0
+        },
+        {
+          "t": 17,
+          "gives": 0,
+          "decisions": 6,
+          "seeds": 3,
+          "rate": 0
+        },
+        {
+          "t": 18,
+          "gives": 4,
+          "decisions": 12,
+          "seeds": 6,
+          "rate": 0.3333
+        },
+        {
+          "t": 19,
+          "gives": 4,
+          "decisions": 16,
+          "seeds": 8,
+          "rate": 0.25
+        },
+        {
+          "t": 20,
+          "gives": 2,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.2
+        },
+        {
+          "t": 21,
+          "gives": 2,
+          "decisions": 14,
+          "seeds": 7,
+          "rate": 0.1429
+        },
+        {
+          "t": 22,
+          "gives": 4,
+          "decisions": 12,
+          "seeds": 5,
+          "rate": 0.3333
+        },
+        {
+          "t": 23,
+          "gives": 4,
+          "decisions": 16,
+          "seeds": 7,
+          "rate": 0.25
+        },
+        {
+          "t": 24,
+          "gives": 4,
+          "decisions": 10,
+          "seeds": 5,
+          "rate": 0.4
+        }
+      ],
+      "byRoundBin": [
+        {
+          "from": 1,
+          "to": 3,
+          "gives": 8,
+          "decisions": 42,
+          "seeds": 15,
+          "rate": 0.1905,
+          "ci": [
+            0.0952,
+            0.3
+          ]
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "gives": 5,
+          "decisions": 44,
+          "seeds": 13,
+          "rate": 0.1136,
+          "ci": [
+            0.0238,
+            0.2368
+          ]
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "gives": 19,
+          "decisions": 58,
+          "seeds": 16,
+          "rate": 0.3276,
+          "ci": [
+            0.1571,
+            0.5455
+          ]
+        },
+        {
+          "from": 10,
+          "to": 12,
+          "gives": 4,
+          "decisions": 30,
+          "seeds": 10,
+          "rate": 0.1333,
+          "ci": [
+            0,
+            0.3333
+          ]
+        },
+        {
+          "from": 13,
+          "to": 15,
+          "gives": 7,
+          "decisions": 32,
+          "seeds": 13,
+          "rate": 0.2188,
+          "ci": [
+            0.0556,
+            0.4286
+          ]
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "gives": 4,
+          "decisions": 24,
+          "seeds": 9,
+          "rate": 0.1667,
+          "ci": [
+            0,
+            0.4
+          ]
+        },
+        {
+          "from": 19,
+          "to": 21,
+          "gives": 8,
+          "decisions": 40,
+          "seeds": 12,
+          "rate": 0.2,
+          "ci": [
+            0.05,
+            0.375
+          ]
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "gives": 12,
+          "decisions": 38,
+          "seeds": 13,
+          "rate": 0.3158,
+          "ci": [
+            0.0625,
+            0.5789
+          ]
+        }
+      ]
+    }
+  ],
+  "historyAtExactRound": [
+    {
+      "label": "Gift (standard execution), three studies",
+      "cell": "E>H",
+      "arms": [
+        "gift-talk",
+        "gift-standard",
+        "gift-exact"
+      ],
+      "pooledRounds12": {
+        "first": {
+          "gives": 41,
+          "decisions": 81,
+          "seeds": 41,
+          "rate": 0.5062
+        },
+        "prior": {
+          "gives": 1,
+          "decisions": 20,
+          "seeds": 18,
+          "rate": 0.05
+        },
+        "difference": 0.4562
+      },
+      "exactRounds": [
+        {
+          "t": 2,
+          "first": {
+            "gives": 13,
+            "decisions": 29,
+            "seeds": 22,
+            "rate": 0.4483
+          },
+          "prior": {
+            "gives": 1,
+            "decisions": 20,
+            "seeds": 18,
+            "rate": 0.05
+          },
+          "difference": 0.3983
+        },
+        {
+          "t": 3,
+          "first": {
+            "gives": 3,
+            "decisions": 9,
+            "seeds": 8,
+            "rate": 0.3333
+          },
+          "prior": {
+            "gives": 4,
+            "decisions": 25,
+            "seeds": 21,
+            "rate": 0.16
+          },
+          "difference": 0.1733
+        },
+        {
+          "t": 4,
+          "first": {
+            "gives": 3,
+            "decisions": 6,
+            "seeds": 6,
+            "rate": 0.5
+          },
+          "prior": {
+            "gives": 0,
+            "decisions": 28,
+            "seeds": 18,
+            "rate": 0
+          },
+          "difference": 0.5
+        },
+        {
+          "t": 5,
+          "first": {
+            "gives": 1,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 0.3333
+          },
+          "prior": {
+            "gives": 0,
+            "decisions": 25,
+            "seeds": 20,
+            "rate": 0
+          },
+          "difference": 0.3333
+        },
+        {
+          "t": 6,
+          "first": {
+            "gives": 4,
+            "decisions": 4,
+            "seeds": 4,
+            "rate": 1
+          },
+          "prior": {
+            "gives": 1,
+            "decisions": 33,
+            "seeds": 23,
+            "rate": 0.0303
+          },
+          "difference": 0.9697
+        }
+      ],
+      "standardized": {
+        "maxRound": 6,
+        "difference": 0.4383,
+        "ci": [
+          0.2767,
+          0.6087
+        ],
+        "firstDecisions": 51,
+        "priorDecisions": 131
+      }
+    },
+    {
+      "label": "Gift exact, W-SGB",
+      "cell": "E>H",
+      "arms": [
+        "gift-exact"
+      ],
+      "pooledRounds12": {
+        "first": {
+          "gives": 12,
+          "decisions": 28,
+          "seeds": 12,
+          "rate": 0.4286
+        },
+        "prior": {
+          "gives": 1,
+          "decisions": 5,
+          "seeds": 5,
+          "rate": 0.2
+        },
+        "difference": 0.2286
+      },
+      "exactRounds": [
+        {
+          "t": 2,
+          "first": {
+            "gives": 3,
+            "decisions": 8,
+            "seeds": 7,
+            "rate": 0.375
+          },
+          "prior": {
+            "gives": 1,
+            "decisions": 5,
+            "seeds": 5,
+            "rate": 0.2
+          },
+          "difference": 0.175
+        },
+        {
+          "t": 3,
+          "first": {
+            "gives": 1,
+            "decisions": 4,
+            "seeds": 3,
+            "rate": 0.25
+          },
+          "prior": {
+            "gives": 1,
+            "decisions": 9,
+            "seeds": 7,
+            "rate": 0.1111
+          },
+          "difference": 0.1389
+        },
+        {
+          "t": 4,
+          "first": {
+            "gives": 1,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 0.3333
+          },
+          "prior": {
+            "gives": 0,
+            "decisions": 7,
+            "seeds": 5,
+            "rate": 0
+          },
+          "difference": 0.3333
+        },
+        {
+          "t": 5,
+          "first": {
+            "gives": 0,
+            "decisions": 1,
+            "seeds": 1,
+            "rate": 0
+          },
+          "prior": {
+            "gives": 0,
+            "decisions": 8,
+            "seeds": 6,
+            "rate": 0
+          },
+          "difference": 0
+        },
+        {
+          "t": 6,
+          "first": {
+            "gives": 1,
+            "decisions": 1,
+            "seeds": 1,
+            "rate": 1
+          },
+          "prior": {
+            "gives": 1,
+            "decisions": 3,
+            "seeds": 2,
+            "rate": 0.3333
+          },
+          "difference": 0.6667
+        }
+      ],
+      "standardized": {
+        "maxRound": 6,
+        "difference": 0.2215,
+        "ci": [
+          -0.0355,
+          0.561
+        ],
+        "firstDecisions": 17,
+        "priorDecisions": 32
+      }
+    },
+    {
+      "label": "Gift (standard execution), three studies",
+      "cell": "H>E",
+      "arms": [
+        "gift-talk",
+        "gift-standard",
+        "gift-exact"
+      ],
+      "pooledRounds12": {
+        "first": {
+          "gives": 64,
+          "decisions": 86,
+          "seeds": 41,
+          "rate": 0.7442
+        },
+        "prior": {
+          "gives": 7,
+          "decisions": 15,
+          "seeds": 14,
+          "rate": 0.4667
+        },
+        "difference": 0.2775
+      },
+      "exactRounds": [
+        {
+          "t": 2,
+          "first": {
+            "gives": 22,
+            "decisions": 34,
+            "seeds": 24,
+            "rate": 0.6471
+          },
+          "prior": {
+            "gives": 7,
+            "decisions": 15,
+            "seeds": 14,
+            "rate": 0.4667
+          },
+          "difference": 0.1804
+        },
+        {
+          "t": 3,
+          "first": {
+            "gives": 5,
+            "decisions": 9,
+            "seeds": 9,
+            "rate": 0.5556
+          },
+          "prior": {
+            "gives": 15,
+            "decisions": 25,
+            "seeds": 20,
+            "rate": 0.6
+          },
+          "difference": -0.0444
+        },
+        {
+          "t": 4,
+          "first": {
+            "gives": 3,
+            "decisions": 5,
+            "seeds": 5,
+            "rate": 0.6
+          },
+          "prior": {
+            "gives": 14,
+            "decisions": 29,
+            "seeds": 20,
+            "rate": 0.4828
+          },
+          "difference": 0.1172
+        },
+        {
+          "t": 5,
+          "first": {
+            "gives": 1,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 0.3333
+          },
+          "prior": {
+            "gives": 6,
+            "decisions": 25,
+            "seeds": 19,
+            "rate": 0.24
+          },
+          "difference": 0.0933
+        },
+        {
+          "t": 6,
+          "first": {
+            "gives": 4,
+            "decisions": 4,
+            "seeds": 4,
+            "rate": 1
+          },
+          "prior": {
+            "gives": 18,
+            "decisions": 33,
+            "seeds": 24,
+            "rate": 0.5455
+          },
+          "difference": 0.4545
+        }
+      ],
+      "standardized": {
+        "maxRound": 6,
+        "difference": 0.1731,
+        "ci": [
+          -0.0098,
+          0.3484
+        ],
+        "firstDecisions": 55,
+        "priorDecisions": 127
+      }
+    },
+    {
+      "label": "Gift (standard execution), three studies",
+      "cell": "H>H",
+      "arms": [
+        "gift-talk",
+        "gift-standard",
+        "gift-exact"
+      ],
+      "pooledRounds12": {
+        "first": {
+          "gives": 39,
+          "decisions": 41,
+          "seeds": 19,
+          "rate": 0.9512
+        },
+        "prior": {
+          "gives": 19,
+          "decisions": 19,
+          "seeds": 12,
+          "rate": 1
+        },
+        "difference": -0.0488
+      },
+      "exactRounds": [
+        {
+          "t": 2,
+          "first": {
+            "gives": 18,
+            "decisions": 19,
+            "seeds": 12,
+            "rate": 0.9474
+          },
+          "prior": {
+            "gives": 19,
+            "decisions": 19,
+            "seeds": 12,
+            "rate": 1
+          },
+          "difference": -0.0526
+        },
+        {
+          "t": 3,
+          "first": {
+            "gives": 7,
+            "decisions": 9,
+            "seeds": 8,
+            "rate": 0.7778
+          },
+          "prior": {
+            "gives": 20,
+            "decisions": 23,
+            "seeds": 14,
+            "rate": 0.8696
+          },
+          "difference": -0.0918
+        },
+        {
+          "t": 4,
+          "first": {
+            "gives": 5,
+            "decisions": 5,
+            "seeds": 4,
+            "rate": 1
+          },
+          "prior": {
+            "gives": 19,
+            "decisions": 23,
+            "seeds": 13,
+            "rate": 0.8261
+          },
+          "difference": 0.1739
+        },
+        {
+          "t": 5,
+          "first": {
+            "gives": 2,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 0.6667
+          },
+          "prior": {
+            "gives": 29,
+            "decisions": 29,
+            "seeds": 15,
+            "rate": 1
+          },
+          "difference": -0.3333
+        },
+        {
+          "t": 6,
+          "first": {
+            "gives": 3,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 1
+          },
+          "prior": {
+            "gives": 29,
+            "decisions": 31,
+            "seeds": 16,
+            "rate": 0.9355
+          },
+          "difference": 0.0645
+        }
+      ],
+      "standardized": {
+        "maxRound": 6,
+        "difference": -0.0397,
+        "ci": [
+          -0.1686,
+          0.0802
+        ],
+        "firstDecisions": 39,
+        "priorDecisions": 125
+      }
+    },
+    {
+      "label": "Neutral, W-RG and W-SGB",
+      "cell": "H>H",
+      "arms": [
+        "neutral-standard",
+        "neutral"
+      ],
+      "pooledRounds12": {
+        "first": {
+          "gives": 5,
+          "decisions": 25,
+          "seeds": 11,
+          "rate": 0.2
+        },
+        "prior": {
+          "gives": 3,
+          "decisions": 9,
+          "seeds": 6,
+          "rate": 0.3333
+        },
+        "difference": -0.1333
+      },
+      "exactRounds": [
+        {
+          "t": 2,
+          "first": {
+            "gives": 2,
+            "decisions": 11,
+            "seeds": 7,
+            "rate": 0.1818
+          },
+          "prior": {
+            "gives": 3,
+            "decisions": 9,
+            "seeds": 6,
+            "rate": 0.3333
+          },
+          "difference": -0.1515
+        },
+        {
+          "t": 3,
+          "first": {
+            "gives": 2,
+            "decisions": 3,
+            "seeds": 3,
+            "rate": 0.6667
+          },
+          "prior": {
+            "gives": 5,
+            "decisions": 13,
+            "seeds": 7,
+            "rate": 0.3846
+          },
+          "difference": 0.2821
+        },
+        {
+          "t": 4,
+          "first": {
+            "gives": 2,
+            "decisions": 3,
+            "seeds": 2,
+            "rate": 0.6667
+          },
+          "prior": {
+            "gives": 2,
+            "decisions": 15,
+            "seeds": 8,
+            "rate": 0.1333
+          },
+          "difference": 0.5333
+        },
+        {
+          "t": 5,
+          "first": {
+            "gives": 1,
+            "decisions": 2,
+            "seeds": 2,
+            "rate": 0.5
+          },
+          "prior": {
+            "gives": 8,
+            "decisions": 14,
+            "seeds": 7,
+            "rate": 0.5714
+          },
+          "difference": -0.0714
+        },
+        {
+          "t": 6,
+          "first": {
+            "gives": 0,
+            "decisions": 1,
+            "seeds": 1,
+            "rate": 0
+          },
+          "prior": {
+            "gives": 6,
+            "decisions": 15,
+            "seeds": 8,
+            "rate": 0.4
+          },
+          "difference": -0.4
+        }
+      ],
+      "standardized": {
+        "maxRound": 6,
+        "difference": 0.1209,
+        "ci": [
+          -0.2034,
+          0.4127
+        ],
+        "firstDecisions": 20,
+        "priorDecisions": 66
+      }
+    }
+  ],
+  "afterUnreciprocatedTransfer": [
+    {
+      "label": "Gift (standard execution), three studies",
+      "cell": "H>H",
+      "rows": [
+        {
+          "condition": "first meeting",
+          "gives": 59,
+          "decisions": 65,
+          "seeds": 30,
+          "rate": 0.9077,
+          "ci": [
+            0.8361,
+            0.9701
+          ]
+        },
+        {
+          "condition": "previous meeting: mutual transfer",
+          "gives": 165,
+          "decisions": 166,
+          "seeds": 40,
+          "rate": 0.994,
+          "ci": [
+            0.98,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: unreciprocated own transfer",
+          "gives": 94,
+          "decisions": 106,
+          "seeds": 42,
+          "rate": 0.8868,
+          "ci": [
+            0.8158,
+            0.9483
+          ]
+        },
+        {
+          "condition": "  same cell, new partner",
+          "gives": 9,
+          "decisions": 14,
+          "seeds": 12,
+          "rate": 0.6429,
+          "ci": [
+            0.4,
+            0.8667
+          ]
+        },
+        {
+          "condition": "  same partner as the loss",
+          "gives": 11,
+          "decisions": 12,
+          "seeds": 11,
+          "rate": 0.9167,
+          "ci": [
+            0.8182,
+            1
+          ]
+        },
+        {
+          "condition": "  previous meeting in another cell",
+          "gives": 85,
+          "decisions": 92,
+          "seeds": 39,
+          "rate": 0.9239,
+          "ci": [
+            0.8652,
+            0.9756
+          ]
+        },
+        {
+          "condition": "previous meeting: received without giving",
+          "gives": 88,
+          "decisions": 99,
+          "seeds": 39,
+          "rate": 0.8889,
+          "ci": [
+            0.8283,
+            0.9429
+          ]
+        },
+        {
+          "condition": "previous meeting: no transfer",
+          "gives": 300,
+          "decisions": 336,
+          "seeds": 44,
+          "rate": 0.8929,
+          "ci": [
+            0.8514,
+            0.9301
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was an unreciprocated own transfer",
+          "gives": 22,
+          "decisions": 30,
+          "seeds": 21,
+          "rate": 0.7333,
+          "ci": [
+            0.6207,
+            0.8571
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was mutual",
+          "gives": 365,
+          "decisions": 377,
+          "seeds": 44,
+          "rate": 0.9682,
+          "ci": [
+            0.9497,
+            0.9836
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier failed to reciprocate",
+          "gives": 67,
+          "decisions": 74,
+          "seeds": 37,
+          "rate": 0.9054,
+          "ci": [
+            0.8308,
+            0.9697
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier reciprocated",
+          "gives": 103,
+          "decisions": 105,
+          "seeds": 31,
+          "rate": 0.981,
+          "ci": [
+            0.9524,
+            1
+          ]
+        },
+        {
+          "condition": "any earlier unreciprocated transfer, partner new",
+          "gives": 162,
+          "decisions": 173,
+          "seeds": 43,
+          "rate": 0.9364,
+          "ci": [
+            0.896,
+            0.9718
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Gift exact, W-SGB",
+      "cell": "H>H",
+      "rows": [
+        {
+          "condition": "first meeting",
+          "gives": 17,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.9444,
+          "ci": [
+            0.8333,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: mutual transfer",
+          "gives": 56,
+          "decisions": 57,
+          "seeds": 12,
+          "rate": 0.9825,
+          "ci": [
+            0.94,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: unreciprocated own transfer",
+          "gives": 25,
+          "decisions": 28,
+          "seeds": 13,
+          "rate": 0.8929,
+          "ci": [
+            0.72,
+            1
+          ]
+        },
+        {
+          "condition": "  same cell, new partner",
+          "gives": 2,
+          "decisions": 4,
+          "seeds": 3,
+          "rate": 0.5,
+          "ci": [
+            0,
+            1
+          ]
+        },
+        {
+          "condition": "  same partner as the loss",
+          "gives": 3,
+          "decisions": 3,
+          "seeds": 2,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "condition": "  previous meeting in another cell",
+          "gives": 23,
+          "decisions": 24,
+          "seeds": 12,
+          "rate": 0.9583,
+          "ci": [
+            0.8636,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: received without giving",
+          "gives": 24,
+          "decisions": 27,
+          "seeds": 12,
+          "rate": 0.8889,
+          "ci": [
+            0.76,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: no transfer",
+          "gives": 106,
+          "decisions": 120,
+          "seeds": 14,
+          "rate": 0.8833,
+          "ci": [
+            0.7934,
+            0.9542
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was an unreciprocated own transfer",
+          "gives": 7,
+          "decisions": 10,
+          "seeds": 7,
+          "rate": 0.7,
+          "ci": [
+            0.4545,
+            0.9091
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was mutual",
+          "gives": 119,
+          "decisions": 123,
+          "seeds": 14,
+          "rate": 0.9675,
+          "ci": [
+            0.9231,
+            1
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier failed to reciprocate",
+          "gives": 19,
+          "decisions": 20,
+          "seeds": 11,
+          "rate": 0.95,
+          "ci": [
+            0.8333,
+            1
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier reciprocated",
+          "gives": 35,
+          "decisions": 35,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "condition": "any earlier unreciprocated transfer, partner new",
+          "gives": 48,
+          "decisions": 53,
+          "seeds": 13,
+          "rate": 0.9057,
+          "ci": [
+            0.8,
+            0.9825
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Harmful E-E, W-SGB",
+      "cell": "H>H",
+      "rows": [
+        {
+          "condition": "first meeting",
+          "gives": 15,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.8333,
+          "ci": [
+            0.6667,
+            0.9583
+          ]
+        },
+        {
+          "condition": "previous meeting: mutual transfer",
+          "gives": 75,
+          "decisions": 85,
+          "seeds": 14,
+          "rate": 0.8824,
+          "ci": [
+            0.8194,
+            0.939
+          ]
+        },
+        {
+          "condition": "previous meeting: unreciprocated own transfer",
+          "gives": 7,
+          "decisions": 19,
+          "seeds": 11,
+          "rate": 0.3684,
+          "ci": [
+            0.1579,
+            0.6111
+          ]
+        },
+        {
+          "condition": "  same cell, new partner",
+          "gives": 3,
+          "decisions": 8,
+          "seeds": 6,
+          "rate": 0.375,
+          "ci": [
+            0,
+            0.7
+          ]
+        },
+        {
+          "condition": "  same partner as the loss",
+          "gives": 1,
+          "decisions": 3,
+          "seeds": 3,
+          "rate": 0.3333,
+          "ci": [
+            0,
+            1
+          ]
+        },
+        {
+          "condition": "  previous meeting in another cell",
+          "gives": 4,
+          "decisions": 9,
+          "seeds": 7,
+          "rate": 0.4444,
+          "ci": [
+            0.1429,
+            0.7778
+          ]
+        },
+        {
+          "condition": "previous meeting: received without giving",
+          "gives": 9,
+          "decisions": 18,
+          "seeds": 9,
+          "rate": 0.5,
+          "ci": [
+            0.2727,
+            0.75
+          ]
+        },
+        {
+          "condition": "previous meeting: no transfer",
+          "gives": 78,
+          "decisions": 110,
+          "seeds": 14,
+          "rate": 0.7091,
+          "ci": [
+            0.6117,
+            0.8103
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was an unreciprocated own transfer",
+          "gives": 9,
+          "decisions": 21,
+          "seeds": 11,
+          "rate": 0.4286,
+          "ci": [
+            0.1818,
+            0.6667
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was mutual",
+          "gives": 81,
+          "decisions": 94,
+          "seeds": 14,
+          "rate": 0.8617,
+          "ci": [
+            0.7826,
+            0.9238
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier failed to reciprocate",
+          "gives": 7,
+          "decisions": 11,
+          "seeds": 6,
+          "rate": 0.6364,
+          "ci": [
+            0.25,
+            0.9167
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier reciprocated",
+          "gives": 42,
+          "decisions": 51,
+          "seeds": 12,
+          "rate": 0.8235,
+          "ci": [
+            0.64,
+            0.9474
+          ]
+        },
+        {
+          "condition": "any earlier unreciprocated transfer, partner new",
+          "gives": 17,
+          "decisions": 31,
+          "seeds": 14,
+          "rate": 0.5484,
+          "ci": [
+            0.3824,
+            0.7407
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Neutral, W-RG and W-SGB",
+      "cell": "H>H",
+      "rows": [
+        {
+          "condition": "first meeting",
+          "gives": 12,
+          "decisions": 37,
+          "seeds": 17,
+          "rate": 0.3243,
+          "ci": [
+            0.1471,
+            0.5278
+          ]
+        },
+        {
+          "condition": "previous meeting: mutual transfer",
+          "gives": 12,
+          "decisions": 22,
+          "seeds": 12,
+          "rate": 0.5455,
+          "ci": [
+            0.3182,
+            0.7333
+          ]
+        },
+        {
+          "condition": "previous meeting: unreciprocated own transfer",
+          "gives": 1,
+          "decisions": 5,
+          "seeds": 5,
+          "rate": 0.2,
+          "ci": [
+            0,
+            0.6
+          ]
+        },
+        {
+          "condition": "  same cell, new partner",
+          "gives": 0,
+          "decisions": 3,
+          "seeds": 3,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "condition": "  same partner as the loss",
+          "gives": 0,
+          "decisions": 1,
+          "seeds": 1,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "condition": "  previous meeting in another cell",
+          "gives": 1,
+          "decisions": 1,
+          "seeds": 1,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "condition": "previous meeting: received without giving",
+          "gives": 2,
+          "decisions": 5,
+          "seeds": 5,
+          "rate": 0.4,
+          "ci": [
+            0,
+            0.8
+          ]
+        },
+        {
+          "condition": "previous meeting: no transfer",
+          "gives": 96,
+          "decisions": 395,
+          "seeds": 26,
+          "rate": 0.243,
+          "ci": [
+            0.1905,
+            0.2984
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was an unreciprocated own transfer",
+          "gives": 1,
+          "decisions": 15,
+          "seeds": 14,
+          "rate": 0.0667,
+          "ci": [
+            0,
+            0.1765
+          ]
+        },
+        {
+          "condition": "last same-cell meeting was mutual",
+          "gives": 33,
+          "decisions": 70,
+          "seeds": 19,
+          "rate": 0.4714,
+          "ci": [
+            0.3061,
+            0.6111
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier failed to reciprocate",
+          "gives": 1,
+          "decisions": 5,
+          "seeds": 4,
+          "rate": 0.2,
+          "ci": [
+            0,
+            0.5
+          ]
+        },
+        {
+          "condition": "partner is an account that earlier reciprocated",
+          "gives": 13,
+          "decisions": 13,
+          "seeds": 5,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "condition": "any earlier unreciprocated transfer, partner new",
+          "gives": 1,
+          "decisions": 20,
+          "seeds": 14,
+          "rate": 0.05,
+          "ci": [
+            0,
+            0.1364
+          ]
+        }
+      ]
+    }
+  ],
+  "encounterIndex": [
+    {
+      "study": "W-CO",
+      "arm": "gift-talk",
+      "cell": "E>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 26,
+          "decisions": 41,
+          "seeds": 18,
+          "rate": 0.6341,
+          "ci": [
+            0.4737,
+            0.7857
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 1,
+          "decisions": 45,
+          "seeds": 18,
+          "rate": 0.0222,
+          "ci": [
+            0,
+            0.075
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 2,
+          "decisions": 32,
+          "seeds": 15,
+          "rate": 0.0625,
+          "ci": [
+            0,
+            0.1515
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 20,
+          "decisions": 255,
+          "seeds": 18,
+          "rate": 0.0784,
+          "ci": [
+            0.0375,
+            0.1313
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 23,
+          "decisions": 332,
+          "seeds": 18,
+          "rate": 0.0693,
+          "ci": [
+            0.0347,
+            0.1114
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-CO",
+      "arm": "gift-talk",
+      "cell": "E>H",
+      "definition": "index within directed cell",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 31,
+          "decisions": 134,
+          "seeds": 18,
+          "rate": 0.2313,
+          "ci": [
+            0.1642,
+            0.2971
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 10,
+          "decisions": 106,
+          "seeds": 18,
+          "rate": 0.0943,
+          "ci": [
+            0.0485,
+            0.1441
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 4,
+          "decisions": 74,
+          "seeds": 18,
+          "rate": 0.0541,
+          "ci": [
+            0,
+            0.125
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 4,
+          "decisions": 59,
+          "seeds": 14,
+          "rate": 0.0678,
+          "ci": [
+            0,
+            0.1754
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 18,
+          "decisions": 239,
+          "seeds": 18,
+          "rate": 0.0753,
+          "ci": [
+            0.0342,
+            0.129
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-RG",
+      "arm": "gift-standard",
+      "cell": "E>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 16,
+          "decisions": 31,
+          "seeds": 12,
+          "rate": 0.5161,
+          "ci": [
+            0.3448,
+            0.7
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 0,
+          "decisions": 24,
+          "seeds": 10,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 3,
+          "decisions": 26,
+          "seeds": 12,
+          "rate": 0.1154,
+          "ci": [
+            0,
+            0.2333
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 7,
+          "decisions": 181,
+          "seeds": 12,
+          "rate": 0.0387,
+          "ci": [
+            0.0172,
+            0.0615
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 10,
+          "decisions": 231,
+          "seeds": 12,
+          "rate": 0.0433,
+          "ci": [
+            0.0219,
+            0.0647
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-RG",
+      "arm": "gift-standard",
+      "cell": "E>H",
+      "definition": "index within directed cell",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 18,
+          "decisions": 91,
+          "seeds": 12,
+          "rate": 0.1978,
+          "ci": [
+            0.1236,
+            0.2766
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 5,
+          "decisions": 75,
+          "seeds": 12,
+          "rate": 0.0667,
+          "ci": [
+            0.0267,
+            0.1098
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 2,
+          "decisions": 48,
+          "seeds": 12,
+          "rate": 0.0417,
+          "ci": [
+            0,
+            0.1
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 1,
+          "decisions": 48,
+          "seeds": 10,
+          "rate": 0.0208,
+          "ci": [
+            0,
+            0.0698
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 8,
+          "decisions": 171,
+          "seeds": 12,
+          "rate": 0.0468,
+          "ci": [
+            0.0205,
+            0.0718
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "E>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 17,
+          "decisions": 39,
+          "seeds": 14,
+          "rate": 0.4359,
+          "ci": [
+            0.2813,
+            0.5952
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 2,
+          "decisions": 29,
+          "seeds": 14,
+          "rate": 0.069,
+          "ci": [
+            0,
+            0.1905
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 2,
+          "decisions": 23,
+          "seeds": 12,
+          "rate": 0.087,
+          "ci": [
+            0,
+            0.2174
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 16,
+          "decisions": 213,
+          "seeds": 14,
+          "rate": 0.0751,
+          "ci": [
+            0.0398,
+            0.1148
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 20,
+          "decisions": 265,
+          "seeds": 14,
+          "rate": 0.0755,
+          "ci": [
+            0.0426,
+            0.1111
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "E>H",
+      "definition": "index within directed cell",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 23,
+          "decisions": 108,
+          "seeds": 14,
+          "rate": 0.213,
+          "ci": [
+            0.1455,
+            0.2816
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 7,
+          "decisions": 83,
+          "seeds": 14,
+          "rate": 0.0843,
+          "ci": [
+            0.0345,
+            0.1447
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 5,
+          "decisions": 53,
+          "seeds": 14,
+          "rate": 0.0943,
+          "ci": [
+            0.0323,
+            0.1702
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 2,
+          "decisions": 60,
+          "seeds": 12,
+          "rate": 0.0333,
+          "ci": [
+            0,
+            0.0784
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 14,
+          "decisions": 196,
+          "seeds": 14,
+          "rate": 0.0714,
+          "ci": [
+            0.0355,
+            0.1134
+          ]
+        }
+      ]
+    }
+  ],
+  "firstInCell": [
+    {
+      "label": "Gift (standard execution), three studies pooled",
+      "cell": "E>H",
+      "firstMeeting": {
+        "gives": 59,
+        "decisions": 111,
+        "seeds": 44,
+        "rate": 0.5315,
+        "ci": [
+          0.4352,
+          0.6286
+        ]
+      },
+      "firstInCellAfterOtherRole": {
+        "gives": 13,
+        "decisions": 222,
+        "seeds": 44,
+        "rate": 0.0586,
+        "ci": [
+          0.0271,
+          0.0948
+        ]
+      },
+      "laterInCell": {
+        "gives": 40,
+        "decisions": 606,
+        "seeds": 44,
+        "rate": 0.066,
+        "ci": [
+          0.0441,
+          0.0915
+        ]
+      }
+    },
+    {
+      "label": "W-CO gift-talk",
+      "cell": "E>H",
+      "firstMeeting": {
+        "gives": 26,
+        "decisions": 41,
+        "seeds": 18,
+        "rate": 0.6341,
+        "ci": [
+          0.4737,
+          0.7857
+        ]
+      },
+      "firstInCellAfterOtherRole": {
+        "gives": 5,
+        "decisions": 93,
+        "seeds": 18,
+        "rate": 0.0538,
+        "ci": [
+          0,
+          0.1209
+        ]
+      },
+      "laterInCell": {
+        "gives": 18,
+        "decisions": 239,
+        "seeds": 18,
+        "rate": 0.0753,
+        "ci": [
+          0.0342,
+          0.129
+        ]
+      }
+    },
+    {
+      "label": "W-RG gift-standard",
+      "cell": "E>H",
+      "firstMeeting": {
+        "gives": 16,
+        "decisions": 31,
+        "seeds": 12,
+        "rate": 0.5161,
+        "ci": [
+          0.3448,
+          0.7
+        ]
+      },
+      "firstInCellAfterOtherRole": {
+        "gives": 2,
+        "decisions": 60,
+        "seeds": 12,
+        "rate": 0.0333,
+        "ci": [
+          0,
+          0.0847
+        ]
+      },
+      "laterInCell": {
+        "gives": 8,
+        "decisions": 171,
+        "seeds": 12,
+        "rate": 0.0468,
+        "ci": [
+          0.0205,
+          0.0718
+        ]
+      }
+    },
+    {
+      "label": "W-SGB gift-exact",
+      "cell": "E>H",
+      "firstMeeting": {
+        "gives": 17,
+        "decisions": 39,
+        "seeds": 14,
+        "rate": 0.4359,
+        "ci": [
+          0.2813,
+          0.5952
+        ]
+      },
+      "firstInCellAfterOtherRole": {
+        "gives": 6,
+        "decisions": 69,
+        "seeds": 14,
+        "rate": 0.087,
+        "ci": [
+          0.0286,
+          0.1528
+        ]
+      },
+      "laterInCell": {
+        "gives": 14,
+        "decisions": 196,
+        "seeds": 14,
+        "rate": 0.0714,
+        "ci": [
+          0.0355,
+          0.1134
+        ]
+      }
+    }
+  ],
+  "wsgbCurves": [
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "H>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 17,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.9444,
+          "ci": [
+            0.8333,
+            1
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 23,
+          "decisions": 23,
+          "seeds": 10,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 21,
+          "decisions": 24,
+          "seeds": 13,
+          "rate": 0.875,
+          "ci": [
+            0.6667,
+            1
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 167,
+          "decisions": 185,
+          "seeds": 14,
+          "rate": 0.9027,
+          "ci": [
+            0.8452,
+            0.9521
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 211,
+          "decisions": 232,
+          "seeds": 14,
+          "rate": 0.9095,
+          "ci": [
+            0.8472,
+            0.9592
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "H>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 24,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0.6857,
+          "ci": [
+            0.525,
+            0.8378
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 10,
+          "decisions": 27,
+          "seeds": 13,
+          "rate": 0.3704,
+          "ci": [
+            0.2174,
+            0.5625
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 10,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0.2857,
+          "ci": [
+            0.1481,
+            0.4483
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 83,
+          "decisions": 207,
+          "seeds": 14,
+          "rate": 0.401,
+          "ci": [
+            0.3393,
+            0.4688
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 103,
+          "decisions": 269,
+          "seeds": 14,
+          "rate": 0.3829,
+          "ci": [
+            0.3195,
+            0.4552
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "E>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 17,
+          "decisions": 39,
+          "seeds": 14,
+          "rate": 0.4359,
+          "ci": [
+            0.2813,
+            0.5952
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 2,
+          "decisions": 29,
+          "seeds": 14,
+          "rate": 0.069,
+          "ci": [
+            0,
+            0.1905
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 2,
+          "decisions": 23,
+          "seeds": 12,
+          "rate": 0.087,
+          "ci": [
+            0,
+            0.2174
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 16,
+          "decisions": 213,
+          "seeds": 14,
+          "rate": 0.0751,
+          "ci": [
+            0.0398,
+            0.1148
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 20,
+          "decisions": 265,
+          "seeds": 14,
+          "rate": 0.0755,
+          "ci": [
+            0.0426,
+            0.1111
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "cell": "E>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 0,
+          "decisions": 20,
+          "seeds": 9,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 2,
+          "decisions": 33,
+          "seeds": 12,
+          "rate": 0.0606,
+          "ci": [
+            0,
+            0.1818
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 1,
+          "decisions": 30,
+          "seeds": 11,
+          "rate": 0.0333,
+          "ci": [
+            0,
+            0.1
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 13,
+          "decisions": 145,
+          "seeds": 14,
+          "rate": 0.0897,
+          "ci": [
+            0.0531,
+            0.1277
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 16,
+          "decisions": 208,
+          "seeds": 14,
+          "rate": 0.0769,
+          "ci": [
+            0.042,
+            0.1156
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "easy-easy-negative",
+      "cell": "E>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 20,
+          "decisions": 20,
+          "seeds": 9,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 33,
+          "decisions": 33,
+          "seeds": 12,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 30,
+          "decisions": 30,
+          "seeds": 11,
+          "rate": 1,
+          "ci": [
+            1,
+            1
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 144,
+          "decisions": 145,
+          "seeds": 14,
+          "rate": 0.9931,
+          "ci": [
+            0.9764,
+            1
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 207,
+          "decisions": 208,
+          "seeds": 14,
+          "rate": 0.9952,
+          "ci": [
+            0.9831,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "easy-easy-negative",
+      "cell": "H>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 15,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.8333,
+          "ci": [
+            0.6667,
+            0.9583
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 19,
+          "decisions": 23,
+          "seeds": 10,
+          "rate": 0.8261,
+          "ci": [
+            0.65,
+            1
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 18,
+          "decisions": 24,
+          "seeds": 13,
+          "rate": 0.75,
+          "ci": [
+            0.5652,
+            0.913
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 132,
+          "decisions": 185,
+          "seeds": 14,
+          "rate": 0.7135,
+          "ci": [
+            0.6339,
+            0.7947
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 169,
+          "decisions": 232,
+          "seeds": 14,
+          "rate": 0.7284,
+          "ci": [
+            0.65,
+            0.8086
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "easy-easy-negative",
+      "cell": "H>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 0,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 6,
+          "decisions": 27,
+          "seeds": 13,
+          "rate": 0.2222,
+          "ci": [
+            0.0909,
+            0.3333
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 6,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0.1714,
+          "ci": [
+            0.0513,
+            0.3235
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 24,
+          "decisions": 207,
+          "seeds": 14,
+          "rate": 0.1159,
+          "ci": [
+            0.0711,
+            0.1675
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 36,
+          "decisions": 269,
+          "seeds": 14,
+          "rate": 0.1338,
+          "ci": [
+            0.086,
+            0.1901
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "neutral",
+      "cell": "H>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 7,
+          "decisions": 18,
+          "seeds": 8,
+          "rate": 0.3889,
+          "ci": [
+            0.1111,
+            0.6667
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 10,
+          "decisions": 23,
+          "seeds": 10,
+          "rate": 0.4348,
+          "ci": [
+            0.25,
+            0.6842
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 3,
+          "decisions": 24,
+          "seeds": 13,
+          "rate": 0.125,
+          "ci": [
+            0,
+            0.3158
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 44,
+          "decisions": 185,
+          "seeds": 14,
+          "rate": 0.2378,
+          "ci": [
+            0.1404,
+            0.3383
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 57,
+          "decisions": 232,
+          "seeds": 14,
+          "rate": 0.2457,
+          "ci": [
+            0.1639,
+            0.3305
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "neutral",
+      "cell": "H>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 0,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 0,
+          "decisions": 27,
+          "seeds": 13,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 1,
+          "decisions": 35,
+          "seeds": 14,
+          "rate": 0.0286,
+          "ci": [
+            0,
+            0.1071
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 2,
+          "decisions": 207,
+          "seeds": 14,
+          "rate": 0.0097,
+          "ci": [
+            0,
+            0.0243
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 3,
+          "decisions": 269,
+          "seeds": 14,
+          "rate": 0.0112,
+          "ci": [
+            0,
+            0.0245
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "neutral",
+      "cell": "E>H",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 0,
+          "decisions": 39,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 0,
+          "decisions": 29,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 0,
+          "decisions": 23,
+          "seeds": 12,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 0,
+          "decisions": 213,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 0,
+          "decisions": 265,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "study": "W-SGB",
+      "arm": "neutral",
+      "cell": "E>E",
+      "definition": "account meeting index",
+      "bins": [
+        {
+          "bin": "1",
+          "gives": 0,
+          "decisions": 20,
+          "seeds": 9,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2",
+          "gives": 0,
+          "decisions": 33,
+          "seeds": 12,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "3",
+          "gives": 0,
+          "decisions": 30,
+          "seeds": 11,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "4+",
+          "gives": 0,
+          "decisions": 145,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        },
+        {
+          "bin": "2+",
+          "gives": 0,
+          "decisions": 208,
+          "seeds": 14,
+          "rate": 0,
+          "ci": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "accounting": [
+    {
+      "study": "W-SGB",
+      "arm": "gift-exact",
+      "reference": "neutral",
+      "components": [
+        {
+          "group": "H-H swap",
+          "mean": 2.1964,
+          "ci": [
+            1.5268,
+            2.9196
+          ],
+          "positiveSeeds": 13,
+          "negativeSeeds": 0,
+          "seeds": 14
+        },
+        {
+          "group": "E-H swap",
+          "mean": 0.3571,
+          "ci": [
+            0.1652,
+            0.567
+          ],
+          "positiveSeeds": 9,
+          "negativeSeeds": 1,
+          "seeds": 14
+        },
+        {
+          "group": "One-way H->H",
+          "mean": 0.1161,
+          "ci": [
+            -0.0446,
+            0.2634
+          ],
+          "positiveSeeds": 9,
+          "negativeSeeds": 2,
+          "seeds": 14
+        },
+        {
+          "group": "One-way E->H",
+          "mean": 0.0804,
+          "ci": [
+            0,
+            0.1607
+          ],
+          "positiveSeeds": 3,
+          "negativeSeeds": 0,
+          "seeds": 14
+        },
+        {
+          "group": "One-way H->E",
+          "mean": -0.6161,
+          "ci": [
+            -0.8036,
+            -0.4554
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 13,
+          "seeds": 14
+        },
+        {
+          "group": "Easy-Easy transfers",
+          "mean": -0.0714,
+          "ci": [
+            -0.1071,
+            -0.0357
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 9,
+          "seeds": 14
+        }
+      ],
+      "net": {
+        "group": "Net welfare change",
+        "mean": 2.0625,
+        "ci": [
+          1.4286,
+          2.808
+        ],
+        "positiveSeeds": 14,
+        "negativeSeeds": 0,
+        "seeds": 14
+      },
+      "componentSum": 2.0625,
+      "roundedComponentSum": 2.07
+    },
+    {
+      "study": "W-RG",
+      "arm": "gift-standard",
+      "reference": "neutral-standard",
+      "components": [
+        {
+          "group": "H-H swap",
+          "mean": 2.4063,
+          "ci": [
+            1.875,
+            2.9375
+          ],
+          "positiveSeeds": 12,
+          "negativeSeeds": 0,
+          "seeds": 12
+        },
+        {
+          "group": "E-H swap",
+          "mean": 0.401,
+          "ci": [
+            0.1979,
+            0.6042
+          ],
+          "positiveSeeds": 8,
+          "negativeSeeds": 1,
+          "seeds": 12
+        },
+        {
+          "group": "One-way H->H",
+          "mean": 0.0521,
+          "ci": [
+            -0.1615,
+            0.2865
+          ],
+          "positiveSeeds": 5,
+          "negativeSeeds": 3,
+          "seeds": 12
+        },
+        {
+          "group": "One-way E->H",
+          "mean": 0.0313,
+          "ci": [
+            0,
+            0.0938
+          ],
+          "positiveSeeds": 1,
+          "negativeSeeds": 0,
+          "seeds": 12
+        },
+        {
+          "group": "One-way H->E",
+          "mean": -1.125,
+          "ci": [
+            -1.375,
+            -0.8438
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 11,
+          "seeds": 12
+        },
+        {
+          "group": "Easy-Easy transfers",
+          "mean": -0.0833,
+          "ci": [
+            -0.1354,
+            -0.0365
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 7,
+          "seeds": 12
+        }
+      ],
+      "net": {
+        "group": "Net welfare change",
+        "mean": 1.6823,
+        "ci": [
+          0.8594,
+          2.4688
+        ],
+        "positiveSeeds": 9,
+        "negativeSeeds": 3,
+        "seeds": 12
+      },
+      "componentSum": 1.6823,
+      "roundedComponentSum": 1.69
+    },
+    {
+      "study": "W-SGB",
+      "arm": "easy-easy-negative",
+      "reference": "neutral",
+      "components": [
+        {
+          "group": "H-H swap",
+          "mean": 1.2321,
+          "ci": [
+            0.8304,
+            1.6607
+          ],
+          "positiveSeeds": 12,
+          "negativeSeeds": 0,
+          "seeds": 14
+        },
+        {
+          "group": "E-H swap",
+          "mean": 0.0223,
+          "ci": [
+            0,
+            0.067
+          ],
+          "positiveSeeds": 1,
+          "negativeSeeds": 0,
+          "seeds": 14
+        },
+        {
+          "group": "One-way H->H",
+          "mean": 0.2411,
+          "ci": [
+            0.0402,
+            0.4598
+          ],
+          "positiveSeeds": 10,
+          "negativeSeeds": 4,
+          "seeds": 14
+        },
+        {
+          "group": "One-way E->H",
+          "mean": 0.0536,
+          "ci": [
+            0,
+            0.1339
+          ],
+          "positiveSeeds": 2,
+          "negativeSeeds": 0,
+          "seeds": 14
+        },
+        {
+          "group": "One-way H->E",
+          "mean": -0.3482,
+          "ci": [
+            -0.5893,
+            -0.1339
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 7,
+          "seeds": 14
+        },
+        {
+          "group": "Easy-Easy transfers",
+          "mean": -1.0134,
+          "ci": [
+            -1.183,
+            -0.8438
+          ],
+          "positiveSeeds": 0,
+          "negativeSeeds": 14,
+          "seeds": 14
+        }
+      ],
+      "net": {
+        "group": "Net welfare change",
+        "mean": 0.1875,
+        "ci": [
+          -0.3393,
+          0.7009
+        ],
+        "positiveSeeds": 9,
+        "negativeSeeds": 5,
+        "seeds": 14
+      },
+      "componentSum": 0.1875,
+      "roundedComponentSum": 0.18
+    }
+  ],
+  "discrepancies": {
+    "firstDecision": [
+      {
+        "label": "W-SGB gift exact vs neutral, E->H (named)",
+        "pairs": 39,
+        "aOnly": 17,
+        "bOnly": 0,
+        "seeds": 14,
+        "seedMeanNetRate": 0.4821,
+        "ci": [
+          0.3214,
+          0.6429
+        ],
+        "pTwoSided": 0.0005
+      },
+      {
+        "label": "W-SGB gift exact vs neutral, H->H",
+        "pairs": 18,
+        "aOnly": 10,
+        "bOnly": 0,
+        "seeds": 8,
+        "seedMeanNetRate": 0.5521,
+        "ci": [
+          0.2708,
+          0.8333
+        ],
+        "pTwoSided": 0.0313
+      },
+      {
+        "label": "W-SGB gift exact vs neutral, H->E",
+        "pairs": 35,
+        "aOnly": 24,
+        "bOnly": 0,
+        "seeds": 14,
+        "seedMeanNetRate": 0.7202,
+        "ci": [
+          0.5476,
+          0.869
+        ],
+        "pTwoSided": 0.0002
+      },
+      {
+        "label": "W-SGB harmful E-E vs neutral, H->H",
+        "pairs": 18,
+        "aOnly": 8,
+        "bOnly": 0,
+        "seeds": 8,
+        "seedMeanNetRate": 0.4271,
+        "ci": [
+          0.2188,
+          0.6458
+        ],
+        "pTwoSided": 0.0313
+      },
+      {
+        "label": "W-SGB money exact vs neutral, H->H",
+        "pairs": 18,
+        "aOnly": 0,
+        "bOnly": 6,
+        "seeds": 8,
+        "seedMeanNetRate": -0.375,
+        "ci": [
+          -0.6875,
+          -0.125
+        ],
+        "pTwoSided": 0.125
+      },
+      {
+        "label": "W-RG gift vs neutral, E->H (named)",
+        "pairs": 31,
+        "aOnly": 16,
+        "bOnly": 0,
+        "seeds": 12,
+        "seedMeanNetRate": 0.5069,
+        "ci": [
+          0.3125,
+          0.7083
+        ],
+        "pTwoSided": 0.002
+      },
+      {
+        "label": "W-RG gift vs neutral, H->H",
+        "pairs": 19,
+        "aOnly": 10,
+        "bOnly": 0,
+        "seeds": 9,
+        "seedMeanNetRate": 0.4519,
+        "ci": [
+          0.163,
+          0.7407
+        ],
+        "pTwoSided": 0.0625
+      },
+      {
+        "label": "W-CO gift vs money, E->H (named)",
+        "pairs": 41,
+        "aOnly": 26,
+        "bOnly": 0,
+        "seeds": 18,
+        "seedMeanNetRate": 0.6157,
+        "ci": [
+          0.4444,
+          0.7778
+        ],
+        "pTwoSided": 0.0001
+      },
+      {
+        "label": "W-CO gift vs money, H->H",
+        "pairs": 28,
+        "aOnly": 22,
+        "bOnly": 0,
+        "seeds": 13,
+        "seedMeanNetRate": 0.7692,
+        "ci": [
+          0.5897,
+          0.9103
+        ],
+        "pTwoSided": 0.0005
+      }
+    ],
+    "samePromptNoise": [
+      {
+        "label": "W-RG gift-standard vs gift-hh-blocked",
+        "pairs": 250,
+        "aOnly": 10,
+        "bOnly": 16,
+        "seeds": 12,
+        "seedMeanNetRate": -0.0111,
+        "ci": [
+          -0.0736,
+          0.0753
+        ],
+        "pTwoSided": 0.8477
+      },
+      {
+        "label": "W-RG gift-standard vs gift-eh-gift-blocked",
+        "pairs": 388,
+        "aOnly": 16,
+        "bOnly": 15,
+        "seeds": 12,
+        "seedMeanNetRate": 0.0138,
+        "ci": [
+          -0.0272,
+          0.0546
+        ],
+        "pTwoSided": 0.5547
+      },
+      {
+        "label": "W-RG gift-hh-blocked vs gift-eh-gift-blocked",
+        "pairs": 239,
+        "aOnly": 13,
+        "bOnly": 11,
+        "seeds": 12,
+        "seedMeanNetRate": 0.0188,
+        "ci": [
+          -0.0288,
+          0.07
+        ],
+        "pTwoSided": 0.5078
+      }
+    ]
+  }
+}

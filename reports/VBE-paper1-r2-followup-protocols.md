@@ -1,6 +1,7 @@
 # Paper 1 — Follow-up Protocols for the Second Review Round
 
 **Version:** 0.1 · 2026-10-01
+**Superseded** by `VBE-paper1-r3-followup-protocols.md` (v0.2, 2026-10-08). Kept for the audit trail.
 **Status:** DRAFT. Not hash-frozen. No target call has been made. Each protocol must be implemented, dry-run, tested, and frozen with its own manifest and run-specific provider-health plan before its first target call, following the project's existing freeze discipline.
 **Origin:** the AAMAS review received 2026-10-01 (Experiments A–E) and the X1 zero-call audit (`engine/src/data/welfare-review-x1.md`), which already answers part of B and the funnel part of D without model calls.
 

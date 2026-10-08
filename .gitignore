@@ -32,6 +32,9 @@ engine/src/lib/vbe/*
 !engine/src/lib/vbe/welfare-review-x1.test.ts
 !engine/src/lib/vbe/reanalyze-welfare-review-x1.ts
 !engine/src/lib/vbe/env-exhaustive.test.ts
+!engine/src/lib/vbe/welfare-review-x2.ts
+!engine/src/lib/vbe/welfare-review-x2.test.ts
+!engine/src/lib/vbe/reanalyze-welfare-review-x2.ts
 engine/src/data/*
 !engine/src/data/welfare-crowding-out.json
 !engine/src/data/welfare-crowding-out-freeze.json
@@ -51,4 +54,6 @@ engine/src/data/*
 !engine/src/data/provider-era-baseline-deepseek-v4.1-flash-post-20260914.json
 !engine/src/data/welfare-review-x1.json
 !engine/src/data/welfare-review-x1.md
+!engine/src/data/welfare-review-x2.json
+!engine/src/data/welfare-review-x2.md
 !engine/src/data/buyer-wrapper-disassembly.json
