@@ -52,3 +52,7 @@ The R3 re-review asked for no reanalysis and no removal of intervals. It asked i
 - **Table 5.** The re-review offered moving p_MRES and the leave-one-seed-out results to the appendix as an optional layout choice. Table 5 is unchanged because page space is not binding: the main text still ends on page 8.
 - **Figure 2.** Structure, intervals, and denominators are unchanged.
 - **Build checks.** There are no undefined references and no overfull boxes.
+
+## AI-use statement (2026-10-09, author-supplied)
+
+The main-text "AI assistance and artifacts" paragraph is split in two. The "AI use" paragraph now carries the authors' statement verbatim: "The authors used ChatGPT and Claude Code to assist with manuscript organization, language polishing, and generation of plotting code. The authors executed and verified the scripts, validated all technical content, and take full responsibility for the submission." The "Artifacts" paragraph keeps the supplement sentence unchanged. `paper/VBE-paper1-aamas2027-r4.pdf` is rebuilt; the main text still ends on page 8.
