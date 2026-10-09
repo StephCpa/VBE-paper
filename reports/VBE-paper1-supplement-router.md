@@ -169,11 +169,8 @@ The superseded belief target made midpoint reporting self-ratifying and offered 
 
 ### S13. AI-assisted technology disclosure
 
-- Tool and user-visible model/version record, with unavailable backend revisions explicitly marked unavailable rather than guessed.
-- Complete relevant prompt record for hypothesis and methodology work, including enough preceding context to interpret short continuation prompts.
-- Affected hypotheses, protocols, code, analyses, and manuscript sections.
-- Human verification and accountability checklist.
-- Source: `VBE-paper1-ai-assistance-disclosure.md` plus the anonymized prompt export assembled before submission.
+- Statement: "The authors used ChatGPT and Claude Code to assist with manuscript organization, language polishing, and generation of plotting code. The authors executed and verified the scripts, validated all technical content, and take full responsibility for the submission."
+- Source: `VBE-paper1-ai-assistance-disclosure.md` (identical to the main-paper "AI use" paragraph).
 
 ## Table migration map
 
